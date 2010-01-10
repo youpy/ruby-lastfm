@@ -72,6 +72,10 @@ describe "Lastfm" do
   end
 
   describe '#track' do
+    it 'should return an instance of Lastfm::Track' do
+      @lastfm.track.should be_an_instance_of(Lastfm::Track)
+    end
+
     it 'should love' do
       @lastfm.session = 'abcdef'
       @lastfm.should_receive(:request).with('track.love', {
