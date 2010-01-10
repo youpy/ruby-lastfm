@@ -11,6 +11,8 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
  lastfm = Lastfm.new(api_key, api_secret)
  token = lastfm.auth.get_token
 
+ # open 'http://www.last.fm/api/auth/?api_key=xxxxxxxxxxx&token=xxxxxxxx' and grant the application
+
  lastfm.session = lastfm.auth.get_session(token)
 
  lastfm.track.love('Hujiko Pro', 'acid acid 7riddim')
