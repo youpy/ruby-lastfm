@@ -5,12 +5,13 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |gem|
     gem.name = "lastfm"
-    gem.summary = %Q{TODO: one-line summary of your gem}
-    gem.description = %Q{TODO: longer description of your gem}
+    gem.summary = %Q{A Ruby interface for Last.fm Web Services}
+    gem.description = %Q{A ruby interface for Last.fm web services version 2.0}
     gem.email = "youpy@buycheapviagraonlinenow.com"
-    gem.homepage = "http://github.com/youpy/lastfm"
+    gem.homepage = "http://github.com/youpy/ruby-lastfm"
     gem.authors = ["youpy"]
     gem.add_development_dependency "rspec"
+    gem.add_dependency "httparty"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new
@@ -36,11 +37,7 @@ task :default => :spec
 
 require 'rake/rdoctask'
 Rake::RDocTask.new do |rdoc|
-  if File.exist?('VERSION')
-    version = File.read('VERSION')
-  else
-    version = ""
-  end
+  version = File.read('VERSION')
 
   rdoc.rdoc_dir = 'rdoc'
   rdoc.title = "lastfm #{version}"

@@ -1,6 +1,17 @@
-= lastfm
+= ruby-lastfm
 
-Description goes here.
+A Ruby interface for Last.fm Web Services
+
+== Supported API Methods
+
+=== Auth
+
+* auth.getToken
+* auth.getSession
+
+=== Track
+
+* track.love
 
 == Note on Patches/Pull Requests
  
