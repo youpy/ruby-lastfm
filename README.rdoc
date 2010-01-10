@@ -2,8 +2,6 @@
 
 A Ruby interface for Last.fm Web Services v2.0
 
-It supports methods which require {authentication}[http://www.last.fm/api/authentication].
-
 == Synopsis
 
  require 'lastfm'
@@ -18,6 +16,8 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
  lastfm.track.love('Hujiko Pro', 'acid acid 7riddim')
 
 == Supported API Methods
+
+It supports methods which require {authentication}[http://www.last.fm/api/authentication].
 
 === Auth
 
