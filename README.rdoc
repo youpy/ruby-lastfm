@@ -9,7 +9,7 @@ A Ruby interface for Last.fm Web Services
  lastfm = Lastfm.new(api_key, api_secret)
  token = lastfm.auth.get_token
 
- lastfm.session = lastfm.get_session(token)
+ lastfm.session = lastfm.auth.get_session(token)
 
  lastfm.track.love('Hujiko Pro', 'acid acid 7riddim')
 
