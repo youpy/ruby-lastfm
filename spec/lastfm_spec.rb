@@ -48,7 +48,7 @@ describe "Lastfm" do
       @lastfm.class.should_receive(:post).and_return(mock_response)
 
       lambda {
-        @lastfm.request('xxx.yyy', { :foo => 'bar' }, :post)['bar'].should eql('baz')
+        @lastfm.request('xxx.yyy', { :foo => 'bar' }, :post)
       }.should raise_error(Lastfm::ApiError, 'Invalid Method - No method with that name in this package')
     end
   end
