@@ -2,7 +2,7 @@
 
 A Ruby interface for Last.fm Web Services v2.0
 
-It supports methods require {authentication}[http://www.last.fm/api/authentication].
+It supports methods which require {authentication}[http://www.last.fm/api/authentication].
 
 == Synopsis
 
