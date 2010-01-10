@@ -2,6 +2,17 @@
 
 A Ruby interface for Last.fm Web Services
 
+== Synopsis
+
+ require 'lastfm'
+
+ lastfm = Lastfm.new(api_key, api_secret)
+ token = lastfm.auth.get_token
+
+ lastfm.session = lastfm.get_session(token)
+
+ lastfm.track.love('Hujiko Pro', 'acid acid 7riddim')
+
 == Supported API Methods
 
 === Auth
@@ -12,6 +23,21 @@ A Ruby interface for Last.fm Web Services
 === Track
 
 * track.love
+
+== Installation
+
+=== Archive Installation
+
+ rake install
+
+=== Gem Installation
+
+ gem update --system
+ gem install gemcutter
+ gem tumble
+ gem install lastfm
+
+== Features/Problems
 
 == Note on Patches/Pull Requests
  
