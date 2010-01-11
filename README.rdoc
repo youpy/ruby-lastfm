@@ -26,7 +26,17 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 
 === Track
 
+* track.addTags
+* track.ban
+* track.getInfo
+* track.getSimilar
+* track.getTags
+* track.getTopFans
+* track.getTopTags
 * track.love
+* track.removeTag
+* track.search
+* track.share
 
 == Installation
 
