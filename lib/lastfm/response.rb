@@ -7,7 +7,8 @@ class Lastfm
       # API returns XML response when no child node?
       if body == '<?xml version="1.0" encoding="utf-8"?>
 <lfm status="ok">
-</lfm>'
+</lfm>
+'
         @parsed_body = {}
       else
         @parsed_body = JSON.parse(body)

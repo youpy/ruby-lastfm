@@ -23,7 +23,8 @@ describe "Lastfm::Response" do
     it 'should ignore unexpected xml response' do
        Lastfm::Response.new('<?xml version="1.0" encoding="utf-8"?>
 <lfm status="ok">
-</lfm>').should be_success
+</lfm>
+').should be_success
      end
   end
 
