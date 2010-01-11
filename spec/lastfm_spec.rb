@@ -16,7 +16,19 @@ describe "Lastfm" do
   end
 
   describe '#request' do
-    it 'should do post request' do
+    it 'should post' do
+      mock_response = mock(HTTParty::Response)
+      @lastfm.class.should_receive(:post).with('/', :body => {
+          :foo => 'bar',
+          :method => 'xxx.yyy',
+          :api_key => 'xxx',
+          :format => 'json'
+        }).and_return(mock_response)
+      mock_response.should_receive(:body).and_return('{ "bar": "baz" }')
+      @lastfm.request('xxx.yyy', { :foo => 'bar' }, :post, false, false)['bar'].should eql('baz')
+    end
+
+    it 'should post with signature' do
       mock_response = mock(HTTParty::Response)
       @lastfm.class.should_receive(:post).with('/', :body => {
           :foo => 'bar',
@@ -26,10 +38,39 @@ describe "Lastfm" do
           :format => 'json'
         }).and_return(mock_response)
       mock_response.should_receive(:body).and_return('{ "bar": "baz" }')
-      @lastfm.request('xxx.yyy', { :foo => 'bar' }, :post)['bar'].should eql('baz')
+      @lastfm.request('xxx.yyy', { :foo => 'bar' }, :post, true, false)['bar'].should eql('baz')
     end
 
-    it 'should do get request' do
+    it 'should post with signature and session (request with authentication)' do
+      mock_response = mock(HTTParty::Response)
+      @lastfm.session = 'abcdef'
+      @lastfm.class.should_receive(:post).with('/', :body => {
+          :foo => 'bar',
+          :method => 'xxx.yyy',
+          :api_key => 'xxx',
+          :api_sig => Digest::MD5.hexdigest('api_keyxxxfoobarmethodxxx.yyyskabcdefyyy'),
+          :sk => 'abcdef',
+          :format => 'json'
+        }).and_return(mock_response)
+      mock_response.should_receive(:body).and_return('{ "bar": "baz" }')
+
+      @lastfm.request('xxx.yyy', { :foo => 'bar' }, :post, true, true)['bar'].should eql('baz')
+    end
+
+    it 'should get' do
+      mock_response = mock(HTTParty::Response)
+      @lastfm.class.should_receive(:get).with('/', :query => {
+          :foo => 'bar',
+          :method => 'xxx.yyy',
+          :api_key => 'xxx',
+          :format => 'json'
+        }).and_return(mock_response)
+      mock_response.should_receive(:body).and_return('{ "bar": "baz" }')
+
+      @lastfm.request('xxx.yyy', { :foo => 'bar' }, :get, false, false)['bar'].should eql('baz')
+    end
+
+    it 'should get with signature (request for authentication)' do
       mock_response = mock(HTTParty::Response)
       @lastfm.class.should_receive(:get).with('/', :query => {
           :foo => 'bar',
@@ -39,7 +80,24 @@ describe "Lastfm" do
           :format => 'json'
         }).and_return(mock_response)
       mock_response.should_receive(:body).and_return('{ "bar": "baz" }')
-      @lastfm.request('xxx.yyy', { :foo => 'bar' }, :get)['bar'].should eql('baz')
+
+      @lastfm.request('xxx.yyy', { :foo => 'bar' }, :get, true, false)['bar'].should eql('baz')
+    end
+
+    it 'should get with signature and session' do
+      mock_response = mock(HTTParty::Response)
+      @lastfm.session = 'abcdef'
+      @lastfm.class.should_receive(:get).with('/', :query => {
+          :foo => 'bar',
+          :method => 'xxx.yyy',
+          :api_key => 'xxx',
+          :api_sig => Digest::MD5.hexdigest('api_keyxxxfoobarmethodxxx.yyyskabcdefyyy'),
+          :sk => 'abcdef',
+          :format => 'json'
+        }).and_return(mock_response)
+      mock_response.should_receive(:body).and_return('{ "bar": "baz" }')
+
+      @lastfm.request('xxx.yyy', { :foo => 'bar' }, :get, true, true)['bar'].should eql('baz')
     end
 
     it 'should raise an error if an api error is ocuured' do
@@ -59,13 +117,15 @@ describe "Lastfm" do
     end
 
     it 'should get token' do
-      @lastfm.should_receive(:request).with('auth.getToken').and_return({ 'token' => 'xxxyyyzzz' })
+      @lastfm.should_receive(:request).
+        with('auth.getToken', {}, :get, true).
+        and_return({ 'token' => 'xxxyyyzzz' })
       @lastfm.auth.get_token.should eql('xxxyyyzzz')
     end
 
     it 'should get session' do
       @lastfm.should_receive(:request).
-        with('auth.getSession', { :token => 'xxxyyyzzz' }).
+        with('auth.getSession', { :token => 'xxxyyyzzz' }, :get, true).
         and_return({ 'session' => { 'key' => 'zzzyyyxxx' }})
       @lastfm.auth.get_session('xxxyyyzzz').should eql('zzzyyyxxx')
     end
@@ -81,8 +141,7 @@ describe "Lastfm" do
       @lastfm.should_receive(:request).with('track.love', {
           :artist => 'foo artist',
           :track => 'foo track',
-          :sk => 'abcdef'
-        }, :post).and_return({ 'status' => 'ok' })
+        }, :post, true, true).and_return({})
 
       @lastfm.track.love('foo artist', 'foo track')
     end
