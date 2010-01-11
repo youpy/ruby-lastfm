@@ -4,8 +4,12 @@ class Lastfm
       @lastfm = lastfm
     end
 
-    def request_with_authentication(method, params = {})
+    def write_request(method, params = {})
       request(method, params, :post, true, true)
+    end
+
+    def request_with_authentication(method, params = {})
+      request(method, params, :get, true, true)
     end
 
     def request_for_authentication(method, params = {})

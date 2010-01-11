@@ -136,14 +136,110 @@ describe "Lastfm" do
       @lastfm.track.should be_an_instance_of(Lastfm::Track)
     end
 
+    it 'should add tags' do
+      @lastfm.should_receive(:request).with('track.addTags', {
+          :artist => 'foo artist',
+          :track => 'foo track',
+          :tags => 'aaa,bbb,ccc'
+        }, :post, true, true).and_return({})
+
+      @lastfm.track.add_tags('foo artist', 'foo track', 'aaa,bbb,ccc')
+    end
+
+    it 'should ban' do
+      @lastfm.should_receive(:request).with('track.ban', {
+          :artist => 'foo artist',
+          :track => 'foo track',
+        }, :post, true, true).and_return({})
+
+      @lastfm.track.ban('foo artist', 'foo track')
+    end
+
+    it 'should get info' do
+      @lastfm.should_receive(:request).with('track.getInfo', {
+          :artist => 'foo artist',
+          :track => 'foo track',
+          :username => 'youpy',
+        }).and_return({})
+
+      @lastfm.track.get_info('foo artist', 'foo track', 'youpy')
+    end
+
+    it 'should get similar' do
+      @lastfm.should_receive(:request).with('track.getSimilar', {
+          :artist => 'foo artist',
+          :track => 'foo track',
+        }).and_return({})
+
+      @lastfm.track.get_similar('foo artist', 'foo track')
+    end
+
+    it 'should get tags' do
+      @lastfm.should_receive(:request).with('track.getTags', {
+          :artist => 'foo artist',
+          :track => 'foo track',
+        }, :get, true, true).and_return({})
+
+      @lastfm.track.get_tags('foo artist', 'foo track')
+    end
+
+    it 'should get top fans' do
+      @lastfm.should_receive(:request).with('track.getTopFans', {
+          :artist => 'foo artist',
+          :track => 'foo track',
+        }).and_return({})
+
+      @lastfm.track.get_top_fans('foo artist', 'foo track')
+    end
+
+    it 'should get top tags' do
+      @lastfm.should_receive(:request).with('track.getTopTags', {
+          :artist => 'foo artist',
+          :track => 'foo track',
+        }).and_return({})
+
+      @lastfm.track.get_top_tags('foo artist', 'foo track')
+    end
+
     it 'should love' do
-      @lastfm.session = 'abcdef'
       @lastfm.should_receive(:request).with('track.love', {
           :artist => 'foo artist',
           :track => 'foo track',
         }, :post, true, true).and_return({})
 
       @lastfm.track.love('foo artist', 'foo track')
+    end
+
+    it 'should remove tag' do
+      @lastfm.should_receive(:request).with('track.removeTag', {
+          :artist => 'foo artist',
+          :track => 'foo track',
+          :tag => 'aaa'
+        }, :post, true, true).and_return({})
+
+      @lastfm.track.remove_tag('foo artist', 'foo track', 'aaa')
+    end
+
+    it 'should search' do
+      @lastfm.should_receive(:request).with('track.search', {
+          :artist => 'foo artist',
+          :track => 'foo track',
+          :limit => 10,
+          :page => 3,
+        }).and_return({})
+
+      @lastfm.track.search('foo artist', 'foo track', 10, 3)
+    end
+
+    it 'should share' do
+      @lastfm.should_receive(:request).with('track.share', {
+          :artist => 'foo artist',
+          :track => 'foo track',
+          :message => 'this is a message',
+          :recipient => 'foo@example.com',
+        }, :post, true, true).and_return({})
+
+      @lastfm.track.share('foo artist', 'foo track', 'foo@example.com', 'this is a message')
     end
   end
 end
