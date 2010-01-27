@@ -1,12 +1,12 @@
 require 'lastfm/response'
-require 'lastfm/method_category'
-
+require 'lastfm/method_category/base'
 require 'lastfm/method_category/auth'
 require 'lastfm/method_category/track'
 
 require 'rubygems'
 require 'digest/md5'
 require 'httparty'
+require 'scrobbler'
 
 class Lastfm
   API_ROOT = 'http://ws.audioscrobbler.com/2.0'
@@ -25,11 +25,11 @@ class Lastfm
   end
 
   def auth
-    Auth.new(self)
+    MethodCategory::Auth.new(self)
   end
 
   def track
-    Track.new(self)
+    MethodCategory::Track.new(self)
   end
 
   def request(method, params = {}, http_method = :get, with_signature = false, with_session = false)
@@ -41,7 +41,6 @@ class Lastfm
 
     params.update(:sk => @session) if with_session
     params.update(:api_sig => Digest::MD5.hexdigest(build_method_signature(params))) if with_signature
-    params.update(:format => 'json')
 
     response = Response.new(self.class.send(http_method, '/', (http_method == :post ? :body : :query) => params).body)
     unless response.success?

@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+<similartracks track="Believe" artist="Cher">
+<track>
+    <name>Strong Enough</name>
+    <playcount></playcount>
+    <mbid></mbid>
+    <match>1</match>
+    <url>http://www.last.fm/music/Cher/_/Strong+Enough</url>
+
+    <streamable fulltrack="0">0</streamable>
+    <duration>222000</duration>
+        <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>http://www.last.fm/music/Cher</url>
+
+    </artist>
+            <image size="small">http://userserve-ak.last.fm/serve/34s/8674593.jpg</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/8674593.jpg</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/8674593.jpg</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/8674593.jpg</image>
+    </track>
+<track>
+
+    <name>All or Nothing</name>
+    <playcount></playcount>
+    <mbid></mbid>
+    <match>0.92356</match>
+    <url>http://www.last.fm/music/Cher/_/All+or+Nothing</url>
+    <streamable fulltrack="0">0</streamable>
+    <duration>222000</duration>
+
+        <artist>
+        <name>Cher</name>
+        <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+        <url>http://www.last.fm/music/Cher</url>
+    </artist>
+            <image size="small">http://userserve-ak.last.fm/serve/34s/8674593.jpg</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/8674593.jpg</image>
+
+    <image size="large">http://userserve-ak.last.fm/serve/126/8674593.jpg</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/8674593.jpg</image>
+    </track>
+<track>
+    <name>Hung Up</name>
+    <playcount></playcount>
+    <mbid></mbid>
+    <match>0.279775</match>
+
+    <url>http://www.last.fm/music/Madonna/_/Hung+Up</url>
+    <streamable fulltrack="0">1</streamable>
+    <duration>222000</duration>
+        <artist>
+        <name>Madonna</name>
+        <mbid>79239441-bfd5-4981-a70c-55c3f15c1287</mbid>
+
+        <url>http://www.last.fm/music/Madonna</url>
+    </artist>
+            <image size="small">http://userserve-ak.last.fm/serve/34s/37622191.png</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/37622191.png</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/37622191.png</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/37622191.png</image>
+
+    </track>
+<track>
+    <name>Vogue</name>
+    <playcount></playcount>
+    <mbid></mbid>
+    <match>0.26649</match>
+    <url>http://www.last.fm/music/Madonna/_/Vogue</url>
+    <streamable fulltrack="0">0</streamable>
+
+    <duration>222000</duration>
+        <artist>
+        <name>Madonna</name>
+        <mbid>79239441-bfd5-4981-a70c-55c3f15c1287</mbid>
+        <url>http://www.last.fm/music/Madonna</url>
+    </artist>
+            <image size="small">http://userserve-ak.last.fm/serve/34s/8598173.jpg</image>
+
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/8598173.jpg</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/8598173.jpg</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/8598173.jpg</image>
+    </track>
+<track>
+    <name>Can't Get You Out Of My Head</name>
+    <playcount></playcount>
+
+    <mbid></mbid>
+    <match>0.256834</match>
+    <url>http://www.last.fm/music/Kylie+Minogue/_/Can%27t+Get+You+Out+Of+My+Head</url>
+    <streamable fulltrack="0">1</streamable>
+    <duration>222000</duration>
+        <artist>
+        <name>Kylie Minogue</name>
+
+        <mbid>2fddb92d-24b2-46a5-bf28-3aed46f4684c</mbid>
+        <url>http://www.last.fm/music/Kylie+Minogue</url>
+    </artist>
+            <image size="small">http://userserve-ak.last.fm/serve/34s/39154113.png</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/39154113.png</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/39154113.png</image>
+
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/39154113.png</image>
+    </track>
+<track>
+    <name>In My Arms</name>
+    <playcount></playcount>
+    <mbid></mbid>
+    <match>0.228823</match>
+    <url>http://www.last.fm/music/Kylie+Minogue/_/In+My+Arms</url>
+
+    <streamable fulltrack="0">0</streamable>
+    <duration>222000</duration>
+        <artist>
+        <name>Kylie Minogue</name>
+        <mbid>2fddb92d-24b2-46a5-bf28-3aed46f4684c</mbid>
+        <url>http://www.last.fm/music/Kylie+Minogue</url>
+
+    </artist>
+            <image size="small">http://userserve-ak.last.fm/serve/34s/9951049.jpg</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/9951049.jpg</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/9951049.jpg</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/9951049.jpg</image>
+    </track>
+</similartracks></lfm>
+

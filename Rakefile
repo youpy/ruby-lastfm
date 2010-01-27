@@ -12,6 +12,8 @@ begin
     gem.authors = ["youpy"]
     gem.add_development_dependency "rspec"
     gem.add_dependency "httparty"
+    gem.add_dependency "nokogiri"
+    gem.add_dependency "scrobbler"
     # gem is a Gem::Specification... see http://www.rubygems.org/read/chapter/20 for additional settings
   end
   Jeweler::GemcutterTasks.new

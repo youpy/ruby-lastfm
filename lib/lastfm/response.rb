@@ -1,34 +1,24 @@
 require 'rubygems'
-require 'json'
+require 'nokogiri'
 
 class Lastfm
   class Response
-    def initialize(body)
-      # API returns XML response when no child node?
-      if body == '<?xml version="1.0" encoding="utf-8"?>
-<lfm status="ok">
-</lfm>
-'
-        @parsed_body = {}
-      else
-        @parsed_body = JSON.parse(body)
-      end
-    end
+    attr_reader :xml
 
-    def [](key)
-      @parsed_body[key]
+    def initialize(body)
+      @xml = Nokogiri::XML.parse(body)
     end
 
     def success?
-      !self['error']
+      @xml.root['status'] == 'ok'
     end
 
     def message
-      self['message']
+      @xml.xpath('/lfm/error').first.content
     end
 
     def error
-      self['error']
+      @xml.xpath('/lfm/error').first['code'].to_i
     end
   end
 end

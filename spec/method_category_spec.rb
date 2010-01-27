@@ -6,6 +6,6 @@ describe 'Lastfm::MethodCategory' do
   end
 
   it 'should have instance of Lastfm' do
-    Lastfm::MethodCategory.new(@lastfm).instance_eval { @lastfm }.should equal(@lastfm)
+    Lastfm::MethodCategory::Base.new(@lastfm).instance_eval { @lastfm }.should equal(@lastfm)
   end
 end

@@ -3,6 +3,16 @@ require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 describe "Lastfm" do
   before do
     @lastfm = Lastfm.new('xxx', 'yyy')
+    @response_xml = <<XML
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+<foo>bar</foo></lfm>
+XML
+    @ok_response = make_response(<<XML)
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+</lfm>
+XML
   end
 
   it 'should have base_uri' do
@@ -22,10 +32,9 @@ describe "Lastfm" do
           :foo => 'bar',
           :method => 'xxx.yyy',
           :api_key => 'xxx',
-          :format => 'json'
         }).and_return(mock_response)
-      mock_response.should_receive(:body).and_return('{ "bar": "baz" }')
-      @lastfm.request('xxx.yyy', { :foo => 'bar' }, :post, false, false)['bar'].should eql('baz')
+      mock_response.should_receive(:body).and_return(@response_xml)
+      @lastfm.request('xxx.yyy', { :foo => 'bar' }, :post, false, false)
     end
 
     it 'should post with signature' do
@@ -35,10 +44,9 @@ describe "Lastfm" do
           :method => 'xxx.yyy',
           :api_key => 'xxx',
           :api_sig => Digest::MD5.hexdigest('api_keyxxxfoobarmethodxxx.yyyyyy'),
-          :format => 'json'
         }).and_return(mock_response)
-      mock_response.should_receive(:body).and_return('{ "bar": "baz" }')
-      @lastfm.request('xxx.yyy', { :foo => 'bar' }, :post, true, false)['bar'].should eql('baz')
+      mock_response.should_receive(:body).and_return(@response_xml)
+      @lastfm.request('xxx.yyy', { :foo => 'bar' }, :post, true, false)
     end
 
     it 'should post with signature and session (request with authentication)' do
@@ -50,11 +58,9 @@ describe "Lastfm" do
           :api_key => 'xxx',
           :api_sig => Digest::MD5.hexdigest('api_keyxxxfoobarmethodxxx.yyyskabcdefyyy'),
           :sk => 'abcdef',
-          :format => 'json'
         }).and_return(mock_response)
-      mock_response.should_receive(:body).and_return('{ "bar": "baz" }')
-
-      @lastfm.request('xxx.yyy', { :foo => 'bar' }, :post, true, true)['bar'].should eql('baz')
+      mock_response.should_receive(:body).and_return(@response_xml)
+      @lastfm.request('xxx.yyy', { :foo => 'bar' }, :post, true, true)
     end
 
     it 'should get' do
@@ -63,11 +69,9 @@ describe "Lastfm" do
           :foo => 'bar',
           :method => 'xxx.yyy',
           :api_key => 'xxx',
-          :format => 'json'
         }).and_return(mock_response)
-      mock_response.should_receive(:body).and_return('{ "bar": "baz" }')
-
-      @lastfm.request('xxx.yyy', { :foo => 'bar' }, :get, false, false)['bar'].should eql('baz')
+      mock_response.should_receive(:body).and_return(@response_xml)
+      @lastfm.request('xxx.yyy', { :foo => 'bar' }, :get, false, false)
     end
 
     it 'should get with signature (request for authentication)' do
@@ -77,11 +81,9 @@ describe "Lastfm" do
           :method => 'xxx.yyy',
           :api_key => 'xxx',
           :api_sig => Digest::MD5.hexdigest('api_keyxxxfoobarmethodxxx.yyyyyy'),
-          :format => 'json'
         }).and_return(mock_response)
-      mock_response.should_receive(:body).and_return('{ "bar": "baz" }')
-
-      @lastfm.request('xxx.yyy', { :foo => 'bar' }, :get, true, false)['bar'].should eql('baz')
+      mock_response.should_receive(:body).and_return(@response_xml)
+      @lastfm.request('xxx.yyy', { :foo => 'bar' }, :get, true, false)
     end
 
     it 'should get with signature and session' do
@@ -93,47 +95,59 @@ describe "Lastfm" do
           :api_key => 'xxx',
           :api_sig => Digest::MD5.hexdigest('api_keyxxxfoobarmethodxxx.yyyskabcdefyyy'),
           :sk => 'abcdef',
-          :format => 'json'
         }).and_return(mock_response)
-      mock_response.should_receive(:body).and_return('{ "bar": "baz" }')
-
-      @lastfm.request('xxx.yyy', { :foo => 'bar' }, :get, true, true)['bar'].should eql('baz')
+      mock_response.should_receive(:body).and_return(@response_xml)
+      @lastfm.request('xxx.yyy', { :foo => 'bar' }, :get, true, true)
     end
 
     it 'should raise an error if an api error is ocuured' do
       mock_response = mock(HTTParty::Response)
-      mock_response.should_receive(:body).and_return('{"message": "Invalid Method - No method with that name in this package", "error": 3}')
+      mock_response.should_receive(:body).and_return(open(fixture('ng.xml')).read)
       @lastfm.class.should_receive(:post).and_return(mock_response)
 
       lambda {
         @lastfm.request('xxx.yyy', { :foo => 'bar' }, :post)
-      }.should raise_error(Lastfm::ApiError, 'Invalid Method - No method with that name in this package')
+      }.should raise_error(Lastfm::ApiError, 'Invalid API key - You must be granted a valid key by last.fm')
     end
   end
 
   describe '#auth' do
     it 'should return an instance of Lastfm::Auth' do
-      @lastfm.auth.should be_an_instance_of(Lastfm::Auth)
+      @lastfm.auth.should be_an_instance_of(Lastfm::MethodCategory::Auth)
     end
 
     it 'should get token' do
       @lastfm.should_receive(:request).
         with('auth.getToken', {}, :get, true).
-        and_return({ 'token' => 'xxxyyyzzz' })
+        and_return(make_response(<<XML))
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+<token>xxxyyyzzz</token></lfm>
+XML
+
       @lastfm.auth.get_token.should eql('xxxyyyzzz')
     end
 
     it 'should get session' do
       @lastfm.should_receive(:request).
         with('auth.getSession', { :token => 'xxxyyyzzz' }, :get, true).
-        and_return({ 'session' => { 'key' => 'zzzyyyxxx' }})
+        and_return(make_response(<<XML))
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+	<session>
+		<name>MyLastFMUsername</name>
+		<key>zzzyyyxxx</key>
+		<subscriber>0</subscriber>
+	</session>
+</lfm>
+XML
       @lastfm.auth.get_session('xxxyyyzzz').should eql('zzzyyyxxx')
     end
   end
 
   describe '#track' do
     it 'should return an instance of Lastfm::Track' do
-      @lastfm.track.should be_an_instance_of(Lastfm::Track)
+      @lastfm.track.should be_an_instance_of(Lastfm::MethodCategory::Track)
     end
 
     it 'should add tags' do
@@ -141,37 +155,41 @@ describe "Lastfm" do
           :artist => 'foo artist',
           :track => 'foo track',
           :tags => 'aaa,bbb,ccc'
-        }, :post, true, true).and_return({})
+        }, :post, true, true).and_return(@ok_response)
 
-      @lastfm.track.add_tags('foo artist', 'foo track', 'aaa,bbb,ccc')
+      @lastfm.track.add_tags('foo artist', 'foo track', 'aaa,bbb,ccc').should be_true
     end
 
     it 'should ban' do
       @lastfm.should_receive(:request).with('track.ban', {
           :artist => 'foo artist',
           :track => 'foo track',
-        }, :post, true, true).and_return({})
+        }, :post, true, true).and_return(@ok_response)
 
-      @lastfm.track.ban('foo artist', 'foo track')
+      @lastfm.track.ban('foo artist', 'foo track').should be_true
     end
 
     it 'should get info' do
       @lastfm.should_receive(:request).with('track.getInfo', {
-          :artist => 'foo artist',
-          :track => 'foo track',
+          :artist => 'Cher',
+          :track => 'Believe',
           :username => 'youpy',
-        }).and_return({})
+        }).and_return(make_response('track_get_info'))
 
-      @lastfm.track.get_info('foo artist', 'foo track', 'youpy')
+      track = @lastfm.track.get_info('Cher', 'Believe', 'youpy')
+      track.should be_an_instance_of(Scrobbler::Track)
+      track.name.should eql('Believe')
     end
 
     it 'should get similar' do
       @lastfm.should_receive(:request).with('track.getSimilar', {
-          :artist => 'foo artist',
-          :track => 'foo track',
-        }).and_return({})
+          :artist => 'Cher',
+          :track => 'Believe',
+        }).and_return(make_response('track_get_similar'))
 
-      @lastfm.track.get_similar('foo artist', 'foo track')
+      tracks = @lastfm.track.get_similar('Cher', 'Believe')
+      tracks.size.should eql(250)
+      tracks.first.should be_an_instance_of(Scrobbler::Track)
     end
 
     it 'should get tags' do
@@ -180,7 +198,7 @@ describe "Lastfm" do
           :track => 'foo track',
         }, :get, true, true).and_return({})
 
-      @lastfm.track.get_tags('foo artist', 'foo track')
+      tags = @lastfm.track.get_tags('foo artist', 'foo track')
     end
 
     it 'should get top fans' do
@@ -189,7 +207,7 @@ describe "Lastfm" do
           :track => 'foo track',
         }).and_return({})
 
-      @lastfm.track.get_top_fans('foo artist', 'foo track')
+      users = @lastfm.track.get_top_fans('foo artist', 'foo track')
     end
 
     it 'should get top tags' do
@@ -198,16 +216,16 @@ describe "Lastfm" do
           :track => 'foo track',
         }).and_return({})
 
-      @lastfm.track.get_top_tags('foo artist', 'foo track')
+      tags = @lastfm.track.get_top_tags('foo artist', 'foo track')
     end
 
     it 'should love' do
       @lastfm.should_receive(:request).with('track.love', {
           :artist => 'foo artist',
           :track => 'foo track',
-        }, :post, true, true).and_return({})
+        }, :post, true, true).and_return(@ok_response)
 
-      @lastfm.track.love('foo artist', 'foo track')
+      @lastfm.track.love('foo artist', 'foo track').should be_true
     end
 
     it 'should remove tag' do
@@ -215,9 +233,9 @@ describe "Lastfm" do
           :artist => 'foo artist',
           :track => 'foo track',
           :tag => 'aaa'
-        }, :post, true, true).and_return({})
+        }, :post, true, true).and_return(@ok_response)
 
-      @lastfm.track.remove_tag('foo artist', 'foo track', 'aaa')
+      @lastfm.track.remove_tag('foo artist', 'foo track', 'aaa').should be_true
     end
 
     it 'should search' do
@@ -228,7 +246,7 @@ describe "Lastfm" do
           :page => 3,
         }).and_return({})
 
-      @lastfm.track.search('foo artist', 'foo track', 10, 3)
+      tracks = @lastfm.track.search('foo artist', 'foo track', 10, 3)
     end
 
     it 'should share' do
@@ -237,9 +255,9 @@ describe "Lastfm" do
           :track => 'foo track',
           :message => 'this is a message',
           :recipient => 'foo@example.com',
-        }, :post, true, true).and_return({})
+        }, :post, true, true).and_return(@ok_response)
 
-      @lastfm.track.share('foo artist', 'foo track', 'foo@example.com', 'this is a message')
+      @lastfm.track.share('foo artist', 'foo track', 'foo@example.com', 'this is a message').should be_true
     end
   end
 end
