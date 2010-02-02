@@ -177,8 +177,27 @@ XML
         }).and_return(make_response('track_get_info'))
 
       track = @lastfm.track.get_info('Cher', 'Believe', 'youpy')
-      track.should be_an_instance_of(Scrobbler::Track)
-      track.name.should eql('Believe')
+      track['name'].should eql('Believe')
+      track['album']['image'].size.should eql(4)
+      track['album']['image'].first['size'].should eql('small')
+      track['album']['image'].first['content'].should eql('http://userserve-ak.last.fm/serve/64s/8674593.jpg')
+      track['toptags']['tag'].size.should eql(5)
+      track['toptags']['tag'].first['name'].should eql('pop')
+    end
+
+    it 'should get xml with force array option' do
+      @lastfm.should_receive(:request).with('track.getInfo', {
+          :artist => 'Cher',
+          :track => 'Believe',
+          :username => 'youpy',
+        }).and_return(make_response('track_get_info_force_array'))
+
+      track = @lastfm.track.get_info('Cher', 'Believe', 'youpy')
+      track['album']['image'].size.should eql(1)
+      track['album']['image'].first['size'].should eql('small')
+      track['album']['image'].first['content'].should eql('http://userserve-ak.last.fm/serve/64s/8674593.jpg')
+      track['toptags']['tag'].size.should eql(1)
+      track['toptags']['tag'].first['name'].should eql('pop')
     end
 
     it 'should get similar' do
@@ -189,7 +208,9 @@ XML
 
       tracks = @lastfm.track.get_similar('Cher', 'Believe')
       tracks.size.should eql(250)
-      tracks.first.should be_an_instance_of(Scrobbler::Track)
+      tracks.first['name'].should eql('Strong Enough')
+      tracks.first['image'][1]['content'].should eql('http://userserve-ak.last.fm/serve/64s/8674593.jpg')
+      tracks[1]['image'][0]['content'].should eql('http://userserve-ak.last.fm/serve/34s/8674593.jpg')
     end
 
     it 'should get tags' do

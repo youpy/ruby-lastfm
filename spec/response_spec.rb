@@ -23,7 +23,7 @@ describe "Lastfm::Response" do
 
     it 'should parse response body as xml' do
       xml = @response.xml
-      xml.xpath('//similartracks/track').size.should eql(6)
+      xml['similartracks']['track'].size.should eql(7)
     end
   end
 

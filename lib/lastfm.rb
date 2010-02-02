@@ -6,7 +6,6 @@ require 'lastfm/method_category/track'
 require 'rubygems'
 require 'digest/md5'
 require 'httparty'
-require 'scrobbler'
 
 class Lastfm
   API_ROOT = 'http://ws.audioscrobbler.com/2.0'

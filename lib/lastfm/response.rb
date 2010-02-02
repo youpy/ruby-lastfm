@@ -1,24 +1,24 @@
 require 'rubygems'
-require 'nokogiri'
+require 'xmlsimple'
 
 class Lastfm
   class Response
     attr_reader :xml
 
     def initialize(body)
-      @xml = Nokogiri::XML.parse(body)
+      @xml = XmlSimple.xml_in(body, 'ForceArray' => ['image', 'tag'])
     end
 
     def success?
-      @xml.root['status'] == 'ok'
+      @xml['status'] == 'ok'
     end
 
     def message
-      @xml.xpath('/lfm/error').first.content
+      @xml['error']['content']
     end
 
     def error
-      @xml.xpath('/lfm/error').first['code'].to_i
+      @xml['error']['code'].to_i
     end
   end
 end

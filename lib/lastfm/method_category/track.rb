@@ -17,11 +17,11 @@ class Lastfm
       end
 
       def get_info(artist, track, username = nil)
-        Scrobbler::Track.new_from_xml(request('getInfo', {
+        request('getInfo', {
               :artist => artist,
               :track => track,
               :username => username
-            }).xml)
+            }).xml['track']
       end
 
       def get_similar(artist, track)
@@ -30,9 +30,7 @@ class Lastfm
             :track => track,
           })
 
-        response.xml.xpath('/lfm/similartracks/track').map do |track|
-          Scrobbler::Track.new_from_xml(track)
-        end
+        response.xml['similartracks']['track'][1 .. -1]
       end
 
       def get_tags(artist, track)
