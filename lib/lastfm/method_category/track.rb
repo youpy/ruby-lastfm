@@ -19,7 +19,7 @@ class Lastfm
       regular_method :get_similar, [:artist, :track], [] do |response|
         response.xml['similartracks']['track'][1 .. -1]
       end
-      regular_method :search, [:track], [[:artist, nil], [:limit, nil], [:page, :nil]]
+      regular_method :search, [:track], [[:artist, nil], [:limit, nil], [:page, nil]]
 
       method_with_authentication :get_tags, [:artist, :track], [] do |response|
         response.xml['tag']
