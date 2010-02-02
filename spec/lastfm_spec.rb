@@ -217,27 +217,36 @@ XML
       @lastfm.should_receive(:request).with('track.getTags', {
           :artist => 'foo artist',
           :track => 'foo track',
-        }, :get, true, true).and_return({})
+        }, :get, true, true).and_return(make_response('track_get_tags'))
 
       tags = @lastfm.track.get_tags('foo artist', 'foo track')
+      tags.size.should eql(2)
+      tags[0]['name'].should eql('swedish')
+      tags[0]['url'].should eql('http://www.last.fm/tag/swedish')
     end
 
     it 'should get top fans' do
       @lastfm.should_receive(:request).with('track.getTopFans', {
           :artist => 'foo artist',
           :track => 'foo track',
-        }).and_return({})
+        }).and_return(make_response('track_get_top_fans'))
 
       users = @lastfm.track.get_top_fans('foo artist', 'foo track')
+      users.size.should eql(2)
+      users[0]['name'].should eql('Through0glass')
     end
 
     it 'should get top tags' do
       @lastfm.should_receive(:request).with('track.getTopTags', {
           :artist => 'foo artist',
           :track => 'foo track',
-        }).and_return({})
+        }).and_return(make_response('track_get_top_tags'))
 
       tags = @lastfm.track.get_top_tags('foo artist', 'foo track')
+      tags.size.should eql(2)
+      tags[0]['name'].should eql('alternative')
+      tags[0]['count'].should eql('100')
+      tags[0]['url'].should eql('www.last.fm/tag/alternative')
     end
 
     it 'should love' do
@@ -261,13 +270,17 @@ XML
 
     it 'should search' do
       @lastfm.should_receive(:request).with('track.search', {
-          :artist => 'foo artist',
-          :track => 'foo track',
+          :artist => nil,
+          :track => 'Believe',
           :limit => 10,
           :page => 3,
-        }).and_return({})
+        }).and_return(make_response('track_search'))
 
-      tracks = @lastfm.track.search('foo artist', 'foo track', 10, 3)
+      tracks = @lastfm.track.search('Believe', nil, 10, 3)
+      tracks['results']['for'].should eql('Believe')
+      tracks['results']['totalResults'].should eql('40540')
+      tracks['results']['trackmatches']['track'].size.should eql(2)
+      tracks['results']['trackmatches']['track'][0]['name'].should eql('Make Me Believe')
     end
 
     it 'should share' do

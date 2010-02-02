@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+<results for="Believe" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">
+<opensearch:Query role="request" searchTerms="Believe" startPage="3" />
+<opensearch:totalResults>40540</opensearch:totalResults>
+<opensearch:startIndex>20</opensearch:startIndex>
+<opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+<trackmatches>
+<track>
+    <name>Make Me Believe</name>
+    <artist>Godsmack</artist>
+
+    <url>http://www.last.fm/music/Godsmack/_/Make+Me+Believe</url>
+    <streamable fulltrack="0">1</streamable>
+    <listeners>76858</listeners>
+            <image size="small">http://userserve-ak.last.fm/serve/34s/8674971.jpg</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/8674971.jpg</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/8674971.jpg</image>
+
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/8674971.jpg</image>
+    </track>
+<track>
+    <name>I Believe in You</name>
+    <artist>Kylie Minogue</artist>
+    <url>http://www.last.fm/music/Kylie+Minogue/_/I+Believe+in+You</url>
+    <streamable fulltrack="0">0</streamable>
+
+    <listeners>74295</listeners>
+            <image size="small">http://userserve-ak.last.fm/serve/34s/8822309.jpg</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/8822309.jpg</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/8822309.jpg</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/8822309.jpg</image>
+    </track>
+</trackmatches>
+</results></lfm>

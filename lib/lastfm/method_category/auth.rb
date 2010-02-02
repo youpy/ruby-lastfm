@@ -1,13 +1,12 @@
 class Lastfm
   module MethodCategory
     class Auth < Base
-      def get_token
-        request_for_authentication('getToken').xml['token']
+      method_for_authentication :get_token, [], [] do |response|
+        response.xml['token']
       end
 
-      def get_session(token)
-        request_for_authentication('getSession', { :token => token }).
-          xml['session']['key']
+      method_for_authentication :get_session, [:token], [] do |response|
+        response.xml['session']['key']
       end
     end
   end

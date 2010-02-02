@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+<topfans artist="Cher" track="Believe">
+
+<user>
+    <name>Through0glass</name>
+    <realname></realname>
+    <url>http://www.last.fm/user/Through0glass</url>
+    <image size="small">http://userserve-ak.last.fm/serve/34/29673533.jpg</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64/29673533.jpg</image>
+
+    <image size="large">http://userserve-ak.last.fm/serve/126/29673533.jpg</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/252/29673533.jpg</image>
+    <weight>796686</weight>
+</user>
+<user>
+    <name>hellobrook</name>
+    <realname>brook</realname>
+
+    <url>http://www.last.fm/user/hellobrook</url>
+    <image size="small">http://userserve-ak.last.fm/serve/34/33834925.jpg</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64/33834925.jpg</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/33834925.jpg</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/252/33834925.jpg</image>
+    <weight>353088</weight>
+
+</user>
+</topfans></lfm>
