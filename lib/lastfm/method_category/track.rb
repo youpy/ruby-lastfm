@@ -22,7 +22,7 @@ class Lastfm
       regular_method :search, [:track], [[:artist, nil], [:limit, nil], [:page, nil]]
 
       method_with_authentication :get_tags, [:artist, :track], [] do |response|
-        response.xml['tag']
+        response.xml['tags']['tag']
       end
     end
   end
