@@ -3,6 +3,7 @@ require 'lastfm/response'
 require 'lastfm/method_category/base'
 require 'lastfm/method_category/auth'
 require 'lastfm/method_category/track'
+require 'lastfm/method_category/artist'
 
 require 'rubygems'
 require 'digest/md5'
@@ -31,6 +32,10 @@ class Lastfm
 
   def track
     MethodCategory::Track.new(self)
+  end
+  
+  def artist
+    MethodCategory::Artist.new(self)
   end
 
   def request(method, params = {}, http_method = :get, with_signature = false, with_session = false)
