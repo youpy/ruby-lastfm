@@ -294,7 +294,7 @@ XML
       @lastfm.track.share('foo artist', 'foo track', 'foo@example.com', 'this is a message').should be_true
     end
   end
-  
+
   describe '#artist' do
     it 'should return an instance of Lastfm::Artist' do
       @lastfm.artist.should be_an_instance_of(Lastfm::MethodCategory::Artist)
@@ -304,7 +304,7 @@ XML
       @lastfm.should_receive(:request).with('artist.getEvents', {
           :artist => 'Cher'
         }).and_return(make_response('artist_get_events'))
-      
+
       events = @lastfm.artist.get_events('Cher')
       events.size.should eql(1)
       events[0]['title'].should eql('Cher')

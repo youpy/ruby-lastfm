@@ -33,7 +33,7 @@ class Lastfm
   def track
     MethodCategory::Track.new(self)
   end
-  
+
   def artist
     MethodCategory::Artist.new(self)
   end
