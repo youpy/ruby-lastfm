@@ -4,6 +4,7 @@ require 'lastfm/method_category/base'
 require 'lastfm/method_category/auth'
 require 'lastfm/method_category/track'
 require 'lastfm/method_category/artist'
+require 'lastfm/method_category/user'
 
 require 'rubygems'
 require 'digest/md5'
@@ -38,6 +39,10 @@ class Lastfm
     MethodCategory::Artist.new(self)
   end
 
+  def user
+    MethodCategory::User.new(self)
+  end
+
   def request(method, params = {}, http_method = :get, with_signature = false, with_session = false)
     params[:method] = method
     params[:api_key] = @api_key
@@ -65,4 +70,10 @@ class Lastfm
       result + param.join('')
     end + @api_secret
   end
+end
+
+class LastfmBeta < Lastfm
+  API_ROOT = 'http://post.audioscrobbler.com/2.0'
+
+  base_uri API_ROOT
 end

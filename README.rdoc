@@ -42,6 +42,19 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 
 * artist.getEvents
 
+== Support for Scrobbling 2.0 Beta
+
+A new version of the scrobbling API is currently in
+{beta}[http://users.last.fm/~tims/Scrobbling2_0_beta_docs.html].  If you want to
+try those methods, create an instance of the LastfmBeta class instead of Lastfm
+and it's business as usual.
+
+ lastfm = LastfmBeta.new(api_key, api_secret)
+ # authenticate as above
+
+ lastfm.track.scrobble('Hujiko Pro', 'acid acid 7riddim')
+ lastfm.user.update_now_playing('Hujiko Pro', 'acid acid 7riddim')
+
 == Installation
 
 === Archive Installation
