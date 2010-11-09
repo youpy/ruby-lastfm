@@ -21,16 +21,40 @@ rescue LoadError
   puts "Jeweler (or a dependency) not available. Install it with: sudo gem install jeweler"
 end
 
-require 'spec/rake/spectask'
-Spec::Rake::SpecTask.new(:spec) do |spec|
-  spec.libs << 'lib' << 'spec'
-  spec.spec_files = FileList['spec/**/*_spec.rb']
+# RSpec version detection from rspec-prof
+# https://github.com/sinisterchipmunk/rspec-prof/blob/master/Rakefile
+unless defined?(RSPEC_VERSION)
+  begin
+    # RSpec 1.3.0
+    require 'spec/rake/spectask'
+    require 'spec/version'
+    RSPEC_VERSION = Spec::VERSION::STRING
+  rescue LoadError
+    # RSpec 2.0
+    begin
+      require 'rspec/core/rake_task'
+      require 'rspec/core/version'
+      RSPEC_VERSION = RSpec::Core::Version::STRING
+    rescue LoadError
+      raise "RSpec does not seem to be installed. You must gem install rspec to use this gem."
+    end
+  end
 end
 
-Spec::Rake::SpecTask.new(:rcov) do |spec|
-  spec.libs << 'lib' << 'spec'
-  spec.pattern = 'spec/**/*_spec.rb'
-  spec.rcov = true
+if RSPEC_VERSION >= "2.0.0"
+  RSpec::Core::RakeTask.new(:core) do |spec|
+    spec.pattern = 'spec/**/*_spec.rb'
+  end
+else
+  Spec::Rake::SpecTask.new(:spec) do |spec|
+    spec.libs << 'lib' << 'spec'
+    spec.spec_files = FileList['spec/**/*_spec.rb']
+  end
+  Spec::Rake::SpecTask.new(:rcov) do |spec|
+    spec.libs << 'lib' << 'spec'
+    spec.pattern = 'spec/**/*_spec.rb'
+    spec.rcov = true
+  end
 end
 
 task :spec => :check_dependencies
