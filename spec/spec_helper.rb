@@ -1,10 +1,6 @@
-$LOAD_PATH.unshift(File.dirname(__FILE__))
-$LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 require 'lastfm'
-require 'spec'
-require 'spec/autorun'
 
-Spec::Runner.configure do |config|
+RSpec.configure do |config|
   def fixture(filename)
     File.dirname(__FILE__) + '/fixtures/' + filename
   end

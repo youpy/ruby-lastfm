@@ -8,7 +8,7 @@ require 'lastfm/method_category/artist'
 require 'rubygems'
 require 'digest/md5'
 require 'httparty'
-require 'activesupport'
+require 'active_support'
 
 class Lastfm
   API_ROOT = 'http://ws.audioscrobbler.com/2.0'
@@ -33,7 +33,7 @@ class Lastfm
   def track
     MethodCategory::Track.new(self)
   end
-  
+
   def artist
     MethodCategory::Artist.new(self)
   end
