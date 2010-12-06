@@ -38,10 +38,6 @@ class Lastfm
     MethodCategory::Artist.new(self)
   end
 
-  def user
-    MethodCategory::User.new(self)
-  end
-
   def request(method, params = {}, http_method = :get, with_signature = false, with_session = false)
     params[:method] = method
     params[:api_key] = @api_key
