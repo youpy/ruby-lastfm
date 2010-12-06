@@ -295,12 +295,15 @@ XML
     end
 
     it 'should scrobble' do
+      time = Time.now
       @lastfm.should_receive(:request).with('track.scrobble', {
           :artist => 'foo artist',
           :track => 'foo track',
+          :album => nil,
+          :time => time
         }, :post, true, true).and_return(@ok_response)
 
-      @lastfm.track.scrobble('foo artist', 'foo track')
+      @lastfm.track.scrobble('foo artist', 'foo track', nil, time)
     end
   end
 
