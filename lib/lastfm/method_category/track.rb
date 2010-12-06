@@ -6,6 +6,8 @@ class Lastfm
       write_method :ban, [:artist, :track]
       write_method :love, [:artist, :track]
       write_method :share, [:artist, :track, :recipient], [[:message, nil]]
+      write_method :scrobble, [:artist, :track], [[:album, nil], [:timestamp, Time.now.utc.to_i]]
+      write_method :update_now_playing, [:artist, :track]
 
       regular_method :get_info, [:artist, :track], [[:username, nil]] do |response|
         response.xml['track']

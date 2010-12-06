@@ -30,6 +30,7 @@ Gem::Specification.new do |s|
      "lib/lastfm/method_category/auth.rb",
      "lib/lastfm/method_category/base.rb",
      "lib/lastfm/method_category/track.rb",
+     "lib/lastfm/method_category/user.rb",
      "lib/lastfm/response.rb",
      "lib/lastfm/util.rb",
      "spec/fixtures/artist_get_events.xml",
@@ -54,8 +55,8 @@ Gem::Specification.new do |s|
   s.summary = %q{A Ruby interface for Last.fm Web Services}
   s.test_files = [
     "spec/lastfm_spec.rb",
-     "spec/method_category_spec.rb",
      "spec/response_spec.rb",
+     "spec/method_category_spec.rb",
      "spec/spec_helper.rb"
   ]
 

@@ -293,8 +293,30 @@ XML
 
       @lastfm.track.share('foo artist', 'foo track', 'foo@example.com', 'this is a message').should be_true
     end
+
+    it 'should scrobble' do
+      time = Time.now
+      @lastfm.should_receive(:request).with('track.scrobble', {
+          :artist => 'foo artist',
+          :track => 'foo track',
+          :album => nil,
+          :timestamp => time
+        }, :post, true, true).and_return(@ok_response)
+
+      @lastfm.track.scrobble('foo artist', 'foo track', nil, time)
+    end
+
+
+    it 'should update now playing' do
+      @lastfm.should_receive(:request).with('track.updateNowPlaying', {
+          :artist => 'foo artist',
+          :track => 'foo track',
+        }, :post, true, true).and_return(@ok_response)
+
+      @lastfm.track.update_now_playing('foo artist', 'foo track')
+    end
   end
-  
+
   describe '#artist' do
     it 'should return an instance of Lastfm::Artist' do
       @lastfm.artist.should be_an_instance_of(Lastfm::MethodCategory::Artist)
@@ -304,7 +326,7 @@ XML
       @lastfm.should_receive(:request).with('artist.getEvents', {
           :artist => 'Cher'
         }).and_return(make_response('artist_get_events'))
-      
+
       events = @lastfm.artist.get_events('Cher')
       events.size.should eql(1)
       events[0]['title'].should eql('Cher')

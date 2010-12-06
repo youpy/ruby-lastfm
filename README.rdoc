@@ -14,6 +14,8 @@ A Ruby interface for Last.fm Web Services v2.0
  lastfm.session = lastfm.auth.get_session(token)
 
  lastfm.track.love('Hujiko Pro', 'acid acid 7riddim')
+ lastfm.track.scrobble('Hujiko Pro', 'acid acid 7riddim')
+ lastfm.user.update_now_playing('Hujiko Pro', 'acid acid 7riddim')
 
 == Supported API Methods
 
@@ -35,6 +37,7 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 * track.getTopTags
 * track.love
 * track.removeTag
+* track.scrobble
 * track.search
 * track.share
 
