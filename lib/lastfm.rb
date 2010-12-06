@@ -71,9 +71,3 @@ class Lastfm
     end + @api_secret
   end
 end
-
-class LastfmBeta < Lastfm
-  API_ROOT = 'http://post.audioscrobbler.com/2.0'
-
-  base_uri API_ROOT
-end
