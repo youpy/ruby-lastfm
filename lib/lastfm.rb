@@ -8,7 +8,7 @@ require 'lastfm/method_category/artist'
 require 'rubygems'
 require 'digest/md5'
 require 'httparty'
-require 'active_support'
+require 'active_support/core_ext/string/inflections'
 
 class Lastfm
   API_ROOT = 'http://ws.audioscrobbler.com/2.0'
