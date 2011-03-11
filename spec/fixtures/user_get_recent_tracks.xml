@@ -1,0 +1,23 @@
+<lfm status="ok">
+  <recenttracks user="RJ" page="1" perPage="10" totalPages="3019">
+    <track nowplaying="true">
+      <artist mbid="2f9ecbed-27be-40e6-abca-6de49d50299e">Aretha Franklin</artist>
+      <name>Sisters Are Doing It For Themselves</name>
+      <mbid/>
+      <album mbid=""/>
+      <url>www.last.fm/music/Aretha+Franklin/_/Sisters+Are+Doing+It+For+Themselves</url>
+      <date uts="1213031819">9 Jun 2008, 17:16</date>
+      <streamable>1</streamable>
+    </track>
+    <track>
+      <name>I Believe in You</name>
+      <artist mbid="">Kylie Minogue</artist>
+      <url>http://www.last.fm/music/Kylie+Minogue/_/I+Believe+in+You</url>
+      <streamable fulltrack="0">0</streamable>
+      <image size="small">http://userserve-ak.last.fm/serve/34s/8822309.jpg</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64s/8822309.jpg</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/8822309.jpg</image>
+      <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/8822309.jpg</image>
+    </track>
+  </recenttracks>
+</lfm>

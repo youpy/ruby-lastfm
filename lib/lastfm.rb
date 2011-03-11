@@ -9,6 +9,7 @@ require 'lastfm/method_category/base'
 require 'lastfm/method_category/auth'
 require 'lastfm/method_category/track'
 require 'lastfm/method_category/artist'
+require 'lastfm/method_category/user'
 
 class Lastfm
   API_ROOT = 'http://ws.audioscrobbler.com/2.0'
@@ -36,6 +37,10 @@ class Lastfm
 
   def artist
     MethodCategory::Artist.new(self)
+  end
+
+  def user
+    MethodCategory::User.new(self)
   end
 
   def request(method, params = {}, http_method = :get, with_signature = false, with_session = false)

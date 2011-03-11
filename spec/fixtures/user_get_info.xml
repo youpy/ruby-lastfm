@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+  <user>
+    <id>1000002</id>
+    <name>RJ</name>
+    <realname>Richard Jones </realname>
+    <url>http://www.last.fm/user/RJ</url>
+    <image>http://userserve-ak.last.fm/serve/126/8270359.jpg</image>
+    <country>UK</country>
+    <age>27</age>
+    <gender>m</gender>
+    <subscriber>1</subscriber>
+    <playcount>54189</playcount>
+    <playlists>4</playlists>
+    <bootstrap>0</bootstrap>
+    <registered unixtime="1037793040">2002-11-20 11:50</registered>
+  </user>
+</lfm>

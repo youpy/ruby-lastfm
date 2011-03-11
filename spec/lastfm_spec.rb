@@ -344,4 +344,47 @@ XML
       events[0]['tags']['tag'].should == ["pop", "dance", "female vocalists", "80s", "cher"]
     end
   end
+
+  describe '#user' do
+    it 'should return and instance of Lastfm::User' do
+      @lastfm.user.should be_an_instance_of(Lastfm::MethodCategory::User)
+    end
+
+    describe '#get_info' do
+      it 'should get user info' do
+        @lastfm.should_receive(:request).with('user.getInfo', {:user => 'test'}).and_return(make_response('user_get_info'))
+        info = @lastfm.user.get_info('test')
+        info['id'].should eql('1000002')
+      end
+    end
+
+    describe '#get_friends' do
+      it 'should get user\'s friends' do
+        @lastfm.should_receive(:request).with('user.getFriends', {
+            :user => 'test',
+            :recenttracks => nil,
+            :page => nil,
+            :limit => nil
+          }).and_return(make_response('user_get_friends'))
+        friends = @lastfm.user.get_friends('test')
+        friends.size.should == 1
+        friends[0]['name'].should eql('polaroide')
+      end
+    end
+
+    describe '#get_recent_tracks' do
+      it 'should get user\'s recent tracks' do
+        @lastfm.should_receive(:request).with('user.getRecentTracks', {
+            :user => 'test',
+            :page => nil,
+            :limit => nil,
+            :to => nil,
+            :from => nil
+          }).and_return(make_response('user_get_recent_tracks'))
+        tracks = @lastfm.user.get_recent_tracks('test')
+        tracks[1]['artist']['content'].should eql('Kylie Minogue')
+        tracks.size.should == 2
+      end
+    end
+  end
 end
