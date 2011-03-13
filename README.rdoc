@@ -46,6 +46,12 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 
 * artist.getEvents
 
+=== User
+
+* user.getInfo
+* user.getFriends
+* user.getRecentTracks
+
 == Installation
 
 === Archive Installation
@@ -60,6 +66,12 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
  gem install lastfm
 
 == Features/Problems
+
+== Commiters
+
+* mattfawcett <https://github.com/mattfawcett>
+* peplin <https://github.com/peplin>
+* liff <https://github.com/liff>
 
 == Note on Patches/Pull Requests
  
