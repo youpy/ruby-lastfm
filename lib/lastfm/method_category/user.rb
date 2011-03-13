@@ -6,7 +6,6 @@ class Lastfm
       end
 
       regular_method :get_friends, [:user], [[:recenttracks, nil], [:limit, nil], [:page, nil]] do |response|
-        p response
         response.xml['friends']['user']
       end
 
