@@ -6,9 +6,9 @@ class Lastfm
     attr_reader :xml
 
     def initialize(body)
-      @xml = XmlSimple.xml_in(body, 'ForceArray' => ['image', 'tag', 'user', 'event'])
+        @xml = XmlSimple.xml_in(body, 'ForceArray' => ['image', 'tag', 'user', 'event'])
     end
-
+         
     def success?
       @xml['status'] == 'ok'
     end
@@ -21,4 +21,5 @@ class Lastfm
       @xml['error']['code'].to_i
     end
   end
+    
 end
