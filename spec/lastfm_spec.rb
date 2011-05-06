@@ -371,6 +371,20 @@ XML
         friends[0]['name'].should eql('polaroide')
       end
     end
+    
+    describe '#get_neighbours' do
+      it 'should get user\'s neighbours' do
+        @lastfm.should_receive(:request).with('user.getNeighbours', {
+            :user => 'rj',
+            :recenttracks => nil,
+            :page => nil,
+            :limit => nil
+          }).and_return(make_response('user_get_neighbours'))
+        neighbours = @lastfm.user.get_neighbours('rj')
+        neighbours.size.should == 50
+        neighbours[0]['name'].should eql('willywongi')
+      end
+    end
 
     describe '#get_recent_tracks' do
       it 'should get user\'s recent tracks' do
