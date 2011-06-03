@@ -46,6 +46,9 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 
 * artist.getEvents
 * artist.search
+* artist.getTopTags
+* artist.getTopAlbums
+* artist.getImages
 
 === User
 
