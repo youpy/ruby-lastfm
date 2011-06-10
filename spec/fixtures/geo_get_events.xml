@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+  <events xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" location="Boulder, Denver CO, United States" page="1" perPage="1" totalPages="1" total="1">
+    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+      <id>1958795</id>
+      <title>Transistor Festival</title>
+      <artists>
+        <artist>Not Breathing</artist>
+        <artist>Iuengliss</artist>
+        <artist>kuxaan-sum</artist>
+        <artist>Entropic Advance</artist>
+        <artist>Page 27</artist>
+        <artist>Brocken Spectre</artist>
+        <artist>And Many More...</artist>
+        <artist>The 47th Star</artist>
+        <artist>c.db.sn.</artist>
+        <artist>Kontrolled Demolition</artist>
+        <headliner>Not Breathing</headliner>
+      </artists>
+      <venue>
+        <id>8898699</id>
+        <name>The Walnut Room</name>
+        <location>
+          <city>Denver, CO</city>
+          <country>United States</country>
+          <street>3131 Walnut Street</street>
+          <postalcode>80205</postalcode>
+          <geo:point>
+            <geo:lat>39.764316</geo:lat>
+            <geo:long>-104.979679</geo:long>
+          </geo:point>
+        </location>
+        <url>http://www.last.fm/venue/8898699+The+Walnut+Room</url>
+        <website>www.thewalnutroom.com</website>
+        <phonenumber>(303) 292-1700</phonenumber>
+        <image size="small">http://userserve-ak.last.fm/serve/34/18629169.png</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/18629169.png</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/18629169.png</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/18629169.png</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/18629169/The+Walnut+Room+twrlogo.png</image>
+      </venue>
+      <startDate>Fri, 10 Jun 2011 01:58:01</startDate>
+      <endDate>Sun, 12 Jun 2011 01:58:01</endDate>
+      <description></description>
+      <image size="small">http://userserve-ak.last.fm/serve/34/166214.jpg</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64/166214.jpg</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/166214.jpg</image>
+      <image size="extralarge">http://userserve-ak.last.fm/serve/252/166214.jpg</image>
+      <attendance>1</attendance>
+      <reviews>0</reviews>
+      <tag>lastfm:event=1958795</tag>    
+      <url>http://www.last.fm/festival/1958795+Transistor+Festival</url>
+      <website>http://www.thewalnutroom.com/posts/detail/2570</website>
+      <tickets></tickets>
+      <cancelled>0</cancelled>
+    </event>
+  </events>
+</lfm>
