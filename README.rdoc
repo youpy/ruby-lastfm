@@ -53,6 +53,10 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 * user.getRecentTracks
 * user.getNeighbours
 
+=== Geo
+
+* geo.getEvents
+
 == Installation
 
 === Archive Installation

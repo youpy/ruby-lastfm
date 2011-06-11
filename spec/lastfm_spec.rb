@@ -345,6 +345,34 @@ XML
     end
   end
 
+  describe '#geo' do
+    it 'should return an instance of Lastfm::Geo' do
+      @lastfm.geo.should be_an_instance_of(Lastfm::MethodCategory::Geo)
+    end
+
+    it 'should get events' do
+      @lastfm.should_receive(:request).with('geo.getEvents', {
+        :location => 'Boulder',
+        :distance => nil,
+        :limit => nil,
+        :page => nil
+      }).and_return(make_response('geo_get_events'))
+
+      events = @lastfm.geo.get_events('Boulder')
+      events.size.should eql(1)
+      events[0]['title'].should eql('Transistor Festival')
+      events[0]['artists'].size.should == 2
+      events[0]['artists']['headliner'].should eql('Not Breathing')
+      events[0]['venue']['name'].should eql('The Walnut Room')
+      events[0]['venue']['location']['city'].should eql('Denver, CO')
+      events[0]['venue']['location']['point']['lat'].should eql("39.764316")
+      events[0]['image'].size.should eql(4)
+      events[0]['image'][0]['size'].should eql('small')
+      events[0]['image'][0]['content'].should eql('http://userserve-ak.last.fm/serve/34/166214.jpg')
+      events[0]['startDate'].should eql("Fri, 10 Jun 2011 01:58:01")
+    end
+  end
+
   describe '#user' do
     it 'should return and instance of Lastfm::User' do
       @lastfm.user.should be_an_instance_of(Lastfm::MethodCategory::User)

@@ -29,6 +29,7 @@ Gem::Specification.new do |s|
      "lib/lastfm/method_category/artist.rb",
      "lib/lastfm/method_category/auth.rb",
      "lib/lastfm/method_category/base.rb",
+     "lib/lastfm/method_category/geo.rb",
      "lib/lastfm/method_category/track.rb",
      "lib/lastfm/response.rb",
      "lib/lastfm/util.rb",
