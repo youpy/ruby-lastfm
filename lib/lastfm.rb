@@ -11,6 +11,7 @@ require 'lastfm/method_category/track'
 require 'lastfm/method_category/artist'
 require 'lastfm/method_category/user'
 require 'lastfm/method_category/geo'
+require 'lastfm/method_category/library'
 
 class Lastfm
   API_ROOT = 'http://ws.audioscrobbler.com/2.0'
@@ -46,6 +47,10 @@ class Lastfm
 
   def geo
     MethodCategory::Geo.new(self)
+  end
+
+  def library
+    MethodCategory::Library.new(self)
   end
 
   def request(method, params = {}, http_method = :get, with_signature = false, with_session = false)

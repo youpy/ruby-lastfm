@@ -374,7 +374,7 @@ XML
   end
 
   describe '#user' do
-    it 'should return and instance of Lastfm::User' do
+    it 'should return an instance of Lastfm::User' do
       @lastfm.user.should be_an_instance_of(Lastfm::MethodCategory::User)
     end
 
@@ -426,6 +426,25 @@ XML
         tracks = @lastfm.user.get_recent_tracks('test')
         tracks[1]['artist']['content'].should eql('Kylie Minogue')
         tracks.size.should == 2
+      end
+    end
+  end
+
+  describe '#library' do
+    it 'should return an instance of Lastfm::Library' do
+      @lastfm.library.should be_an_instance_of(Lastfm::MethodCategory::Library)
+    end
+
+    describe '#get_artists' do
+      it 'should get the artists\' info' do
+        @lastfm.should_receive(:request).with('library.getArtists', {
+          :user => 'test',
+          :limit => nil,
+          :page => nil
+        }).and_return(make_response('library_get_artists'))
+        artists = @lastfm.library.get_artists('test')
+        artists[1]['name'].should eql('Dark Castle')
+        artists.size.should == 2
       end
     end
   end

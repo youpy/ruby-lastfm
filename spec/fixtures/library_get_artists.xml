@@ -1,0 +1,26 @@
+<lfm status="ok">
+  <artists user="RJ" page="1" perPage="50" totalPages="20">
+    <artist rank="1">
+      <name>Dream Theater</name>
+      <playcount>1346</playcount>
+      <tagcount>0</tagcount>
+      <mbid>28503ab7-8bf2-4666-a7bd-2644bfc7cb1d</mbid>
+      <url>http://www.last.fm/music/Dream+Theater</url>
+      <streamable>1</streamable>
+      <image size="small">http://userserve-ak.last.fm/serve/50/95853.jpg</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/85/95853.jpg</image>
+      <image size="large">http://userserve-ak.last.fm/serve/160/95853.jpg</image>
+    </artist>
+    <artist rank="2">
+      <name>Dark Castle</name>
+      <playcount>1201</playcount>
+      <tagcount>0</tagcount>
+      <mbid>38503ab7-8bf2-4666-a7bd-2644bfc7cb1d</mbid>
+      <url>http://www.last.fm/music/Dark+Castle</url>
+      <streamable>1</streamable>
+      <image size="small">http://userserve-ak.last.fm/serve/50/95855.jpg</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/85/95855.jpg</image>
+      <image size="large">http://userserve-ak.last.fm/serve/160/95855.jpg</image>
+    </artist>
+  </artists>
+</lfm>
