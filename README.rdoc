@@ -76,12 +76,13 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 
 == Features/Problems
 
-== Commiters
+== Comitters
 
-* mattfawcett <https://github.com/mattfawcett>
-* peplin <https://github.com/peplin>
-* liff <https://github.com/liff>
-* pipedreambomb <https://github.com/pipedreambomb>
+* {mattfawcett}[https://github.com/mattfawcett]
+* {peplin}[https://github.com/peplin]
+* {liff}[https://github.com/liff]
+* {pipedreambomb}[https://github.com/pipedreambomb]
+* {dbolson}[https://github.com/dbolson]
 
 == Note on Patches/Pull Requests
  
