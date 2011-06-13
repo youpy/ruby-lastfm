@@ -57,6 +57,10 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 
 * geo.getEvents
 
+=== Library
+
+* library.getArtists
+
 == Installation
 
 === Archive Installation
