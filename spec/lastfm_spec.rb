@@ -141,7 +141,9 @@ XML
 	</session>
 </lfm>
 XML
-      @lastfm.auth.get_session('xxxyyyzzz').should eql('zzzyyyxxx')
+      session = @lastfm.auth.get_session('xxxyyyzzz')
+      session['name'].should eql('MyLastFMUsername')
+      session['key'].should eql('zzzyyyxxx')
     end
   end
 
