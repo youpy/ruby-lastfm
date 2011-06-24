@@ -313,10 +313,11 @@ XML
           :artist => 'foo artist',
           :track => 'foo track',
           :album => nil,
-          :timestamp => time
+          :timestamp => time,
+          :mbid => nil
         }, :post, true, true).and_return(@ok_response)
 
-      @lastfm.track.scrobble('foo artist', 'foo track', nil, time)
+      @lastfm.track.scrobble(:artist => 'foo artist', :track => 'foo track', :album => nil, :timestamp => time, :mbid => nil)
     end
 
 
