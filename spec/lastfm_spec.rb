@@ -184,6 +184,19 @@ XML
       track['toptags']['tag'].size.should eql(5)
       track['toptags']['tag'].first['name'].should eql('pop')
     end
+    
+    it 'should get correction' do
+      @lastfm.should_receive(:request).with('track.getCorrection', {
+          :artist => 'White Stripes',
+          :track => 'One More Cup of Coffee',
+          :username => 'wainekerr',
+        }).and_return(make_response('track_get_correction'))
+      
+      track = @lastfm.track.get_correction('White Stripes', 'One More Cup of Coffee', 'wainekerr')
+      track['track']['name'].should eql('One More Cup of Coffee')
+      track['track']['artist']['name'].should eql('The White Stripes')
+      track['track']['url'].should eql('www.last.fm/music/The+White+Stripes/_/One+More+Cup+of+Coffee')
+    end
 
     it 'should get xml with force array option' do
       @lastfm.should_receive(:request).with('track.getInfo', {
