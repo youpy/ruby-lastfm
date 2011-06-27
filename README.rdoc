@@ -30,6 +30,7 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 
 * {track.addTags}[http://www.lastfm.jp/api/show?service=304]
 * {track.ban}[http://www.lastfm.jp/api/show?service=261]
+* {track.getCorrection}[http://www.lastfm.jp/api/show?service=447]
 * {track.getInfo}[http://www.lastfm.jp/api/show?service=356]
 * {track.getSimilar}[http://www.lastfm.jp/api/show?service=319]
 * {track.getTags}[http://www.lastfm.jp/api/show?service=320]
@@ -83,6 +84,7 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 * {liff}[https://github.com/liff]
 * {pipedreambomb}[https://github.com/pipedreambomb]
 * {dbolson}[https://github.com/dbolson]
+* {webs}[https://github.com/webs]
 
 == Note on Patches/Pull Requests
  
