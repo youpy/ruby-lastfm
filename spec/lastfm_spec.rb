@@ -134,11 +134,11 @@ XML
         and_return(make_response(<<XML))
 <?xml version="1.0" encoding="utf-8"?>
 <lfm status="ok">
-	<session>
-		<name>MyLastFMUsername</name>
-		<key>zzzyyyxxx</key>
-		<subscriber>0</subscriber>
-	</session>
+  <session>
+    <name>MyLastFMUsername</name>
+    <key>zzzyyyxxx</key>
+    <subscriber>0</subscriber>
+  </session>
 </lfm>
 XML
       @lastfm.auth.get_session('xxxyyyzzz').should eql('zzzyyyxxx')
