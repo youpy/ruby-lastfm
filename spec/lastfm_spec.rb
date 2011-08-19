@@ -394,7 +394,7 @@ XML
       album['tracks']['track'][0]['name'].should eql('Believe')
       album['tracks']['track'][0]['duration'].should eql('239')
       album['tracks']['track'][0]['url'].should eql('http://www.last.fm/music/Cher/_/Believe')
-      
+
     end
 
   end
