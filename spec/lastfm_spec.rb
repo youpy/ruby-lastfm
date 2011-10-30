@@ -412,7 +412,7 @@ XML
         friends[0]['name'].should eql('polaroide')
       end
     end
-    
+
     describe '#get_neighbours' do
       it 'should get user\'s neighbours' do
         @lastfm.should_receive(:request).with('user.getNeighbours', {
