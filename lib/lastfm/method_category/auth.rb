@@ -6,7 +6,7 @@ class Lastfm
       end
 
       method_for_authentication :get_session, [:token], [] do |response|
-        response.xml['session']['key']
+        response.xml['session']
       end
     end
   end
