@@ -9,6 +9,7 @@ require 'lastfm/method_category/base'
 require 'lastfm/method_category/auth'
 require 'lastfm/method_category/track'
 require 'lastfm/method_category/artist'
+require 'lastfm/method_category/album'
 require 'lastfm/method_category/user'
 require 'lastfm/method_category/geo'
 require 'lastfm/method_category/library'
@@ -39,6 +40,10 @@ class Lastfm
 
   def artist
     MethodCategory::Artist.new(self)
+  end
+  
+  def album
+    MethodCategory::Album.new(self)
   end
 
   def user
