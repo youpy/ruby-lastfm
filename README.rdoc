@@ -11,7 +11,7 @@ A Ruby interface for Last.fm Web Services v2.0
 
  # open 'http://www.last.fm/api/auth/?api_key=xxxxxxxxxxx&token=xxxxxxxx' and grant the application
 
- lastfm.session = lastfm.auth.get_session(token)
+ lastfm.session = lastfm.auth.get_session(token)['key']
 
  lastfm.track.love('Hujiko Pro', 'acid acid 7riddim')
  lastfm.track.scrobble('Hujiko Pro', 'acid acid 7riddim')
@@ -43,9 +43,14 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 * {track.share}[http://www.lastfm.jp/api/show?service=305]
 * {track.updateNowPlaying}[http://www.lastfm.jp/api/show?service=454]
 
+=== Album
+
+* {album.getInfo}[http://www.last.fm/api/show?service=290]
+
 === Artist
 
 * {artist.getEvents}[http://www.lastfm.jp/api/show?service=117]
+* {artist.getInfo}[http://www.last.fm/api/show?service=267]
 
 === User
 
@@ -85,6 +90,7 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 * {pipedreambomb}[https://github.com/pipedreambomb]
 * {dbolson}[https://github.com/dbolson]
 * {webs}[https://github.com/webs]
+* {magnolia-fan}[https://github.com/magnolia-fan]
 
 == Note on Patches/Pull Requests
 
