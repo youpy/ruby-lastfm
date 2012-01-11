@@ -454,10 +454,10 @@ XML
           :user => 'test',
           :limit => nil,
           :page => nil
-        }).and_return(make_response('library_get_artists'))
-        artists = @lastfm.library.get_artists('test')
-        artists[1]['name'].should eql('Dream Theater')
-        artists.size.should == 2
+        }).and_return(make_response('library_get_tracks'))
+        tracks = @lastfm.library.get_tracks('test')
+        tracks[1]['name'].should eql('Learning to Live')
+        tracks.size.should == 1
       end
     end
 
