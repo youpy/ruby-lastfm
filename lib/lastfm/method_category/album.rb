@@ -2,7 +2,9 @@ class Lastfm
   module MethodCategory
     class Album < Base
       regular_method :get_info, [:artist, :album], [] do |response|
-        response.xml['album']
+        result = response.xml['album']
+        result['releasedate'].lstrip!
+        result
       end
     end
   end

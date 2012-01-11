@@ -314,11 +314,15 @@ XML
       @lastfm.should_receive(:request).with('track.scrobble', {
           :artist => 'foo artist',
           :track => 'foo track',
-          :album => nil,
-          :timestamp => time
+          :album => 'foo album',
+          :mbid => '0383dadf-2a4e-4d10-a46a-e9e041da8eb3',
+          :timestamp => time,
+          :trackNumber => 1,
+          :duration => nil,
+          :albumArtist => nil,
         }, :post, true, true).and_return(@ok_response)
 
-      @lastfm.track.scrobble('foo artist', 'foo track', nil, time)
+      @lastfm.track.scrobble('foo artist', 'foo track', time, 'foo album', 1, '0383dadf-2a4e-4d10-a46a-e9e041da8eb3', nil, nil)
     end
 
 
@@ -326,9 +330,14 @@ XML
       @lastfm.should_receive(:request).with('track.updateNowPlaying', {
           :artist => 'foo artist',
           :track => 'foo track',
+          :album => 'foo album',
+          :mbid => '0383dadf-2a4e-4d10-a46a-e9e041da8eb3',
+          :trackNumber => 1,
+          :duration => nil,
+          :albumArtist => nil,
         }, :post, true, true).and_return(@ok_response)
 
-      @lastfm.track.update_now_playing('foo artist', 'foo track')
+      @lastfm.track.update_now_playing('foo artist', 'foo track', 'foo album', 1, '0383dadf-2a4e-4d10-a46a-e9e041da8eb3', nil, nil)
     end
   end
 
@@ -336,7 +345,7 @@ XML
     it 'should return an instance of Lastfm::Artist' do
       @lastfm.artist.should be_an_instance_of(Lastfm::MethodCategory::Artist)
     end
-    
+
     it 'should get info' do
       @lastfm.should_receive(:request).with('artist.getInfo', {
           :artist => 'Cher'
@@ -347,7 +356,6 @@ XML
       artist['mbid'].should eql('bfcc6d75-a6a5-4bc6-8282-47aec8531818')
       artist['url'].should eql('http://www.last.fm/music/Cher')
       artist['image'].size.should eql(5)
-      
     end
 
     it 'should get events' do
@@ -372,12 +380,12 @@ XML
       events[0]['tags']['tag'].should == ["pop", "dance", "female vocalists", "80s", "cher"]
     end
   end
-  
+
   describe '#album' do
     it 'should return an instance of Lastfm::Album' do
       @lastfm.album.should be_an_instance_of(Lastfm::MethodCategory::Album)
     end
-    
+
     it 'should get info' do
       @lastfm.should_receive(:request).with('album.getInfo', {
           :artist => 'Cher', :album => 'Believe'
@@ -395,7 +403,6 @@ XML
       album['tracks']['track'][0]['name'].should eql('Believe')
       album['tracks']['track'][0]['duration'].should eql('239')
       album['tracks']['track'][0]['url'].should eql('http://www.last.fm/music/Cher/_/Believe')
-      
     end
 
   end
