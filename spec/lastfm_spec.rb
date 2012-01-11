@@ -379,6 +379,19 @@ XML
       events[0]['tickets']['ticket']['content'].should eql("http://www.last.fm/affiliate/byid/29/1584537/12/ws.artist.events.b25b959554ed76058ac220b7b2e0a026")
       events[0]['tags']['tag'].should == ["pop", "dance", "female vocalists", "80s", "cher"]
     end
+
+    it 'should get similar artists' do
+      @lastfm.should_receive(:request).with('artist.getSimilar', {
+                                              :artist => 'kid606'
+                                            }).and_return(make_response('artist_get_similar'))
+      events = @lastfm.artist.get_similar('kid606')
+      events.size.should eql(2)
+      events[1]['name'].should eql('Venetian Snares')
+      events[1]['mbid'].should eql('56abaa47-0101-463b-b37e-e961136fec39')
+      events[1]['match'].should eql('100')
+      events[1]['url'].should eql('/music/Venetian+Snares')
+      events[1]['image'].should eql(['http://userserve-ak.last.fm/serve/160/211799.jpg'])
+    end
   end
 
   describe '#album' do
