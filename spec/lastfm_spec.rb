@@ -361,14 +361,29 @@ XML
       @lastfm.should_receive(:request).with('artist.getSimilar', {
                                               :artist => 'kid606'
                                             }).and_return(make_response('artist_get_similar'))
-      events = @lastfm.artist.get_similar('kid606')
-      events.size.should eql(2)
-      events[1]['name'].should eql('Venetian Snares')
-      events[1]['mbid'].should eql('56abaa47-0101-463b-b37e-e961136fec39')
-      events[1]['match'].should eql('100')
-      events[1]['url'].should eql('/music/Venetian+Snares')
-      events[1]['image'].should eql(['http://userserve-ak.last.fm/serve/160/211799.jpg'])
+      artists = @lastfm.artist.get_similar('kid606')
+      artists.size.should eql(2)
+      artists[1]['name'].should eql('Venetian Snares')
+      artists[1]['mbid'].should eql('56abaa47-0101-463b-b37e-e961136fec39')
+      artists[1]['match'].should eql('100')
+      artists[1]['url'].should eql('/music/Venetian+Snares')
+      artists[1]['image'].should eql(['http://userserve-ak.last.fm/serve/160/211799.jpg'])
     end
+  end
+
+  describe '#event' do
+    it 'should return an instance of Lastfm::Event' do
+      @lastfm.event.should be_an_instance_of(Lastfm::MethodCategory::Event)
+    end
+    
+    it 'should get info' do
+      @lastfm.should_receive(:request).with('event.getInfo', { 
+                                            :event_id => 1073657
+                                            }).and_return(make_response('event_get_info'))
+      info = @lastfm.event.get_info(1073657)
+      info['title'].should eql('Neko Case')
+    end
+    
   end
 
   describe '#geo' do
