@@ -448,6 +448,19 @@ XML
       @lastfm.library.should be_an_instance_of(Lastfm::MethodCategory::Library)
     end
 
+    describe '#get_tracks' do
+      it 'should get the tracks\' info' do
+        @lastfm.should_receive(:request).with('library.getTracks', {
+          :user => 'test',
+          :limit => nil,
+          :page => nil
+        }).and_return(make_response('library_get_artists'))
+        artists = @lastfm.library.get_artists('test')
+        artists[1]['name'].should eql('Dream Theater')
+        artists.size.should == 2
+      end
+    end
+
     describe '#get_artists' do
       it 'should get the artists\' info' do
         @lastfm.should_receive(:request).with('library.getArtists', {
