@@ -62,6 +62,12 @@ class Lastfm
     params[:method] = method
     params[:api_key] = @api_key
 
+    params.each do |k, v|
+      if v.nil?
+        params.delete(k)
+      end
+    end
+
     # http://www.lastfm.jp/group/Last.fm+Web+Services/forum/21604/_/497978
     #params[:format] = format
 
