@@ -5,9 +5,10 @@ class Lastfm
         response.xml['artists']['artist']
       end
       
-      regular_method :get_tracks, [:user], [[:artist, nil], [:album, nil], [:page, nil], [:limit, nil]]
+      regular_method :get_tracks, [:user], [[:artist, nil], [:album, nil], [:page, nil], [:limit, nil]] do |response|
         response.xml['tracks']['track']
       end
+      
     end
   end
 end
