@@ -141,7 +141,9 @@ XML
 	</session>
 </lfm>
 XML
-      @lastfm.auth.get_session('xxxyyyzzz').should eql('zzzyyyxxx')
+      session = @lastfm.auth.get_session('xxxyyyzzz')
+      session['name'].should eql('MyLastFMUsername')
+      session['key'].should eql('zzzyyyxxx')
     end
   end
 
@@ -334,6 +336,19 @@ XML
     it 'should return an instance of Lastfm::Artist' do
       @lastfm.artist.should be_an_instance_of(Lastfm::MethodCategory::Artist)
     end
+    
+    it 'should get info' do
+      @lastfm.should_receive(:request).with('artist.getInfo', {
+          :artist => 'Cher'
+        }).and_return(make_response('artist_get_info'))
+
+      artist = @lastfm.artist.get_info('Cher')
+      artist['name'].should eql('Cher')
+      artist['mbid'].should eql('bfcc6d75-a6a5-4bc6-8282-47aec8531818')
+      artist['url'].should eql('http://www.last.fm/music/Cher')
+      artist['image'].size.should eql(5)
+      
+    end
 
     it 'should get events' do
       @lastfm.should_receive(:request).with('artist.getEvents', {
@@ -356,6 +371,33 @@ XML
       events[0]['tickets']['ticket']['content'].should eql("http://www.last.fm/affiliate/byid/29/1584537/12/ws.artist.events.b25b959554ed76058ac220b7b2e0a026")
       events[0]['tags']['tag'].should == ["pop", "dance", "female vocalists", "80s", "cher"]
     end
+  end
+  
+  describe '#album' do
+    it 'should return an instance of Lastfm::Album' do
+      @lastfm.album.should be_an_instance_of(Lastfm::MethodCategory::Album)
+    end
+    
+    it 'should get info' do
+      @lastfm.should_receive(:request).with('album.getInfo', {
+          :artist => 'Cher', :album => 'Believe'
+        }).and_return(make_response('album_get_info'))
+
+      album = @lastfm.album.get_info('Cher', 'Believe')
+      album['name'].should eql('Believe')
+      album['artist'].should eql('Cher')
+      album['id'].should eql('2026126')
+      album['mbid'].should eql('61bf0388-b8a9-48f4-81d1-7eb02706dfb0')
+      album['url'].should eql('http://www.last.fm/music/Cher/Believe')
+      album['image'].size.should eql(5)
+      album['releasedate'].should eql('6 Apr 1999, 00:00')
+      album['tracks']['track'].size.should eql(10)
+      album['tracks']['track'][0]['name'].should eql('Believe')
+      album['tracks']['track'][0]['duration'].should eql('239')
+      album['tracks']['track'][0]['url'].should eql('http://www.last.fm/music/Cher/_/Believe')
+      
+    end
+
   end
 
   describe '#geo' do
