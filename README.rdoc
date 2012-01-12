@@ -66,6 +66,7 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 === Library
 
 * {library.getArtists}[http://www.lastfm.jp/api/show?service=322]
+* {library.getTracks}[http://www.last.fm/api/show/library.getTracks]
 
 == Installation
 
@@ -91,6 +92,7 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 * {dbolson}[https://github.com/dbolson]
 * {webs}[https://github.com/webs]
 * {magnolia-fan}[https://github.com/magnolia-fan]
+* {garyadamshannon}[https://github.com/garyadamshannon]
 
 == Note on Patches/Pull Requests
 
