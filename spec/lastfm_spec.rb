@@ -500,12 +500,14 @@ XML
     describe '#get_tracks' do
       it 'should get the tracks\' info' do
         @lastfm.should_receive(:request).with('library.getTracks', {
-          :user => 'test',
-          :limit => nil,
-          :page => nil
-        }).and_return(make_response('library_get_tracks'))
-        tracks = @lastfm.library.get_tracks('test')
-        tracks[1]['name'].should eql('Learning to Live')
+            :user => 'test',
+            :artist => 'foo',
+            :album => 'bar',
+            :limit => nil,
+            :page => nil
+          }).and_return(make_response('library_get_tracks'))
+        tracks = @lastfm.library.get_tracks('test', 'foo', 'bar')
+        tracks[0]['name'].should eql('Learning to Live')
         tracks.size.should == 1
       end
     end
