@@ -23,6 +23,7 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 
 === Auth
 
+* {auth.getMobileSession}[http://www.lastfm.jp/api/show?service=266]
 * {auth.getToken}[http://www.lastfm.jp/api/show?service=265]
 * {auth.getSession}[http://www.lastfm.jp/api/show?service=125]
 
