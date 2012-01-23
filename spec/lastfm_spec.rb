@@ -147,6 +147,24 @@ XML
       session['name'].should eql('MyLastFMUsername')
       session['key'].should eql('zzzyyyxxx')
     end
+
+    it 'should get mobile session' do
+      @lastfm.should_receive(:request).
+        with('auth.getMobileSession', { :username => 'xxxyyyzzz', :authToken => 'xxxxAuthTokenxxxx' }, :get, true).
+        and_return(make_response(<<XML))
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+	<session>
+		<name>MyLastFMUsername</name>
+		<key>zzzyyyxxx</key>
+		<subscriber>0</subscriber>
+	</session>
+</lfm>
+XML
+      session = @lastfm.auth.get_mobile_session('xxxyyyzzz', 'xxxxAuthTokenxxxx')
+      session['name'].should eql('MyLastFMUsername')
+      session['key'].should eql('zzzyyyxxx')
+    end
   end
 
   describe '#track' do
