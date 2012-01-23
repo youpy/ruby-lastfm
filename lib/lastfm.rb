@@ -23,7 +23,13 @@ class Lastfm
   attr_accessor :session
 
   class Error < StandardError; end
-  class ApiError < Error; end
+  class ApiError < Error
+    attr_accessor :code
+    def initialize(message, code = nil)
+      super(message)
+      @code = code
+    end
+  end
 
   def initialize(api_key, api_secret)
     @api_key = api_key
@@ -76,7 +82,7 @@ class Lastfm
 
     response = Response.new(self.class.send(http_method, '/', (http_method == :post ? :body : :query) => params).body)
     unless response.success?
-      raise ApiError.new(response.message)
+      raise ApiError.new(response.message, response.error)
     end
 
     response

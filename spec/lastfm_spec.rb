@@ -107,7 +107,9 @@ XML
 
       lambda {
         @lastfm.request('xxx.yyy', { :foo => 'bar' }, :post)
-      }.should raise_error(Lastfm::ApiError, 'Invalid API key - You must be granted a valid key by last.fm')
+      }.should raise_error(Lastfm::ApiError, 'Invalid API key - You must be granted a valid key by last.fm') {|error|
+        error.code.should == 10
+      }
     end
   end
 
