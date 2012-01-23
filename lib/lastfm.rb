@@ -24,7 +24,8 @@ class Lastfm
 
   class Error < StandardError; end
   class ApiError < Error
-    attr_accessor :code
+    attr_reader :code
+
     def initialize(message, code = nil)
       super(message)
       @code = code
