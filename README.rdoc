@@ -93,6 +93,7 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 * {webs}[https://github.com/webs]
 * {magnolia-fan}[https://github.com/magnolia-fan]
 * {garyadamshannon}[https://github.com/garyadamshannon]
+* {Garthex}[https://github.com/Garthex]
 
 == Note on Patches/Pull Requests
 
