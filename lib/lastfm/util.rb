@@ -13,7 +13,11 @@ class Lastfm
       end
 
       optional.each_with_index do |name, index|
-        options[name[0]] = args[index + mandatory.size] || name[1]
+        value = name[1]
+        if value.kind_of?(Proc)
+          value = value.call
+        end
+        options[name[0]] = args[index + mandatory.size] || value
       end
 
       options
