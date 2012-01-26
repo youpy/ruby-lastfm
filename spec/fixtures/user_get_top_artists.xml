@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+<topartists user="test" type="overall">
+    <artist rank="1">
+        <name>Pain of Salvation</name>
+        <playcount>1354</playcount>
+        <mbid>28503ab7-8bf2-4666-a7bd-2644bfc7cb1d</mbid>
+        <url>f7c65346-9631-4220-9188-5e90baae58d5</url>
+        <streamable>1</streamable>
+        <image size="small">http://userserve-ak.last.fm/serve/34/53572699.png</image>
+    </artist>
+        <artist rank="2">
+        <name>Opeth</name>
+        <playcount>1186</playcount>
+        <mbid>c14b4180-dc87-481e-b17a-64e4150f90f6</mbid>
+        <url>http://www.last.fm/music/Opeth</url>
+        <streamable>1</streamable>
+        <image size="small">http://userserve-ak.last.fm/serve/34/66663756.png</image>
+    </artist>
+        <artist rank="3">
+        <name>Nevermore</name>
+        <playcount>959</playcount>
+        <mbid>7d093650-89be-4108-842b-ba7f5367504b</mbid>
+        <url>http://www.last.fm/music/Nevermore</url>
+        <streamable>1</streamable>
+        <image size="small">http://userserve-ak.last.fm/serve/34/239749.jpg</image>
+    </artist>
+</topartists>
+</lfm>

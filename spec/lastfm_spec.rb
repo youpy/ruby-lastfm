@@ -468,6 +468,52 @@ XML
       end
     end
 
+    describe '#get_top_artists' do
+      it 'should get user\'s top artists' do
+        @lastfm.should_receive(:request).with('user.getTopArtists', {
+            :user => 'test',
+            :period => 'overall',
+            :limit => nil,
+            :page => nil
+          }).and_return(make_response('user_get_top_artists'))
+
+        artists = @lastfm.user.get_top_artists('test', 'overall', nil, nil)
+
+        artists.size.should == 3
+        artists[0]['name'].should == "Pain of Salvation"
+        artists[0]['playcount'].should == '1354'
+
+        artists[1]['name'].should == "Opeth"
+        artists[1]['playcount'].should == '1186'
+
+        artists[2]['name'].should == "Nevermore"
+        artists[2]['playcount'].should == '959'
+      end
+    end
+
+    describe '#get_top_albums' do
+      it 'should get user\'s top albums' do
+        @lastfm.should_receive(:request).with('user.getTopAlbums', {
+            :user => 'test',
+            :period => 'overall',
+            :limit => nil,
+            :page => nil
+          }).and_return(make_response('user_get_top_albums'))
+
+        albums = @lastfm.user.get_top_albums('test', 'overall', nil, nil)
+
+        albums.size.should == 2
+
+        albums[0]['rank'].should == '1'
+        albums[0]['name'].should == 'The Wall'
+        albums[0]['artist']['name'].should == 'Pink Floyd'
+
+        albums[1]['rank'].should == '2'
+        albums[1]['name'].should == 'The Perfect Element, Part I'
+        albums[1]['artist']['name'].should == 'Pain of Salvation'
+      end
+    end
+
     describe '#get_friends' do
       it 'should get user\'s friends' do
         @lastfm.should_receive(:request).with('user.getFriends', {
