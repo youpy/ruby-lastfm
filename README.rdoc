@@ -59,6 +59,8 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 * {user.getFriends}[http://www.lastfm.jp/api/show?service=263]
 * {user.getRecentTracks}[http://www.lastfm.jp/api/show?service=278]
 * {user.getNeighbours}[http://www.lastfm.jp/api/show?service=264]
+* {user.getTopArtists}[http://www.lastfm.jp/api/show/user.getTopArtists]
+* {user.getTopAlbuns}[http://www.lastfm.jp/api/show/user.getTopAlbums]
 
 === Geo
 
