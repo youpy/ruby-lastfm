@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+<toptracks user="skr" type="7day" page="1" perPage="50" totalPages="6" total="271">
+
+                        <track rank="1">
+    <name>No Light, No Light (TV On The Radio Remix)</name>
+    <duration></duration>
+            <playcount>5</playcount>
+            <mbid></mbid>
+    <url>http://www.last.fm/music/Florence%2B%252B%2Bthe%2BMachine/_/No+Light%2C+No+Light+%28TV+On+The+Radio+Remix%29</url>
+    <streamable fulltrack="0">0</streamable>
+            <artist>
+        <name>Florence + the Machine</name>
+        <mbid>5fee3020-513b-48c2-b1f7-4681b01db0c6</mbid>
+        <url>http://www.last.fm/music/Florence%2B%252B%2Bthe%2BMachine</url>
+    </artist>
+                </track>                        <track rank="2">
+    <name>Backwords (Porcelain Raft cover)</name>
+    <duration>230</duration>
+            <playcount>5</playcount>
+            <mbid></mbid>
+    <url>http://www.last.fm/music/Oupa%2B%2526%2BTony%2BCrow/_/Backwords+%28Porcelain+Raft+cover%29</url>
+    <streamable fulltrack="0">0</streamable>
+            <artist>
+        <name>Oupa &amp; Tony Crow</name>
+        <mbid></mbid>
+        <url>http://www.last.fm/music/Oupa%2B%2526%2BTony%2BCrow</url>
+    </artist>
+                </track>                        
+                </toptracks></lfm>

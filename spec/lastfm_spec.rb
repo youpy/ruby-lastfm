@@ -513,6 +513,52 @@ XML
         albums[1]['artist']['name'].should == 'Pain of Salvation'
       end
     end
+    
+    describe '#get_top_tracks' do
+      it 'should get user\'s top tracks' do
+        @lastfm.should_receive(:request).with('user.getTopTracks', {
+            :user => 'test',
+            :period => '7day',
+            :limit => nil,
+            :page => nil
+          }).and_return(make_response('user_get_top_tracks'))
+
+        tracks = @lastfm.user.get_top_tracks('test', '7day', nil, nil)
+
+        tracks.size.should == 2
+
+        tracks[0]['rank'].should == '1'
+        tracks[0]['name'].should == 'No Light, No Light (TV On The Radio Remix)'
+        tracks[0]['artist']['name'].should == 'Florence + the Machine'
+
+        tracks[1]['rank'].should == '2'
+        tracks[1]['name'].should == 'Backwords (Porcelain Raft cover)'
+        tracks[1]['artist']['name'].should == 'Oupa & Tony Crow'
+      end
+    end
+    
+    describe '#get_loved_tracks' do
+      it 'should get user\'s loved tracks' do
+        @lastfm.should_receive(:request).with('user.getLovedTracks', {
+            :user => 'test',
+            :period => nil,
+            :limit => nil,
+            :page => nil
+          }).and_return(make_response('user_get_loved_tracks'))
+
+        tracks = @lastfm.user.get_loved_tracks('test', nil, nil, nil)
+
+        tracks.size.should == 2
+
+        tracks[0]['rank'].should == nil
+        tracks[0]['name'].should == 'I Spy'
+        tracks[0]['artist']['name'].should == 'Mikhael Paskalev'
+
+        tracks[1]['rank'].should == nil
+        tracks[1]['name'].should == 'Working Titles'
+        tracks[1]['artist']['name'].should == 'Damien Jurado'
+      end
+    end    
 
     describe '#get_friends' do
       it 'should get user\'s friends' do
