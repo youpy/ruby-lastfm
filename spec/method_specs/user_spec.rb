@@ -37,6 +37,54 @@ describe '#user' do
       artists[2]['playcount'].should == '959'
     end
   end
+  
+  describe '#get_personal_tags' do
+    it 'should get user\'s tagged artists' do
+      @lastfm.should_receive(:request).with('user.getPersonalTags', {
+        :user => 'test',
+        :tag => 'rock',
+        :taggingtype => 'artist',
+        :limit => nil,
+        :page => nil
+      }).and_return(make_response('user_get_personal_tags_artists'))
+
+      artists = @lastfm.user.get_personal_tags('test', 'rock')
+      artists[0]['name'].should == 'Afghan Whigs'
+      artists[0]['url'].should == 'http://www.last.fm/music/Afghan+Whigs'
+      artists[1]['name'].should == 'Jeff The Brotherhood'
+      artists.size.should == 5
+    end
+
+    it 'should get user\'s tagged albums' do
+      @lastfm.should_receive(:request).with('user.getPersonalTags', {
+        :user => 'test',
+        :tag => 'hip-hop',
+        :taggingtype => 'album',
+        :limit => nil,
+        :page => nil
+      }).and_return(make_response('user_get_personal_tags_albums'))
+
+      albums = @lastfm.user.get_personal_tags('test', 'hip-hop', 'album')
+      albums[0]['name'].should == 'DJ Bizkid Presents: The Best of Atmosphere'
+      albums.size.should == 1
+    end
+    
+    it 'should get user\'s tagged tracks' do
+      @lastfm.should_receive(:request).with('user.getPersonalTags', {
+        :user => 'test',
+        :tag => 'jazz',
+        :taggingtype => 'track',
+        :limit => nil,
+        :page => nil
+      }).and_return(make_response('user_get_personal_tags_tracks'))
+
+      tracks = @lastfm.user.get_personal_tags('test', 'jazz', 'track')
+      tracks[0]['name'].should == 'Come Together'
+      tracks[1]['name'].should == 'Dione'
+      tracks[1]['duration'].should == '450'
+      tracks.size.should == 5
+    end
+  end
 
   describe '#get_top_albums' do
     it 'should get user\'s top albums' do

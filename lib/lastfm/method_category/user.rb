@@ -20,6 +20,19 @@ class Lastfm
         neighbours
       end
 
+      regular_method :get_personal_tags, [:user, :tag], [[:taggingtype, 'artist'], [:limit, nil], [:page, nil]] do |response|
+        taggings = response.xml['taggings']
+        result = if taggings['artists']
+          taggings['artists']['artist']
+        elsif taggings['albums']
+          taggings['albums']['album']
+        elsif taggings['tracks']
+          taggings['tracks']['track']
+        end
+
+        ensure_array(result)
+      end
+
       regular_method :get_recent_tracks, [:user], [[:limit, nil], [:page, nil], [:to, nil], [:from, nil]] do |response|
         response.xml['recenttracks']['track']
       end

@@ -49,10 +49,10 @@ describe '#track' do
 
     it 'should get xml with force array option' do
       @lastfm.should_receive(:request).with('track.getInfo', {
-          :artist => 'Cher',
-          :track => 'Believe',
-          :username => 'youpy',
-        }).and_return(make_response('track_get_info_force_array'))
+        :artist => 'Cher',
+        :track => 'Believe',
+        :username => 'youpy',
+      }).and_return(make_response('track_get_info_force_array'))
 
       track = @lastfm.track.get_info('Cher', 'Believe', 'youpy')
       track['album']['image'].size.should == 1

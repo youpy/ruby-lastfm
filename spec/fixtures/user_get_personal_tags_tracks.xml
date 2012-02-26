@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+  <taggings user="RJ" tag="jazz" page="1" perPage="50" totalPages="1" total="5">
+    <tracks>
+      <track>
+        <name>Come Together</name>
+        <duration>316</duration>
+        <mbid/>
+        <url>http://www.last.fm/music/Brian+Bromberg/_/Come+Together</url>
+        <streamable fulltrack="0">1</streamable>
+        <artist>
+          <name>Brian Bromberg</name>
+          <mbid>69ed9582-7b72-4b7b-8e30-816c06e5f89b</mbid>
+          <url>http://www.last.fm/music/Brian+Bromberg</url>
+        </artist>
+        <image size="small">http://userserve-ak.last.fm/serve/34s/33026873.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64s/33026873.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/33026873.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/33026873.jpg</image>
+      </track>
+      <track>
+        <name>Dione</name>
+        <duration>450</duration>
+        <mbid/>
+        <url>http://www.last.fm/music/Calum+Marshall/_/Dione</url>
+        <streamable fulltrack="1">1</streamable>
+        <artist>
+          <name>Calum Marshall</name>
+          <mbid/>
+          <url>http://www.last.fm/music/Calum+Marshall</url>
+        </artist>
+        <image size="small">http://userserve-ak.last.fm/serve/34s/34604249.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64s/34604249.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/34604249.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/34604249.jpg</image>
+      </track>
+      <track>
+        <name>Living Hope</name>
+        <duration>306</duration>
+        <mbid/>
+        <url>http://www.last.fm/music/Dennis+Chambers/_/Living+Hope</url>
+        <streamable fulltrack="0">1</streamable>
+        <artist>
+          <name>Dennis Chambers</name>
+          <mbid>919553a3-2c2f-4b2e-b0ea-efe8e2573e9c</mbid>
+          <url>http://www.last.fm/music/Dennis+Chambers</url>
+        </artist>
+        <image size="small">http://userserve-ak.last.fm/serve/34s/33038159.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64s/33038159.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/33038159.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/33038159.jpg</image>
+      </track>
+      <track>
+        <name>Morning Dance</name>
+        <duration>256</duration>
+        <mbid/>
+        <url>http://www.last.fm/music/Spyro+Gyra/_/Morning+Dance</url>
+        <streamable fulltrack="0">1</streamable>
+        <artist>
+          <name>Spyro Gyra</name>
+          <mbid>9a7c8025-1af8-42cd-8df8-857220610bc5</mbid>
+          <url>http://www.last.fm/music/Spyro+Gyra</url>
+        </artist>
+        <image size="small">http://userserve-ak.last.fm/serve/34s/32950969.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64s/32950969.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/32950969.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/32950969.jpg</image>
+      </track>
+      <track>
+        <name>Walk on By</name>
+        <duration>290</duration>
+        <mbid/>
+        <url>http://www.last.fm/music/Peter+White/_/Walk+on+By</url>
+        <streamable fulltrack="0">1</streamable>
+        <artist>
+          <name>Peter White</name>
+          <mbid>2833d222-f057-43a5-a90b-e44f0df63acb</mbid>
+          <url>http://www.last.fm/music/Peter+White</url>
+        </artist>
+        <image size="small">http://images.amazon.com/images/P/B0000516VZ.01._SCMZZZZZZZ_.jpg</image>
+        <image size="medium">http://images.amazon.com/images/P/B0000516VZ.01._SCMZZZZZZZ_.jpg</image>
+        <image size="large">http://images.amazon.com/images/P/B0000516VZ.01._SCMZZZZZZZ_.jpg</image>
+        <image size="extralarge">http://images.amazon.com/images/P/B0000516VZ.01._SCMZZZZZZZ_.jpg</image>
+      </track>
+    </tracks>
+  </taggings>
+</lfm>

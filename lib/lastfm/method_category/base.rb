@@ -29,6 +29,14 @@ class Lastfm
             block.call(send(method, id.to_s.camelize(:lower), Lastfm::Util.build_options(args, mandatory, optional)))
           end
         end
+        
+        def ensure_array(object)
+          if object.is_a? Array
+            object
+          else
+            [object]
+          end
+        end
       end
 
       def initialize(lastfm)

@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+  <taggings user="RJ" tag="rock" page="1" perPage="50" totalPages="1" total="5">
+    <artists>
+      <artist>
+        <name>Afghan Whigs</name>
+        <mbid/>
+        <url>http://www.last.fm/music/Afghan+Whigs</url>
+        <streamable>1</streamable>
+        <image size="small">http://userserve-ak.last.fm/serve/34/65473.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/65473.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/65473.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/65473.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/65473/Afghan+Whigs.jpg</image>
+      </artist>
+      <artist>
+        <name>Jeff The Brotherhood</name>
+        <mbid>51b13b20-dc03-4d51-8c6d-f3b0c52476a6</mbid>
+        <url>http://www.last.fm/music/Jeff+The+Brotherhood</url>
+        <streamable>0</streamable>
+        <image size="small">http://userserve-ak.last.fm/serve/34/42786999.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/42786999.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/42786999.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/42786999.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/500/42786999/Jeff+The+Brotherhood+JTBKAHANtext.jpg</image>
+      </artist>
+      <artist>
+        <name>Morphine</name>
+        <mbid>42689657-cbec-4f66-a9ed-80f939ea23ed</mbid>
+        <url>http://www.last.fm/music/Morphine</url>
+        <streamable>1</streamable>
+        <image size="small">http://userserve-ak.last.fm/serve/34/37674353.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/37674353.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/37674353.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/37674353.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/500/37674353/Morphine.jpg</image>
+      </artist>
+      <artist>
+        <name>John Hammond</name>
+        <mbid>d83e599c-2d5a-44ec-b727-587e1455b1b5</mbid>
+        <url>http://www.last.fm/music/John+Hammond</url>
+        <streamable>1</streamable>
+        <image size="small">http://userserve-ak.last.fm/serve/34/22931645.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/22931645.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/22931645.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/22931645.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/500/22931645/John+Hammond+jhjr.jpg</image>
+      </artist>
+      <artist>
+        <name>G3</name>
+        <mbid>ec676b1e-9586-479d-926b-25face38e87f</mbid>
+        <url>http://www.last.fm/music/G3</url>
+        <streamable>1</streamable>
+        <image size="small">http://userserve-ak.last.fm/serve/34/45853299.png</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/45853299.png</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/45853299.png</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/45853299.png</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/500/45853299/G3.png</image>
+      </artist>
+    </artists>
+  </taggings>
+</lfm>

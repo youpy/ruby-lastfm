@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+  <taggings user="RJ" tag="hip-hop" page="1" perPage="50" totalPages="1" total="1">
+    <albums>
+      <album>
+        <name>DJ Bizkid Presents: The Best of Atmosphere</name>
+        <mbid>d7bc8315-a032-435b-a551-ec39a3998443</mbid>
+        <url>http://www.last.fm/music/Atmosphere/DJ+Bizkid+Presents%3A+The+Best+of+Atmosphere</url>
+        <artist>
+          <name>Atmosphere</name>
+          <mbid>ef954679-5ee7-4016-acef-7ac71f2fa3d8</mbid>
+          <url>http://www.last.fm/music/Atmosphere</url>
+        </artist>
+        <image size="small">http://cdn.last.fm/flatness/catalogue/noimage/2/default_album_medium.png</image>
+        <image size="medium">http://cdn.last.fm/flatness/catalogue/noimage/2/default_album_medium.png</image>
+        <image size="large">http://cdn.last.fm/flatness/catalogue/noimage/2/default_album_medium.png</image>
+        <image size="extralarge">http://cdn.last.fm/flatness/catalogue/noimage/2/default_album_medium.png</image>
+      </album>
+    </albums>
+  </taggings>
+</lfm>
