@@ -46,11 +46,11 @@ class Lastfm
   def artist
     MethodCategory::Artist.new(self)
   end
-  
+
   def auth
     MethodCategory::Auth.new(self)
   end
-  
+
   def event
     MethodCategory::Event.new(self)
   end
@@ -62,7 +62,7 @@ class Lastfm
   def library
     MethodCategory::Library.new(self)
   end
-  
+
   def tag
     MethodCategory::Tag.new(self)
   end

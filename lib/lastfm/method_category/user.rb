@@ -31,7 +31,7 @@ class Lastfm
       regular_method :get_top_artists, [:user], [[:period, nil], [:limit, nil], [:page, nil]] do |response|
         response.xml['topartists']['artist']
       end
-      
+
       regular_method :get_top_tags, [:user], [[:limit, nil]] do |response|
         response.xml['toptags']['tag']
       end
