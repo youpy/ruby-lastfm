@@ -55,12 +55,14 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 
 === User
 
-* {user.getInfo}[http://www.lastfm.jp/api/show?service=344]
 * {user.getFriends}[http://www.lastfm.jp/api/show?service=263]
-* {user.getRecentTracks}[http://www.lastfm.jp/api/show?service=278]
+* {user.getInfo}[http://www.lastfm.jp/api/show?service=344]
+* {user.getLovedTracks}[http://www.lastfm.jp/api/show/user.getLovedTracks]
 * {user.getNeighbours}[http://www.lastfm.jp/api/show?service=264]
 * {user.getTopArtists}[http://www.lastfm.jp/api/show/user.getTopArtists]
 * {user.getTopAlbuns}[http://www.lastfm.jp/api/show/user.getTopAlbums]
+* {user.getTopTracks}[http://www.lastfm.jp/api/show/user.getTopTracks]
+* {user.getRecentTracks}[http://www.lastfm.jp/api/show?service=278]
 
 === Geo
 
@@ -88,16 +90,17 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 
 == Comitters
 
-* {mattfawcett}[https://github.com/mattfawcett]
-* {peplin}[https://github.com/peplin]
-* {liff}[https://github.com/liff]
+* {Matthew Fawcett}[https://github.com/mattfawcett]
+* {Christopher Peplin}[https://github.com/peplin]
+* {Olli Helenius}[https://github.com/liff]
 * {pipedreambomb}[https://github.com/pipedreambomb]
-* {dbolson}[https://github.com/dbolson]
+* {Danny Olson}[https://github.com/dbolson]
 * {webs}[https://github.com/webs]
-* {magnolia-fan}[https://github.com/magnolia-fan]
-* {garyadamshannon}[https://github.com/garyadamshannon]
-* {Garthex}[https://github.com/Garthex]
-* {lfzawacki}[https://github.com/lfzawacki]
+* {Gregory Eremin}[https://github.com/magnolia-fan]
+* {Gary Shannon}[https://github.com/garyadamshannon]
+* {Kyle Fleming}[https://github.com/Garthex]
+* {Lucas}[https://github.com/lfzawacki]
+* {Johan Oskarsson}[https://github.com/johanoskarsson]
 
 == Note on Patches/Pull Requests
 
