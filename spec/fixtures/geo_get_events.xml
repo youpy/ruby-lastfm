@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <lfm status="ok">
   <events xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" location="Boulder, Denver CO, United States" page="1" perPage="1" totalPages="1" total="1">
-    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
       <id>1958795</id>
       <title>Transistor Festival</title>
       <artists>
@@ -41,17 +41,17 @@
       </venue>
       <startDate>Fri, 10 Jun 2011 01:58:01</startDate>
       <endDate>Sun, 12 Jun 2011 01:58:01</endDate>
-      <description></description>
+      <description/>
       <image size="small">http://userserve-ak.last.fm/serve/34/166214.jpg</image>
       <image size="medium">http://userserve-ak.last.fm/serve/64/166214.jpg</image>
       <image size="large">http://userserve-ak.last.fm/serve/126/166214.jpg</image>
       <image size="extralarge">http://userserve-ak.last.fm/serve/252/166214.jpg</image>
       <attendance>1</attendance>
       <reviews>0</reviews>
-      <tag>lastfm:event=1958795</tag>    
+      <tag>lastfm:event=1958795</tag>
       <url>http://www.last.fm/festival/1958795+Transistor+Festival</url>
       <website>http://www.thewalnutroom.com/posts/detail/2570</website>
-      <tickets></tickets>
+      <tickets/>
       <cancelled>0</cancelled>
     </event>
   </events>

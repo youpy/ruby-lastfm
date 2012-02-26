@@ -79,7 +79,7 @@ describe '#track' do
     }).and_return(make_response('track_get_similar'))
 
     tracks = @lastfm.track.get_similar('Cher', 'Believe')
-    tracks.size.should == 250
+    tracks.size.should == 5
     tracks.first['name'].should == 'Strong Enough'
     tracks.first['image'][1]['content'].should == 'http://userserve-ak.last.fm/serve/64s/8674593.jpg'
     tracks[1]['image'][0]['content'].should == 'http://userserve-ak.last.fm/serve/34s/8674593.jpg'

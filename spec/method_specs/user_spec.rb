@@ -132,7 +132,7 @@ describe '#user' do
         :limit => nil
       }).and_return(make_response('user_get_neighbours'))
       neighbours = @lastfm.user.get_neighbours('rj')
-      neighbours.size.should == 50
+      neighbours.size.should == 5
       neighbours[0]['name'].should == 'willywongi'
     end
   end

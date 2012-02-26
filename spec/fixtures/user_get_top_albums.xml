@@ -1,29 +1,29 @@
 <?xml version="1.0" encoding="utf-8"?>
 <lfm status="ok">
-<topalbums user="test" type="overall">
+  <topalbums user="test" type="overall">
     <album rank="1">
-        <name>The Wall</name>
-        <playcount>536</playcount>
-        <mbid>639f0d06-53bd-32a5-8f65-1db785743ab0</mbid>  
-        <url>http://www.last.fm/music/Pink+Floyd/The+Wall</url>
-        <artist>
-          <name>Pink Floyd</name>
-          <mbid>83d91898-7763-47d7-b03b-b92132375c47</mbid>
-          <url>http://www.last.fm/music/Pink+Floyd</url>
-        </artist>
-        <image size="small">http://userserve-ak.last.fm/serve/34s/70211546.png</image>
+      <name>The Wall</name>
+      <playcount>536</playcount>
+      <mbid>639f0d06-53bd-32a5-8f65-1db785743ab0</mbid>
+      <url>http://www.last.fm/music/Pink+Floyd/The+Wall</url>
+      <artist>
+        <name>Pink Floyd</name>
+        <mbid>83d91898-7763-47d7-b03b-b92132375c47</mbid>
+        <url>http://www.last.fm/music/Pink+Floyd</url>
+      </artist>
+      <image size="small">http://userserve-ak.last.fm/serve/34s/70211546.png</image>
     </album>
     <album rank="2">
-        <name>The Perfect Element, Part I</name>
-        <playcount>524</playcount>
-        <mbid>3039a1a9-a8d2-4560-81c7-b0af31f692b3</mbid>  
-        <url>http://www.last.fm/music/Pain+Of+Salvation/The+Perfect+Element%2C+Part+I</url>
-        <artist>
-          <name>Pain of Salvation</name>
-          <mbid>f7c65346-9631-4220-9188-5e90baae58d5</mbid>
-          <url>http://www.last.fm/music/Pain+of+Salvation</url>
-        </artist>
-        <image size="small">http://userserve-ak.last.fm/serve/34s/66884232.png</image>
+      <name>The Perfect Element, Part I</name>
+      <playcount>524</playcount>
+      <mbid>3039a1a9-a8d2-4560-81c7-b0af31f692b3</mbid>
+      <url>http://www.last.fm/music/Pain+Of+Salvation/The+Perfect+Element%2C+Part+I</url>
+      <artist>
+        <name>Pain of Salvation</name>
+        <mbid>f7c65346-9631-4220-9188-5e90baae58d5</mbid>
+        <url>http://www.last.fm/music/Pain+of+Salvation</url>
+      </artist>
+      <image size="small">http://userserve-ak.last.fm/serve/34s/66884232.png</image>
     </album>
-</topalbums>
+  </topalbums>
 </lfm>
