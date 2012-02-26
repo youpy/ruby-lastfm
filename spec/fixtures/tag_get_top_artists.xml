@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+  <topartists tag="Disco">
+    <artist rank="1">
+      <name>Bee Gees</name>
+      <mbid>bf0f7e29-dfe1-416c-b5c6-f9ebc19ea810</mbid>
+      <url>http://www.last.fm/music/Bee+Gees</url>
+      <streamable>1</streamable>
+      <image size="small">http://userserve-ak.last.fm/serve/34/33475253.png</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64/33475253.png</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/33475253.png</image>
+      <image size="extralarge">http://userserve-ak.last.fm/serve/252/33475253.png</image>
+      <image size="mega">http://userserve-ak.last.fm/serve/_/33475253/Bee+Gees+beegeesgroup01.png</image>
+    </artist>
+    <artist rank="2">
+      <name>ABBA</name>
+      <mbid>d87e52c5-bb8d-4da8-b941-9f4928627dc8</mbid>
+      <url>http://www.last.fm/music/ABBA</url>
+      <streamable>1</streamable>
+      <image size="small">http://userserve-ak.last.fm/serve/34/41830911.png</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64/41830911.png</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/41830911.png</image>
+      <image size="extralarge">http://userserve-ak.last.fm/serve/252/41830911.png</image>
+      <image size="mega">http://userserve-ak.last.fm/serve/500/41830911/ABBA+PNG.png</image>
+    </artist>
+    <artist rank="3">
+      <name>Boney M.</name>
+      <mbid>5403bf6e-bc1d-4e62-b31f-926a2bf66a14</mbid>
+      <url>http://www.last.fm/music/Boney+M.</url>
+      <streamable>1</streamable>
+      <image size="small">http://userserve-ak.last.fm/serve/34/38736073.png</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64/38736073.png</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/38736073.png</image>
+      <image size="extralarge">http://userserve-ak.last.fm/serve/252/38736073.png</image>
+      <image size="mega">http://userserve-ak.last.fm/serve/500/38736073/Boney+M+PNG+Version.png</image>
+    </artist>
+    <artist rank="4">
+      <name>Donna Summer</name>
+      <mbid>b60527cc-54f3-4bbe-a01b-dcf34c95ae14</mbid>
+      <url>http://www.last.fm/music/Donna+Summer</url>
+      <streamable>1</streamable>
+      <image size="small">http://userserve-ak.last.fm/serve/34/28390425.png</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64/28390425.png</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/28390425.png</image>
+      <image size="extralarge">http://userserve-ak.last.fm/serve/252/28390425.png</image>
+      <image size="mega">http://userserve-ak.last.fm/serve/_/28390425/Donna+Summer+Donna.png</image>
+    </artist>
+    <artist rank="5">
+      <name>KC And The Sunshine Band</name>
+      <mbid>76a5a114-ed6a-4eb6-8a81-ad5768d4b41c</mbid>
+      <url>http://www.last.fm/music/KC+And+The+Sunshine+Band</url>
+      <streamable>1</streamable>
+      <image size="small">http://userserve-ak.last.fm/serve/34/573905.jpg</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64/573905.jpg</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/573905.jpg</image>
+      <image size="extralarge">http://userserve-ak.last.fm/serve/252/573905.jpg</image>
+      <image size="mega">http://userserve-ak.last.fm/serve/_/573905/KC+And+The+Sunshine+Band.jpg</image>
+    </artist>
+  </topartists>
+</lfm>

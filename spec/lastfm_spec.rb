@@ -166,6 +166,26 @@ XML
       session['key'].should eql('zzzyyyxxx')
     end
   end
+  
+  describe '#tag' do
+    it 'should return an instance of Lastfm::Tag' do
+      @lastfm.tag.should be_an_instance_of(Lastfm::MethodCategory::Tag)
+    end
+
+    it 'should get top tags' do
+      @lastfm.should_receive(:request).with('tag.getTopArtists', {
+        :tag => 'Disco',
+        :limit => nil,
+        :page => nil
+      }).and_return(make_response('tag_get_top_artists'))
+
+      artists = @lastfm.tag.get_top_artists('Disco')
+      artists.size.should eql(5)
+      artists[0]['name'].should eql('Bee Gees')
+      artists[0]['url'].should eql('http://www.last.fm/music/Bee+Gees')
+      artists[1]['name'].should eql('ABBA')
+    end
+  end
 
   describe '#track' do
     it 'should return an instance of Lastfm::Track' do

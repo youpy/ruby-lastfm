@@ -6,13 +6,14 @@ require 'active_support/core_ext/string/inflections'
 require 'lastfm/util'
 require 'lastfm/response'
 require 'lastfm/method_category/base'
-require 'lastfm/method_category/auth'
-require 'lastfm/method_category/track'
-require 'lastfm/method_category/artist'
 require 'lastfm/method_category/album'
-require 'lastfm/method_category/user'
+require 'lastfm/method_category/artist'
+require 'lastfm/method_category/auth'
 require 'lastfm/method_category/geo'
 require 'lastfm/method_category/library'
+require 'lastfm/method_category/tag'
+require 'lastfm/method_category/track'
+require 'lastfm/method_category/user'
 
 class Lastfm
   API_ROOT = 'http://ws.audioscrobbler.com/2.0'
@@ -37,24 +38,16 @@ class Lastfm
     @api_secret = api_secret
   end
 
-  def auth
-    MethodCategory::Auth.new(self)
-  end
-
-  def track
-    MethodCategory::Track.new(self)
+  def album
+    MethodCategory::Album.new(self)
   end
 
   def artist
     MethodCategory::Artist.new(self)
   end
   
-  def album
-    MethodCategory::Album.new(self)
-  end
-
-  def user
-    MethodCategory::User.new(self)
+  def auth
+    MethodCategory::Auth.new(self)
   end
 
   def geo
@@ -63,6 +56,18 @@ class Lastfm
 
   def library
     MethodCategory::Library.new(self)
+  end
+  
+  def tag
+    MethodCategory::Tag.new(self)
+  end
+  
+  def track
+    MethodCategory::Track.new(self)
+  end
+
+  def user
+    MethodCategory::User.new(self)
   end
 
   def request(method, params = {}, http_method = :get, with_signature = false, with_session = false)
