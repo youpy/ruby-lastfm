@@ -30,7 +30,7 @@ class Lastfm
           taggings['tracks']['track']
         end
 
-        ensure_array(result)
+        Lastfm::Util::force_array(result)
       end
 
       regular_method :get_recent_tracks, [:user], [[:limit, nil], [:page, nil], [:to, nil], [:from, nil]] do |response|
