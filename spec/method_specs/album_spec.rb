@@ -1,9 +1,7 @@
 require File.expand_path(File.dirname(__FILE__) + '/../spec_helper')
 
 describe '#album' do
-  before do
-    init_lastfm
-  end
+  before { init_lastfm }
 
   it 'should return an instance of Lastfm::Album' do
     @lastfm.album.should be_an_instance_of(Lastfm::MethodCategory::Album)

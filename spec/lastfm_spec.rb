@@ -1,9 +1,7 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
 describe "Lastfm" do
-  before do
-    init_lastfm
-  end
+  before { init_lastfm }
 
   it 'should have base_uri' do
     Lastfm.base_uri.should == 'http://ws.audioscrobbler.com/2.0'
