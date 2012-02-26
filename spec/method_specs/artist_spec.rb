@@ -50,13 +50,30 @@ describe '#artist' do
       @lastfm.should_receive(:request).with('artist.getSimilar', {
         :artist => 'kid606'
       }).and_return(make_response('artist_get_similar'))
+
       artists = @lastfm.artist.get_similar('kid606')
-      artists.size.should eql(2)
-      artists[1]['name'].should eql('Venetian Snares')
-      artists[1]['mbid'].should eql('56abaa47-0101-463b-b37e-e961136fec39')
-      artists[1]['match'].should eql('100')
-      artists[1]['url'].should eql('/music/Venetian+Snares')
-      artists[1]['image'].should eql(['http://userserve-ak.last.fm/serve/160/211799.jpg'])
+      artists.size.should == 2
+      artists[1]['name'].should == 'Venetian Snares'
+      artists[1]['mbid'].should == '56abaa47-0101-463b-b37e-e961136fec39'
+      artists[1]['match'].should == '100'
+      artists[1]['url'].should == '/music/Venetian+Snares'
+      artists[1]['image'].should == ['http://userserve-ak.last.fm/serve/160/211799.jpg']
+    end
+  end
+  
+  describe '#get_tags' do
+    it 'should get artist tags' do
+      @lastfm.should_receive(:request).with('artist.getTags', {
+        :artist => 'zebrahead',
+        :user => 'test',
+        :mbid => nil,
+        :autocorrect => nil
+      }).and_return(make_response('artist_get_tags'))
+
+      tags = @lastfm.artist.get_tags('zebrahead', 'test')
+      tags.size.should == 2
+      tags[0]['name'].should == 'punk'
+      tags[1]['name'].should == 'Awesome'
     end
   end
 end
