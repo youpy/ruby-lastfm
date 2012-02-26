@@ -11,7 +11,7 @@ describe '#event' do
         :event => 1073657
       }).and_return(make_response('event_get_info'))
       info = @lastfm.event.get_info(1073657)
-      info['title'].should eql('Neko Case')
+      info['title'].should == 'Neko Case'
     end
   end
 end
