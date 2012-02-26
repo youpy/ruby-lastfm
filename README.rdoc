@@ -21,11 +21,30 @@ A Ruby interface for Last.fm Web Services v2.0
 
 It supports methods which require {authentication}[http://www.last.fm/api/authentication].
 
+=== Album
+
+* {album.getInfo}[http://www.last.fm/api/show?service=290]
+
+=== Artist
+
+* {artist.getEvents}[http://www.lastfm.jp/api/show?service=117]
+* {artist.getInfo}[http://www.last.fm/api/show?service=267]
+* {artist.getSimilar}[http://www.last.fm/api/show?service=267]
+* {artist.getTags}[http://www.last.fm/api/show?service=267]
+
 === Auth
 
 * {auth.getMobileSession}[http://www.lastfm.jp/api/show?service=266]
 * {auth.getToken}[http://www.lastfm.jp/api/show?service=265]
 * {auth.getSession}[http://www.lastfm.jp/api/show?service=125]
+
+=== Event
+
+* {event.getInfo}[http://www.lastfm.jp/api/show/event.getInfo]
+
+=== Tag
+
+* {tag.getTopArtists}[http://www.lastfm.jp/api/show/tag.getTopArtists]
 
 === Track
 
@@ -44,25 +63,18 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 * {track.share}[http://www.lastfm.jp/api/show?service=305]
 * {track.updateNowPlaying}[http://www.lastfm.jp/api/show?service=454]
 
-=== Album
-
-* {album.getInfo}[http://www.last.fm/api/show?service=290]
-
-=== Artist
-
-* {artist.getEvents}[http://www.lastfm.jp/api/show?service=117]
-* {artist.getInfo}[http://www.last.fm/api/show?service=267]
-
 === User
 
 * {user.getFriends}[http://www.lastfm.jp/api/show?service=263]
 * {user.getInfo}[http://www.lastfm.jp/api/show?service=344]
 * {user.getLovedTracks}[http://www.lastfm.jp/api/show/user.getLovedTracks]
 * {user.getNeighbours}[http://www.lastfm.jp/api/show?service=264]
-* {user.getTopArtists}[http://www.lastfm.jp/api/show/user.getTopArtists]
-* {user.getTopAlbuns}[http://www.lastfm.jp/api/show/user.getTopAlbums]
-* {user.getTopTracks}[http://www.lastfm.jp/api/show/user.getTopTracks]
+* {user.getPersonalTags}[http://www.lastfm.jp/api/show/user.getPersonalTags]
 * {user.getRecentTracks}[http://www.lastfm.jp/api/show?service=278]
+* {user.getTopArtists}[http://www.lastfm.jp/api/show/user.getTopArtists]
+* {user.getTopAlbums}[http://www.lastfm.jp/api/show/user.getTopAlbums]
+* {user.getTopTags}[http://www.lastfm.jp/api/show/user.getTopTags]
+* {user.getTopTracks}[http://www.lastfm.jp/api/show/user.getTopTracks]
 
 === Geo
 

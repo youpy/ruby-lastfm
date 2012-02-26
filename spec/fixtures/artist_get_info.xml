@@ -1,93 +1,92 @@
-<?xml version="1.0" encoding="utf-8"?> 
-<lfm status="ok"> 
-<artist> 
-  <name>Cher</name> 
-  <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid> 
-  <url>http://www.last.fm/music/Cher</url> 
-  <image size="small">http://userserve-ak.last.fm/serve/34/63111289.png</image> 
-  <image size="medium">http://userserve-ak.last.fm/serve/64/63111289.png</image> 
-  <image size="large">http://userserve-ak.last.fm/serve/126/63111289.png</image> 
-  <image size="extralarge">http://userserve-ak.last.fm/serve/252/63111289.png</image> 
-  <image size="mega">http://userserve-ak.last.fm/serve/500/63111289/Cher.png</image> 
-  <streamable>1</streamable> 
-  <stats> 
-    <listeners>665718</listeners> 
-    <playcount>6419503</playcount> 
-      </stats> 
- 
-  <similar> 
-	    <artist> 
-	  <name>Sonny &amp; Cher</name> 
-	  <url>http://www.last.fm/music/Sonny%2B%2526%2BCher</url> 
-	  <image size="small">http://userserve-ak.last.fm/serve/34/244080.jpg</image> 
-	  <image size="medium">http://userserve-ak.last.fm/serve/64/244080.jpg</image> 
-	  <image size="large">http://userserve-ak.last.fm/serve/126/244080.jpg</image> 
-	  <image size="extralarge">http://userserve-ak.last.fm/serve/252/244080.jpg</image> 
-	  <image size="mega">http://userserve-ak.last.fm/serve/_/244080/Sonny++Cher.jpg</image> 
-	</artist> 
-    <artist> 
-	  <name>Madonna</name> 
-	  <url>http://www.last.fm/music/Madonna</url> 
-	  <image size="small">http://userserve-ak.last.fm/serve/34/41422453.png</image> 
-	  <image size="medium">http://userserve-ak.last.fm/serve/64/41422453.png</image> 
-	  <image size="large">http://userserve-ak.last.fm/serve/126/41422453.png</image> 
-	  <image size="extralarge">http://userserve-ak.last.fm/serve/252/41422453.png</image> 
-	  <image size="mega">http://userserve-ak.last.fm/serve/_/41422453/Madonna+PNG.png</image> 
-	</artist> 
-    <artist> 
-	  <name>Cyndi Lauper</name> 
-	  <url>http://www.last.fm/music/Cyndi+Lauper</url> 
-	  <image size="small">http://userserve-ak.last.fm/serve/34/6967243.jpg</image> 
-	  <image size="medium">http://userserve-ak.last.fm/serve/64/6967243.jpg</image> 
-	  <image size="large">http://userserve-ak.last.fm/serve/126/6967243.jpg</image> 
-	  <image size="extralarge">http://userserve-ak.last.fm/serve/252/6967243.jpg</image> 
-	  <image size="mega">http://userserve-ak.last.fm/serve/500/6967243/Cyndi+Lauper+cl_kt03_5x6a_640.jpg</image> 
-	</artist> 
-    <artist> 
-	  <name>Kylie Minogue</name> 
-	  <url>http://www.last.fm/music/Kylie+Minogue</url> 
-	  <image size="small">http://userserve-ak.last.fm/serve/34/62311929.png</image> 
-	  <image size="medium">http://userserve-ak.last.fm/serve/64/62311929.png</image> 
-	  <image size="large">http://userserve-ak.last.fm/serve/126/62311929.png</image> 
-	  <image size="extralarge">http://userserve-ak.last.fm/serve/252/62311929.png</image> 
-	  <image size="mega">http://userserve-ak.last.fm/serve/_/62311929/Kylie+Minogue+Kylie.png</image> 
-	</artist> 
-    <artist> 
-	  <name>Céline Dion</name> 
-	  <url>http://www.last.fm/music/C%C3%A9line+Dion</url> 
-	  <image size="small">http://userserve-ak.last.fm/serve/34/39611203.png</image> 
-	  <image size="medium">http://userserve-ak.last.fm/serve/64/39611203.png</image> 
-	  <image size="large">http://userserve-ak.last.fm/serve/126/39611203.png</image> 
-	  <image size="extralarge">http://userserve-ak.last.fm/serve/252/39611203.png</image> 
-	  <image size="mega">http://userserve-ak.last.fm/serve/500/39611203/Cline+Dion+PNG4.png</image> 
-	</artist> 
-  </similar> 
-    <tags> 
-        <tag> 
-	  <name>pop</name> 
-	  <url>http://www.last.fm/tag/pop</url> 
-	</tag> 
-        <tag> 
-	  <name>female vocalists</name> 
-	  <url>http://www.last.fm/tag/female%20vocalists</url> 
-	</tag> 
-        <tag> 
-	  <name>80s</name> 
-	  <url>http://www.last.fm/tag/80s</url> 
-	</tag> 
-        <tag> 
-	  <name>dance</name> 
-	  <url>http://www.last.fm/tag/dance</url> 
-	</tag> 
-        <tag> 
-	  <name>rock</name> 
-	  <url>http://www.last.fm/tag/rock</url> 
-	</tag> 
-      </tags> 
-      <bio> 
-    <published>Sat, 11 Dec 2010 23:49:01 +0000</published> 
-    <summary><![CDATA[Cher (born Cherilyn Sarkisian on May 20, 1946, later adopted by Gilbert LaPierre.) is an American singer, actress, songwriter, author and entertainer. Among her many career accomplishments in music, television and film, she has won an Academy Award, a Grammy Award, an Emmy Award and three Golden Globe Awards among others.  Referred to as the Goddess of Pop, Cher first rose to prominence in 1965 as one half of the pop/rock duo Sonny &amp; Cher.]]></summary> 
-    <content><![CDATA[Cher (born Cherilyn Sarkisian on May 20, 1946, later adopted by Gilbert LaPierre.) is an American singer, actress, songwriter, author and entertainer. Among her many career accomplishments in music, television and film, she has won an Academy Award, a Grammy Award, an Emmy Award and three Golden Globe Awards among others.
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+  <artist>
+    <name>Cher</name>
+    <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+    <url>http://www.last.fm/music/Cher</url>
+    <image size="small">http://userserve-ak.last.fm/serve/34/63111289.png</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64/63111289.png</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/63111289.png</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/252/63111289.png</image>
+    <image size="mega">http://userserve-ak.last.fm/serve/500/63111289/Cher.png</image>
+    <streamable>1</streamable>
+    <stats>
+      <listeners>665718</listeners>
+      <playcount>6419503</playcount>
+    </stats>
+    <similar>
+      <artist>
+        <name>Sonny &amp; Cher</name>
+        <url>http://www.last.fm/music/Sonny%2B%2526%2BCher</url>
+        <image size="small">http://userserve-ak.last.fm/serve/34/244080.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/244080.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/244080.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/244080.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/244080/Sonny++Cher.jpg</image>
+      </artist>
+      <artist>
+        <name>Madonna</name>
+        <url>http://www.last.fm/music/Madonna</url>
+        <image size="small">http://userserve-ak.last.fm/serve/34/41422453.png</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/41422453.png</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/41422453.png</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/41422453.png</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/41422453/Madonna+PNG.png</image>
+      </artist>
+      <artist>
+        <name>Cyndi Lauper</name>
+        <url>http://www.last.fm/music/Cyndi+Lauper</url>
+        <image size="small">http://userserve-ak.last.fm/serve/34/6967243.jpg</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/6967243.jpg</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/6967243.jpg</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/6967243.jpg</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/500/6967243/Cyndi+Lauper+cl_kt03_5x6a_640.jpg</image>
+      </artist>
+      <artist>
+        <name>Kylie Minogue</name>
+        <url>http://www.last.fm/music/Kylie+Minogue</url>
+        <image size="small">http://userserve-ak.last.fm/serve/34/62311929.png</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/62311929.png</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/62311929.png</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/62311929.png</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/_/62311929/Kylie+Minogue+Kylie.png</image>
+      </artist>
+      <artist>
+        <name>Céline Dion</name>
+        <url>http://www.last.fm/music/C%C3%A9line+Dion</url>
+        <image size="small">http://userserve-ak.last.fm/serve/34/39611203.png</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/39611203.png</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/39611203.png</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/39611203.png</image>
+        <image size="mega">http://userserve-ak.last.fm/serve/500/39611203/Cline+Dion+PNG4.png</image>
+      </artist>
+    </similar>
+    <tags>
+      <tag>
+        <name>pop</name>
+        <url>http://www.last.fm/tag/pop</url>
+      </tag>
+      <tag>
+        <name>female vocalists</name>
+        <url>http://www.last.fm/tag/female%20vocalists</url>
+      </tag>
+      <tag>
+        <name>80s</name>
+        <url>http://www.last.fm/tag/80s</url>
+      </tag>
+      <tag>
+        <name>dance</name>
+        <url>http://www.last.fm/tag/dance</url>
+      </tag>
+      <tag>
+        <name>rock</name>
+        <url>http://www.last.fm/tag/rock</url>
+      </tag>
+    </tags>
+    <bio>
+      <published>Sat, 11 Dec 2010 23:49:01 +0000</published>
+      <summary><![CDATA[Cher (born Cherilyn Sarkisian on May 20, 1946, later adopted by Gilbert LaPierre.) is an American singer, actress, songwriter, author and entertainer. Among her many career accomplishments in music, television and film, she has won an Academy Award, a Grammy Award, an Emmy Award and three Golden Globe Awards among others.  Referred to as the Goddess of Pop, Cher first rose to prominence in 1965 as one half of the pop/rock duo Sonny &amp; Cher.]]></summary>
+      <content><![CDATA[Cher (born Cherilyn Sarkisian on May 20, 1946, later adopted by Gilbert LaPierre.) is an American singer, actress, songwriter, author and entertainer. Among her many career accomplishments in music, television and film, she has won an Academy Award, a Grammy Award, an Emmy Award and three Golden Globe Awards among others.
  
  Referred to as the Goddess of Pop, Cher first rose to prominence in 1965 as one half of the pop/rock duo Sonny &amp; Cher. She also established herself as a solo recording artist, releasing 25 albums, contributing to numerous compilations, and tallying 34 Billboard Top 40 entries over her career, both solo and with Sonny. These include eighteen Top 10 singles and five number one singles (four solo). Cher has had 16 top ten hits in the UK between 1965 and 2003, four of which reached number one (two solo, one with Sonny, one as part of a charity single).
  
@@ -103,6 +102,7 @@
  
  Cher made her musical debut and first film role in a decade in <em>Burlesque</em>, starring alongside Christina Aguilera, who also made her musical and film debut. The film was released in November 2010.
     
-User-contributed text is available under the Creative Commons By-SA License and may also be available under the GNU FDL.]]></content> 
-  </bio> 
-  </artist></lfm>
+User-contributed text is available under the Creative Commons By-SA License and may also be available under the GNU FDL.]]></content>
+    </bio>
+  </artist>
+</lfm>

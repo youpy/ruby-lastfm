@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+  <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
+    <id>1073657</id>
+    <title>Neko Case</title>
+    <artists>
+      <artist>Neko Case</artist>
+      <headliner>Neko Case</headliner>
+    </artists>
+    <venue>
+      <id>8783057</id>
+      <name>Ryman Auditorium</name>
+      <location>
+        <city>Nashville</city>
+        <country>United States</country>
+        <street>116 Fifth Avenue North</street>
+        <postalcode>37219</postalcode>
+        <geo:point>
+          <geo:lat>36.16148</geo:lat>
+          <geo:long>-86.777959</geo:long>
+        </geo:point>
+      </location>
+      <url>http://www.last.fm/venue/8783057</url>
+    </venue>
+    <startDate>Sat, 25 Jul 2009 20:00:00</startDate>
+    <description/>
+    <image size="small">http://userserve-ak.last.fm/serve/34/17278547.jpg</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64/17278547.jpg</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/17278547.jpg</image>
+    <attendance>2</attendance>
+    <reviews>0</reviews>
+    <tag>lastfm:event=1073657</tag>
+    <url>http://www.last.fm/event/1073657</url>
+    <website>http://www.ryman.com/</website>
+    <tickets>
+      <ticket supplier="TicketMaster">http://www.last.fm/affiliate_redirect.php?restype=29&amp;id=1073657&amp;supplier=12</ticket>
+    </tickets>
+  </event>
+</lfm>

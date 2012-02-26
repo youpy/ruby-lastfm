@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <lfm status="ok">
-  <events artist="Cher" xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" total="1">
-    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" >
+  <events xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#" artist="Cher" total="1">
+    <event xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#">
       <id>1584537</id>
       <title>Cher</title>
       <artists>
@@ -17,21 +17,21 @@
           <street>3570 Las Vegas Blvd South</street>
           <postalcode>89109</postalcode>
           <geo:point>
-             <geo:lat>36.116143</geo:lat>
-             <geo:long>-115.176416</geo:long>
+            <geo:lat>36.116143</geo:lat>
+            <geo:long>-115.176416</geo:long>
           </geo:point>
         </location>
         <url>http://www.last.fm/venue/8912825+The+Colosseum+At+Caesars+Palace</url>
-        <website></website>
-        <phonenumber></phonenumber>
-        <image size="small"></image>
-        <image size="medium"></image>
-        <image size="large"></image>
-        <image size="extralarge"></image>
-        <image size="mega"></image>
+        <website/>
+        <phonenumber/>
+        <image size="small"/>
+        <image size="medium"/>
+        <image size="large"/>
+        <image size="extralarge"/>
+        <image size="mega"/>
       </venue>
       <startDate>Sat, 23 Oct 2010 19:30:00</startDate>
-      <description></description>
+      <description/>
       <image size="small">http://userserve-ak.last.fm/serve/34/34814037.jpg</image>
       <image size="medium">http://userserve-ak.last.fm/serve/64/34814037.jpg</image>
       <image size="large">http://userserve-ak.last.fm/serve/126/34814037.jpg</image>
@@ -40,7 +40,7 @@
       <reviews>0</reviews>
       <tag>lastfm:event=1584537</tag>
       <url>http://www.last.fm/event/1584537+Cher</url>
-      <website></website>
+      <website/>
       <tickets>
         <ticket supplier="TicketMaster">http://www.last.fm/affiliate/byid/29/1584537/12/ws.artist.events.b25b959554ed76058ac220b7b2e0a026</ticket>
       </tickets>

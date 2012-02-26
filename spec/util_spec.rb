@@ -11,11 +11,11 @@ describe Lastfm::Util do
         ['foo', nil],
         [:foo],
         [[:bar, 'xxx'], [:baz, nil]
-        ]).should eql({
+        ]).should == {
           :foo => 'foo',
           :bar => 'xxx',
           :baz => nil,
-        })
+        }
     end
 
     it 'should use proc object to set optional value' do
@@ -23,10 +23,10 @@ describe Lastfm::Util do
         ['foo', nil],
         [:foo],
         [[:bar, Proc.new { 'xxx' }]
-        ]).should eql({
+        ]).should == {
           :foo => 'foo',
           :bar => 'xxx',
-        })
+        }
     end
   end
 end

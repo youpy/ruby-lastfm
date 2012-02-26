@@ -1,6 +1,6 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
-describe "Lastfm::Response" do
+describe 'Lastfm::Response' do
   before do
     @ok = open(fixture('ok.xml')).read
     @ng = open(fixture('ng.xml')).read
@@ -23,7 +23,7 @@ describe "Lastfm::Response" do
 
     it 'should parse response body as xml' do
       xml = @response.xml
-      xml['similartracks']['track'].size.should eql(7)
+      xml['similartracks']['track'].size.should == 7
     end
   end
 
@@ -37,11 +37,11 @@ describe "Lastfm::Response" do
     end
 
     it 'should have message' do
-      @response.message.should eql('Invalid API key - You must be granted a valid key by last.fm')
+      @response.message.should == 'Invalid API key - You must be granted a valid key by last.fm'
     end
 
     it 'should have error number' do
-      @response.error.should eql(10)
+      @response.error.should == 10
     end
   end
 end

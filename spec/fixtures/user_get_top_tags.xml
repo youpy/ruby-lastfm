@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+  <toptags user="RJ">
+    <tag>
+      <name>rock</name>
+      <count>19</count>
+      <url>www.last.fm/tag/rock</url>
+    </tag>
+    <tag>
+      <name>jazz</name>
+      <count>15</count>
+      <url>www.last.fm/tag/jazz</url>
+    </tag>
+    <tag>
+      <name>metal</name>
+      <count>10</count>
+      <url>www.last.fm/tag/metal</url>
+    </tag>
+    <tag>
+      <name>soul</name>
+      <count>8</count>
+      <url>www.last.fm/tag/soul</url>
+    </tag>
+    <tag>
+      <name>female vocalists</name>
+      <count>8</count>
+      <url>www.last.fm/tag/female%20vocalists</url>
+    </tag>
+  </toptags>
+</lfm>
