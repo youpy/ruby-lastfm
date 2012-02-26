@@ -61,7 +61,7 @@ class Lastfm
   def tag
     MethodCategory::Tag.new(self)
   end
-  
+
   def track
     MethodCategory::Track.new(self)
   end

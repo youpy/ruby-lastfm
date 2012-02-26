@@ -151,4 +151,18 @@ describe '#user' do
       tracks.size.should == 2
     end
   end
+  
+  describe '#get_top_tags' do
+    it 'should get user\'s top tags' do
+      @lastfm.should_receive(:request).with('user.getTopTags', {
+        :user => 'test',
+        :limit => nil
+      }).and_return(make_response('user_get_top_tags'))
+      tags = @lastfm.user.get_top_tags('test')
+      tags[0]['name'].should == 'rock'
+      tags[0]['count'].should == '19'
+      tags[1]['count'].should == '15'
+      tags.size.should == 5
+    end
+  end
 end
