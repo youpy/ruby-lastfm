@@ -1,6 +1,6 @@
 require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 
-describe "Lastfm::Response" do
+describe 'Lastfm::Response' do
   before do
     @ok = open(fixture('ok.xml')).read
     @ng = open(fixture('ng.xml')).read

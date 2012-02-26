@@ -24,10 +24,10 @@ describe '#geo' do
     events[0]['artists']['headliner'].should == 'Not Breathing'
     events[0]['venue']['name'].should == 'The Walnut Room'
     events[0]['venue']['location']['city'].should == 'Denver, CO'
-    events[0]['venue']['location']['point']['lat'].should == "39.764316"
+    events[0]['venue']['location']['point']['lat'].should == '39.764316'
     events[0]['image'].size.should == 4
     events[0]['image'][0]['size'].should == 'small'
     events[0]['image'][0]['content'].should == 'http://userserve-ak.last.fm/serve/34/166214.jpg'
-    events[0]['startDate'].should == "Fri, 10 Jun 2011 01:58:01"
+    events[0]['startDate'].should == 'Fri, 10 Jun 2011 01:58:01'
   end
 end

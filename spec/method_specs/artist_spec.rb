@@ -33,13 +33,13 @@ describe '#artist' do
     events[0]['artists']['headliner'].should == 'Cher'
     events[0]['venue']['name'].should == 'The Colosseum At Caesars Palace'
     events[0]['venue']['location']['city'].should == 'Las Vegas(, NV)'
-    events[0]['venue']['location']['point']['lat'].should == "36.116143"
+    events[0]['venue']['location']['point']['lat'].should == '36.116143'
     events[0]['image'].size.should == 4
     events[0]['image'][0]['size'].should == 'small'
     events[0]['image'][0]['content'].should == 'http://userserve-ak.last.fm/serve/34/34814037.jpg'
-    events[0]['startDate'].should == "Sat, 23 Oct 2010 19:30:00"
-    events[0]['tickets']['ticket']['supplier'].should == "TicketMaster"
-    events[0]['tickets']['ticket']['content'].should == "http://www.last.fm/affiliate/byid/29/1584537/12/ws.artist.events.b25b959554ed76058ac220b7b2e0a026"
-    events[0]['tags']['tag'].should == ["pop", "dance", "female vocalists", "80s", "cher"]
+    events[0]['startDate'].should == 'Sat, 23 Oct 2010 19:30:00'
+    events[0]['tickets']['ticket']['supplier'].should == 'TicketMaster'
+    events[0]['tickets']['ticket']['content'].should == 'http://www.last.fm/affiliate/byid/29/1584537/12/ws.artist.events.b25b959554ed76058ac220b7b2e0a026'
+    events[0]['tags']['tag'].should == ['pop', 'dance', 'female vocalists', '80s', 'cher']
   end
 end

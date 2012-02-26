@@ -29,13 +29,13 @@ describe '#user' do
       artists = @lastfm.user.get_top_artists('test', 'overall', nil, nil)
 
       artists.size.should == 3
-      artists[0]['name'].should == "Pain of Salvation"
+      artists[0]['name'].should == 'Pain of Salvation'
       artists[0]['playcount'].should == '1354'
 
-      artists[1]['name'].should == "Opeth"
+      artists[1]['name'].should == 'Opeth'
       artists[1]['playcount'].should == '1186'
 
-      artists[2]['name'].should == "Nevermore"
+      artists[2]['name'].should == 'Nevermore'
       artists[2]['playcount'].should == '959'
     end
   end
