@@ -52,6 +52,7 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 
 * {artist.getEvents}[http://www.lastfm.jp/api/show?service=117]
 * {artist.getInfo}[http://www.last.fm/api/show?service=267]
+* {artist.getSimilar}[http://www.last.fm/api/show/artist.getSimilar]
 
 === User
 

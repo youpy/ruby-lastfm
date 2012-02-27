@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+  <similarartists artist="kid606" streamable="1">
+    <artist>
+      <name>Shitmat</name>
+      <mbid>1234567-0101-463b-b37e-e961136fec39</mbid>
+      <match>1</match>
+      <url>/music/Shitmat</url>
+      <image>http://userserve-ak.last.fm/serve/160/11111.jpg</image>
+    </artist>
+      <artist>
+      <name>Venetian Snares</name>
+      <mbid>56abaa47-0101-463b-b37e-e961136fec39</mbid>
+      <match>0.75</match>
+      <url>/music/Venetian+Snares</url>
+      <image>http://userserve-ak.last.fm/serve/160/211799.jpg</image>
+    </artist>
+  </similarartists>
+</lfm>
