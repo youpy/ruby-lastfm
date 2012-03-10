@@ -113,6 +113,7 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 * {Kyle Fleming}[https://github.com/Garthex]
 * {Lucas}[https://github.com/lfzawacki]
 * {Johan Oskarsson}[https://github.com/johanoskarsson]
+* {Paul Miller}[https://github.com/paulmillr]
 
 == Note on Patches/Pull Requests
 
