@@ -62,6 +62,7 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 * {track.search}[http://www.lastfm.jp/api/show?service=286]
 * {track.share}[http://www.lastfm.jp/api/show?service=305]
 * {track.updateNowPlaying}[http://www.lastfm.jp/api/show?service=454]
+* {track.unlove}[http://www.last.fm/api/show/track.unlove]
 
 === User
 

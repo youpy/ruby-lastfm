@@ -221,4 +221,15 @@ describe '#track' do
       @lastfm.track.update_now_playing('foo artist', 'foo track', 'foo album', 1, '0383dadf-2a4e-4d10-a46a-e9e041da8eb3', nil, nil)
     end
   end
+
+  describe '#unlove' do
+    it 'should unlove' do
+      @lastfm.should_receive(:request).with('track.unlove', {
+        :artist => 'foo artist',
+        :track => 'foo track',
+      }, :post, true, true).and_return(@ok_response)
+
+      @lastfm.track.unlove('foo artist', 'foo track').should be_true
+    end
+  end
 end
