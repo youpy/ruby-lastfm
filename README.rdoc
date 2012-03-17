@@ -103,18 +103,7 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 
 == Comitters
 
-* {Matthew Fawcett}[https://github.com/mattfawcett]
-* {Christopher Peplin}[https://github.com/peplin]
-* {Olli Helenius}[https://github.com/liff]
-* {pipedreambomb}[https://github.com/pipedreambomb]
-* {Danny Olson}[https://github.com/dbolson]
-* {webs}[https://github.com/webs]
-* {Gregory Eremin}[https://github.com/magnolia-fan]
-* {Gary Shannon}[https://github.com/garyadamshannon]
-* {Kyle Fleming}[https://github.com/Garthex]
-* {Lucas}[https://github.com/lfzawacki]
-* {Johan Oskarsson}[https://github.com/johanoskarsson]
-* {Paul Miller}[https://github.com/paulmillr]
+see https://github.com/youpy/ruby-lastfm/contributors 
 
 == Note on Patches/Pull Requests
 
