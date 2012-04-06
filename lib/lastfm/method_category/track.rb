@@ -13,9 +13,11 @@ class Lastfm
       regular_method :get_info, [:artist, :track], [[:username, nil]] do |response|
         response.xml['track']
       end
-      regular_method :get_correction, [:artist, :track], [[:username, nil]] do |response|
-        response.xml['correction']
+
+      regular_method :get_correction, [:artist, :track], [] do |response|
+        response.xml['corrections']['correction']
       end
+
       regular_method :get_top_fans, [:artist, :track], [] do |response|
         response.xml['topfans']['user']
       end

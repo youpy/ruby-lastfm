@@ -67,11 +67,13 @@ describe '#track' do
     it 'should get correction' do
       @lastfm.should_receive(:request).with('track.getCorrection', {
         :artist => 'White Stripes',
-        :track => 'One More Cup of Coffee',
-        :username => 'wainekerr',
+        :track => 'One More Cup of Coffee'
       }).and_return(make_response('track_get_correction'))
 
-      correction = @lastfm.track.get_correction('White Stripes', 'One More Cup of Coffee', 'wainekerr')
+      corrections = @lastfm.track.get_correction('White Stripes', 'One More Cup of Coffee')
+      correction = corrections.first
+
+      corrections.size.should eql(1)
       correction['track']['name'].should == 'One More Cup of Coffee'
       correction['track']['artist']['name'].should == 'The White Stripes'
       correction['track']['url'].should == 'www.last.fm/music/The+White+Stripes/_/One+More+Cup+of+Coffee'
