@@ -1,4 +1,4 @@
-= ruby-lastfm
+= ruby-lastfm {<img src="https://secure.travis-ci.org/youpy/ruby-lastfm.png?rvm=1.9.3" />}[http://travis-ci.org/youpy/ruby-lastfm]
 
 A Ruby interface for Last.fm Web Services v2.0
 
