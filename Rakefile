@@ -19,6 +19,15 @@ Jeweler::Tasks.new do |gem|
   gem.email = "youpy@buycheapviagraonlinenow.com"
   gem.homepage = "http://github.com/youpy/ruby-lastfm"
   gem.authors = ["youpy"]
+
+  gem.add_dependency 'rake', '>= 0.9.2'
+  gem.add_dependency "xml-simple"
+  gem.add_dependency "httparty"
+  gem.add_dependency 'activesupport', '>= 3.0.3'
+
+  gem.add_development_dependency 'rspec', '~> 2.8.0'
+  gem.add_development_dependency 'jeweler', '~> 1.6.4'
+  gem.add_development_dependency 'rdoc'
 end
 
 require 'rspec/core'

@@ -5,3 +5,4 @@ rdoc
 pkg
 vendor/bundle
 .bundle
+Gemfile.lock
