@@ -76,4 +76,20 @@ describe '#artist' do
       tags[1]['name'].should == 'Awesome'
     end
   end
+
+  describe '#search' do
+    it 'should search' do
+      @lastfm.should_receive(:request).with('artist.search', {
+        :artist => 'RADWIMPS',
+        :limit => 10,
+        :page => 3,
+      }).and_return(make_response('artist_search'))
+
+      tracks = @lastfm.artist.search('RADWIMPS', 10, 3)
+      tracks['results']['for'].should == 'RADWIMPS'
+      tracks['results']['totalResults'].should == '3'
+      tracks['results']['artistmatches']['artist'].size.should == 3
+      tracks['results']['artistmatches']['artist'][0]['name'].should == 'RADWIMPS'
+    end
+  end
 end
