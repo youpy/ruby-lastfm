@@ -1,0 +1,50 @@
+<lfm status="ok">
+  <results xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" for="RADWIMPS">
+    <opensearch:Query role="request" searchTerms="RADWIMPS" startPage="1"/>
+    <opensearch:totalResults>3</opensearch:totalResults>
+    <opensearch:startIndex>0</opensearch:startIndex>
+    <opensearch:itemsPerPage>30</opensearch:itemsPerPage>
+    <artistmatches>
+      <artist>
+        <name>RADWIMPS</name>
+        <listeners>46672</listeners>
+        <mbid>6f500293-7396-4903-b4fd-118127d06f9e</mbid>
+        <url>http://www.last.fm/music/RADWIMPS</url>
+        <streamable>1</streamable>
+        <image size="small">http://userserve-ak.last.fm/serve/34/48041869.png</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64/48041869.png</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/48041869.png</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/252/48041869.png</image>
+        <image size="mega">
+          http://userserve-ak.last.fm/serve/500/48041869/RADWIMPS+rad.png
+        </image>
+      </artist>
+      <artist>
+        <name>ＲＡＤＷＩＭＰＳ</name>
+        <listeners>250</listeners>
+        <mbid/>
+        <url>
+          http://www.last.fm/music/%EF%BC%B2%EF%BC%A1%EF%BC%A4%EF%BC%B7%EF%BC%A9%EF%BC%AD%EF%BC%B0%EF%BC%B3
+        </url>
+        <streamable>0</streamable>
+        <image size="small"/>
+        <image size="medium"/>
+        <image size="large"/>
+        <image size="extralarge"/>
+        <image size="mega"/>
+      </artist>
+      <artist>
+        <name>RADWIMPＳ</name>
+        <listeners>8</listeners>
+        <mbid/>
+        <url>http://www.last.fm/music/RADWIMP%EF%BC%B3</url>
+        <streamable>0</streamable>
+        <image size="small"/>
+        <image size="medium"/>
+        <image size="large"/>
+        <image size="extralarge"/>
+        <image size="mega"/>
+      </artist>
+    </artistmatches>
+  </results>
+</lfm>

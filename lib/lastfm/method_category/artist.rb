@@ -16,6 +16,8 @@ class Lastfm
       regular_method :get_tags, [:artist], [[:user, nil], [:mbid, nil], [:autocorrect, nil]] do |response|
         response.xml['tags']['tag']
       end
+
+      regular_method :search, [:artist], [[:limit, nil], [:page, nil]]
     end
   end
 end
