@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "lastfm"
-  s.version = "1.5.1"
+  s.version = "1.6.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["youpy"]
-  s.date = "2012-04-10"
+  s.date = "2012-05-29"
   s.description = "A ruby interface for Last.fm web services version 2.0"
   s.email = "youpy@buycheapviagraonlinenow.com"
   s.extra_rdoc_files = [
@@ -21,7 +21,6 @@ Gem::Specification.new do |s|
     ".rspec",
     ".travis.yml",
     "Gemfile",
-    "Gemfile.lock",
     "LICENSE",
     "README.rdoc",
     "Rakefile",
@@ -45,6 +44,7 @@ Gem::Specification.new do |s|
     "spec/fixtures/artist_get_info.xml",
     "spec/fixtures/artist_get_similar.xml",
     "spec/fixtures/artist_get_tags.xml",
+    "spec/fixtures/artist_search.xml",
     "spec/fixtures/event_get_info.xml",
     "spec/fixtures/geo_get_events.xml",
     "spec/fixtures/library_get_artists.xml",
@@ -101,6 +101,9 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<rspec>, ["~> 2.8.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.6.4"])
       s.add_development_dependency(%q<rdoc>, [">= 0"])
+      s.add_development_dependency(%q<rspec>, ["~> 2.8.0"])
+      s.add_development_dependency(%q<jeweler>, ["~> 1.6.4"])
+      s.add_development_dependency(%q<rdoc>, [">= 0"])
       s.add_runtime_dependency(%q<rake>, [">= 0.9.2"])
       s.add_runtime_dependency(%q<xml-simple>, [">= 0"])
       s.add_runtime_dependency(%q<httparty>, [">= 0"])
@@ -111,6 +114,9 @@ Gem::Specification.new do |s|
     else
       s.add_dependency(%q<lastfm>, [">= 0"])
       s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
+      s.add_dependency(%q<rspec>, ["~> 2.8.0"])
+      s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
+      s.add_dependency(%q<rdoc>, [">= 0"])
       s.add_dependency(%q<rspec>, ["~> 2.8.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
       s.add_dependency(%q<rdoc>, [">= 0"])
@@ -125,6 +131,9 @@ Gem::Specification.new do |s|
   else
     s.add_dependency(%q<lastfm>, [">= 0"])
     s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
+    s.add_dependency(%q<rspec>, ["~> 2.8.0"])
+    s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
+    s.add_dependency(%q<rdoc>, [">= 0"])
     s.add_dependency(%q<rspec>, ["~> 2.8.0"])
     s.add_dependency(%q<jeweler>, ["~> 1.6.4"])
     s.add_dependency(%q<rdoc>, [">= 0"])
