@@ -7,17 +7,25 @@ class Lastfm
     def self.build_options(args, mandatory, optional)
       options = {}
 
-      mandatory.each_with_index do |name, index|
-        raise ArgumentError.new('%s is required' % name) unless args[index]
-        options[name] = args[index]
-      end
-
-      optional.each_with_index do |name, index|
-        value = name[1]
-        if value.kind_of?(Proc)
-          value = value.call
+      if args.first.is_a?(Hash)
+        # mandatory parameter check
+        mandatory.each do |name|
+          raise ArgumentError.new("#{name} is required") unless args.first.has_key?(name)
         end
-        options[name[0]] = args[index + mandatory.size] || value
+        options = args.first
+      else
+        mandatory.each_with_index do |name, index|
+          raise ArgumentError.new('%s is required' % name) unless args[index]
+          options[name] = args[index]
+        end
+
+        optional.each_with_index do |name, index|
+          value = name[1]
+          if value.kind_of?(Proc)
+            value = value.call
+          end
+          options[name[0]] = args[index + mandatory.size] || value
+        end
       end
 
       options
