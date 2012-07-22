@@ -53,7 +53,7 @@ class Lastfm
         response.xml['toptracks']['track']
       end
       
-      regular_method :get_artist_tracks, [:user], [:artist], [[:period, nil], [:limit, nil], [:page, nil]] do |response|
+      regular_method :get_artist_tracks, [:user], [[:artist, 'abandon all ships'], [:period, nil], [:limit, nil], [:page, nil]] do |response|
         response.xml['artisttracks']['track']
       end
     end
