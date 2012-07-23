@@ -16,7 +16,7 @@ describe '#library' do
         :limit => nil,
         :page => nil
       }).and_return(make_response('library_get_tracks'))
-      tracks = @lastfm.library.get_tracks('test', 'foo', 'bar')
+      tracks = @lastfm.library.get_tracks(:user => 'test', :artist => 'foo', :album => 'bar')
       tracks[0]['name'].should == 'Learning to Live'
       tracks.size.should == 1
     end
@@ -29,7 +29,7 @@ describe '#library' do
         :limit => nil,
         :page => nil
       }).and_return(make_response('library_get_artists'))
-      artists = @lastfm.library.get_artists('test')
+      artists = @lastfm.library.get_artists(:user => 'test')
       artists[1]['name'].should == 'Dark Castle'
       artists.size.should == 2
     end

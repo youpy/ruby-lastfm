@@ -15,7 +15,11 @@ describe '#track' do
         :tags => 'aaa,bbb,ccc'
       }, :post, true, true).and_return(@ok_response)
 
-      @lastfm.track.add_tags('foo artist', 'foo track', 'aaa,bbb,ccc').should be_true
+      @lastfm.track.add_tags(
+        :artist => 'foo artist',
+        :track => 'foo track',
+        :tags => 'aaa,bbb,ccc'
+        ).should be_true
     end
   end
 
@@ -26,7 +30,7 @@ describe '#track' do
         :track => 'foo track',
       }, :post, true, true).and_return(@ok_response)
 
-      @lastfm.track.ban('foo artist', 'foo track').should be_true
+      @lastfm.track.ban(:artist => 'foo artist', :track => 'foo track').should be_true
     end
   end
 
@@ -38,7 +42,10 @@ describe '#track' do
         :username => 'youpy',
       }).and_return(make_response('track_get_info'))
 
-      track = @lastfm.track.get_info('Cher', 'Believe', 'youpy')
+      track = @lastfm.track.get_info(
+        :artist => 'Cher',
+        :track => 'Believe',
+        :username => 'youpy')
       track['name'].should == 'Believe'
       track['album']['image'].size.should == 4
       track['album']['image'].first['size'].should == 'small'
@@ -54,7 +61,10 @@ describe '#track' do
         :username => 'youpy',
       }).and_return(make_response('track_get_info_force_array'))
 
-      track = @lastfm.track.get_info('Cher', 'Believe', 'youpy')
+      track = @lastfm.track.get_info(
+        :artist => 'Cher',
+        :track => 'Believe',
+        :username => 'youpy')
       track['album']['image'].size.should == 1
       track['album']['image'].first['size'].should == 'small'
       track['album']['image'].first['content'].should == 'http://userserve-ak.last.fm/serve/64s/8674593.jpg'
@@ -70,7 +80,9 @@ describe '#track' do
         :track => 'One More Cup of Coffee'
       }).and_return(make_response('track_get_correction'))
 
-      corrections = @lastfm.track.get_correction('White Stripes', 'One More Cup of Coffee')
+      corrections = @lastfm.track.get_correction(
+        :artist => 'White Stripes',
+        :track => 'One More Cup of Coffee')
       correction = corrections.first
 
       corrections.size.should eql(1)
@@ -87,7 +99,9 @@ describe '#track' do
         :track => 'Believe',
       }).and_return(make_response('track_get_similar'))
 
-      tracks = @lastfm.track.get_similar('Cher', 'Believe')
+      tracks = @lastfm.track.get_similar(
+        :artist => 'Cher',
+        :track => 'Believe')
       tracks.size.should == 5
       tracks.first['name'].should == 'Strong Enough'
       tracks.first['image'][1]['content'].should == 'http://userserve-ak.last.fm/serve/64s/8674593.jpg'
@@ -102,7 +116,9 @@ describe '#track' do
         :track => 'foo track',
       }, :get, true, true).and_return(make_response('track_get_tags'))
 
-      tags = @lastfm.track.get_tags('foo artist', 'foo track')
+      tags = @lastfm.track.get_tags(
+        :artist => 'foo artist',
+        :track => 'foo track')
       tags.size.should == 2
       tags[0]['name'].should == 'swedish'
       tags[0]['url'].should == 'http://www.last.fm/tag/swedish'
@@ -116,7 +132,9 @@ describe '#track' do
         :track => 'foo track',
       }).and_return(make_response('track_get_top_fans'))
 
-      users = @lastfm.track.get_top_fans('foo artist', 'foo track')
+      users = @lastfm.track.get_top_fans(
+        :artist => 'foo artist',
+        :track => 'foo track')
       users.size.should == 2
       users[0]['name'].should == 'Through0glass'
     end
@@ -129,7 +147,9 @@ describe '#track' do
         :track => 'foo track',
       }).and_return(make_response('track_get_top_tags'))
 
-      tags = @lastfm.track.get_top_tags('foo artist', 'foo track')
+      tags = @lastfm.track.get_top_tags(
+        :artist => 'foo artist',
+        :track => 'foo track')
       tags.size.should == 2
       tags[0]['name'].should == 'alternative'
       tags[0]['count'].should == '100'
@@ -144,7 +164,9 @@ describe '#track' do
         :track => 'foo track',
       }, :post, true, true).and_return(@ok_response)
 
-      @lastfm.track.love('foo artist', 'foo track').should be_true
+      @lastfm.track.love(
+        :artist => 'foo artist',
+        :track => 'foo track').should be_true
     end
   end
 
@@ -156,7 +178,10 @@ describe '#track' do
         :tag => 'aaa'
       }, :post, true, true).and_return(@ok_response)
 
-      @lastfm.track.remove_tag('foo artist', 'foo track', 'aaa').should be_true
+      @lastfm.track.remove_tag(
+        :artist => 'foo artist',
+        :track => 'foo track',
+        :tag => 'aaa').should be_true
     end
   end
 
@@ -169,7 +194,10 @@ describe '#track' do
         :page => 3,
       }).and_return(make_response('track_search'))
 
-      tracks = @lastfm.track.search('Believe', nil, 10, 3)
+      tracks = @lastfm.track.search(
+        :track => 'Believe',
+        :limit => 10,
+        :page => 3)
       tracks['results']['for'].should == 'Believe'
       tracks['results']['totalResults'].should == '40540'
       tracks['results']['trackmatches']['track'].size.should == 2
@@ -186,7 +214,11 @@ describe '#track' do
         :recipient => 'foo@example.com',
       }, :post, true, true).and_return(@ok_response)
 
-      @lastfm.track.share('foo artist', 'foo track', 'foo@example.com', 'this is a message').should be_true
+      @lastfm.track.share(
+        :artist => 'foo artist',
+        :track => 'foo track',
+        :recipient => 'foo@example.com',
+        :message => 'this is a message').should be_true
     end
   end
 
@@ -204,7 +236,13 @@ describe '#track' do
         :albumArtist => nil,
       }, :post, true, true).and_return(@ok_response)
 
-      @lastfm.track.scrobble('foo artist', 'foo track', time, 'foo album', 1, '0383dadf-2a4e-4d10-a46a-e9e041da8eb3', nil, nil)
+      @lastfm.track.scrobble(
+        :artist => 'foo artist',
+        :track => 'foo track',
+        :timestamp => time,
+        :album => 'foo album',
+        :trackNumber => 1,
+        :mbid => '0383dadf-2a4e-4d10-a46a-e9e041da8eb3')
     end
   end
 
@@ -220,7 +258,12 @@ describe '#track' do
         :albumArtist => nil,
       }, :post, true, true).and_return(@ok_response)
 
-      @lastfm.track.update_now_playing('foo artist', 'foo track', 'foo album', 1, '0383dadf-2a4e-4d10-a46a-e9e041da8eb3', nil, nil)
+      @lastfm.track.update_now_playing(
+        :artist =>'foo artist',
+        :track => 'foo track',
+        :album => 'foo album',
+        :trackNumber => 1,
+        :mbid => '0383dadf-2a4e-4d10-a46a-e9e041da8eb3')
     end
   end
 
@@ -231,7 +274,9 @@ describe '#track' do
         :track => 'foo track',
       }, :post, true, true).and_return(@ok_response)
 
-      @lastfm.track.unlove('foo artist', 'foo track').should be_true
+      @lastfm.track.unlove(
+        :artist => 'foo artist',
+        :track => 'foo track').should be_true
     end
   end
 end

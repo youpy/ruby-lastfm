@@ -16,7 +16,7 @@ describe '#geo' do
         :page => nil
       }).and_return(make_response('geo_get_events'))
 
-      events = @lastfm.geo.get_events('Boulder')
+      events = @lastfm.geo.get_events(:location => 'Boulder')
       events.size.should == 1
       events[0]['title'].should == 'Transistor Festival'
       events[0]['artists'].size.should == 2

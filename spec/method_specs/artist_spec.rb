@@ -13,7 +13,7 @@ describe '#artist' do
         :artist => 'Cher'
       }).and_return(make_response('artist_get_info'))
 
-      artist = @lastfm.artist.get_info('Cher')
+      artist = @lastfm.artist.get_info(:artist => 'Cher')
       artist['name'].should == 'Cher'
       artist['mbid'].should == 'bfcc6d75-a6a5-4bc6-8282-47aec8531818'
       artist['url'].should == 'http://www.last.fm/music/Cher'
@@ -27,7 +27,7 @@ describe '#artist' do
         :artist => 'Cher'
       }).and_return(make_response('artist_get_events'))
 
-      events = @lastfm.artist.get_events('Cher')
+      events = @lastfm.artist.get_events(:artist => 'Cher')
       events.size.should == 1
       events[0]['title'].should == 'Cher'
       events[0]['artists'].size.should == 2
@@ -51,7 +51,7 @@ describe '#artist' do
         :artist => 'kid606'
       }).and_return(make_response('artist_get_similar'))
 
-      artists = @lastfm.artist.get_similar('kid606')
+      artists = @lastfm.artist.get_similar(:artist => 'kid606')
       artists.size.should == 2
       artists[1]['name'].should == 'Venetian Snares'
       artists[1]['mbid'].should == '56abaa47-0101-463b-b37e-e961136fec39'
@@ -60,7 +60,7 @@ describe '#artist' do
       artists[1]['image'].should == ['http://userserve-ak.last.fm/serve/160/211799.jpg']
     end
   end
-  
+
   describe '#get_tags' do
     it 'should get artist tags' do
       @lastfm.should_receive(:request).with('artist.getTags', {
@@ -70,7 +70,7 @@ describe '#artist' do
         :autocorrect => nil
       }).and_return(make_response('artist_get_tags'))
 
-      tags = @lastfm.artist.get_tags('zebrahead', 'test')
+      tags = @lastfm.artist.get_tags(:artist => 'zebrahead', :user => 'test')
       tags.size.should == 2
       tags[0]['name'].should == 'punk'
       tags[1]['name'].should == 'Awesome'
@@ -85,7 +85,7 @@ describe '#artist' do
         :page => 3,
       }).and_return(make_response('artist_search'))
 
-      tracks = @lastfm.artist.search('RADWIMPS', 10, 3)
+      tracks = @lastfm.artist.search(:artist => 'RADWIMPS', :limit => 10, :page => 3)
       tracks['results']['for'].should == 'RADWIMPS'
       tracks['results']['totalResults'].should == '3'
       tracks['results']['artistmatches']['artist'].size.should == 3
