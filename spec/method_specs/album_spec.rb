@@ -13,7 +13,7 @@ describe '#album' do
         :artist => 'Cher', :album => 'Believe'
       }).and_return(make_response('album_get_info'))
 
-      album = @lastfm.album.get_info('Cher', 'Believe')
+      album = @lastfm.album.get_info(:artist => 'Cher', :album => 'Believe')
       album['name'].should == 'Believe'
       album['artist'].should == 'Cher'
       album['id'].should == '2026126'

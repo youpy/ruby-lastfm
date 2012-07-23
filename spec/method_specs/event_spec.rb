@@ -10,7 +10,7 @@ describe '#event' do
       @lastfm.should_receive(:request).with('event.getInfo', {
         :event => 1073657
       }).and_return(make_response('event_get_info'))
-      info = @lastfm.event.get_info(1073657)
+      info = @lastfm.event.get_info(:event => 1073657)
       info['title'].should == 'Neko Case'
     end
   end

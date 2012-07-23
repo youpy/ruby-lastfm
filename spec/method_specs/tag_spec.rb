@@ -15,7 +15,7 @@ describe '#tag' do
         :page => nil
       }).and_return(make_response('tag_get_top_artists'))
 
-      artists = @lastfm.tag.get_top_artists('Disco')
+      artists = @lastfm.tag.get_top_artists(:tag => 'Disco')
       artists.size.should == 5
       artists[0]['name'].should == 'Bee Gees'
       artists[0]['url'].should == 'http://www.last.fm/music/Bee+Gees'
