@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <lfm status="ok">
+        <artisttracks user="RJ" artist="Metallica" page="1" perPage="50" totalPages="6" items="278">
+            <track> 
+                <artist mbid="65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab">Metallica</artist>
+                <name>Better Than You</name>
+                <streamable>0</streamable>
+                <mbid></mbid>
+                <album mbid="b05cf8e3-67ad-4d40-9dc1-3a697e3a1bf8">Reload</album>
+                <url>http://www.last.fm/music/Metallica/_/Better+Than+You</url>
+                <image size="small">http://userserve-ak.last.fm/serve/34s/8600317.jpg</image>
+                <image size="medium">http://userserve-ak.last.fm/serve/64s/8600317.jpg</image>
+                <image size="large">http://userserve-ak.last.fm/serve/126/8600317.jpg</image>
+                <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/8600317.jpg</image>
+                <date uts="1262887346">7 Jan 2010, 18:02</date>
+        </track>
+</artisttracks>
+</lfm>

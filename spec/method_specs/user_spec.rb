@@ -169,6 +169,20 @@ describe '#user' do
     end
   end
 
+  describe '#get_artist_tracks' do
+    it 'should get user\'s tracks by the provided artist' do
+    @lastfm.should_receive(:request).with('user.getArtistTracks', {
+        :user => 'RJ',
+        :artist => 'Metallica',
+        :page => nil,
+        :limit => nil,
+        :period => nil
+        }).and_return(make_response('user_get_artist_tracks'))
+        tracks = @lastfm.user.get_artist_tracks('RJ','Metallica')
+      end
+    end
+
+
   describe '#get_friends' do
     it 'should get user\'s friends' do
       @lastfm.should_receive(:request).with('user.getFriends', {
@@ -224,5 +238,7 @@ describe '#user' do
       tags[1]['count'].should == '15'
       tags.size.should == 5
     end
+
+    
   end
 end
