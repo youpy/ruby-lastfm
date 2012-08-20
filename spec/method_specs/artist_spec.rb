@@ -15,7 +15,6 @@ describe '#artist' do
 
       top_tracks = @lastfm.artist.get_top_tracks(:artist => 'Cher')
       top_tracks.size.should > 1
-      top_tracks['artist'].should == 'Cher'
     end
   end
   
@@ -27,7 +26,6 @@ describe '#artist' do
 
       top_albums = @lastfm.artist.get_top_albums(:artist => 'Cher')
       top_albums.size.should > 1
-      top_albums['artist'].should == 'Cher'
     end
   end
 
