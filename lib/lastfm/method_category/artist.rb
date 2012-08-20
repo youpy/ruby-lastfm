@@ -1,6 +1,14 @@
 class Lastfm
   module MethodCategory
     class Artist < Base
+      regular_method :get_top_tracks, [:artist], [] do |response|
+        response.xml['toptracks']['track']
+      end
+
+      regular_method :get_top_albums, [:artist], [] do |response|
+        response.xml['topalbums']['album']
+      end
+      
       regular_method :get_info, [:artist], [] do |response|
         response.xml['artist']
       end

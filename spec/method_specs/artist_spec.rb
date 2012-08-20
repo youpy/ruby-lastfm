@@ -7,6 +7,28 @@ describe '#artist' do
     @lastfm.artist.should be_an_instance_of(Lastfm::MethodCategory::Artist)
   end
 
+  describe '#get_top_tracks' do
+    it 'should get top tracks' do
+      @lastfm.should_receive(:request).with('artist.getTopTracks', {
+        :artist => 'Cher'
+      }).and_return(make_response('artist_get_top_tracks'))
+
+      top_tracks = @lastfm.artist.get_top_tracks(:artist => 'Cher')
+      top_tracks.size.should > 1
+    end
+  end
+  
+  describe '#get_top_albums' do
+    it 'should get top albums' do
+      @lastfm.should_receive(:request).with('artist.getTopAlbums', {
+        :artist => 'Cher'
+      }).and_return(make_response('artist_get_top_albums'))
+
+      top_albums = @lastfm.artist.get_top_albums(:artist => 'Cher')
+      top_albums.size.should > 1
+    end
+  end
+
   describe '#get_info' do
     it 'should get info' do
       @lastfm.should_receive(:request).with('artist.getInfo', {
