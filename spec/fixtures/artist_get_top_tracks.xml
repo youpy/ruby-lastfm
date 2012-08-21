@@ -1,0 +1,894 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+	<toptracks artist="Cher" page="1" perPage="50" totalPages="20" total="1000">
+
+		<track rank="1">
+			<name>Believe</name>
+			<duration>239</duration>
+			<playcount>104998</playcount>
+			<listeners>36769</listeners>
+			<mbid>028523f5-23b3-4910-adc1-46d932e2fb55</mbid>
+			<url>http://www.last.fm/music/Cher/_/Believe</url>
+			<streamable fulltrack="0">1</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/41161483.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/41161483.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/41161483.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/41161483.png</image>
+		</track>
+		<track rank="2">
+			<name>If I Could Turn Back Time</name>
+			<duration>240</duration>
+			<playcount>60532</playcount>
+			<listeners>23573</listeners>
+			<mbid>00d97e7b-a417-4866-8c77-33c31ea09834</mbid>
+			<url>http://www.last.fm/music/Cher/_/If+I+Could+Turn+Back+Time</url>
+			<streamable fulltrack="0">1</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/41161483.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/41161483.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/41161483.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/41161483.png</image>
+		</track>
+		<track rank="3">
+			<name>Strong Enough</name>
+			<duration>223</duration>
+			<playcount>36859</playcount>
+			<listeners>12687</listeners>
+			<mbid>03bc1da8-3b25-4060-b843-1fbf60c046a8</mbid>
+			<url>http://www.last.fm/music/Cher/_/Strong+Enough</url>
+			<streamable fulltrack="0">1</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/41161483.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/41161483.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/41161483.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/41161483.png</image>
+		</track>
+		<track rank="4">
+			<name>The Shoop Shoop Song (It's in His Kiss)</name>
+			<duration>156</duration>
+			<playcount>28211</playcount>
+			<listeners>12336</listeners>
+			<mbid>027b8425-4c6a-4d34-9c86-09789b5c1a65</mbid>
+			<url>http://www.last.fm/music/Cher/_/The+Shoop+Shoop+Song+(It%27s+in+His+Kiss)</url>
+			<streamable fulltrack="0">1</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/41161483.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/41161483.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/41161483.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/41161483.png</image>
+		</track>
+		<track rank="5">
+			<name>Welcome to Burlesque</name>
+			<duration>165</duration>
+			<playcount>29355</playcount>
+			<listeners>9535</listeners>
+			<mbid>171a0a78-4521-4c31-b262-b69c9aaee469</mbid>
+			<url>http://www.last.fm/music/Cher/_/Welcome+to+Burlesque</url>
+			<streamable fulltrack="0">1</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/54578571.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/54578571.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/54578571.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/54578571.png</image>
+		</track>
+		<track rank="6">
+			<name>Just Like Jesse James</name>
+			<duration>246</duration>
+			<playcount>21354</playcount>
+			<listeners>8399</listeners>
+			<mbid>0b20236f-f7a6-4200-ab98-63c25d4f3634</mbid>
+			<url>http://www.last.fm/music/Cher/_/Just+Like+Jesse+James</url>
+			<streamable fulltrack="0">1</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/41161483.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/41161483.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/41161483.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/41161483.png</image>
+		</track>
+		<track rank="7">
+			<name>Gypsies, Tramps and Thieves</name>
+			<duration>156</duration>
+			<playcount>17265</playcount>
+			<listeners>7564</listeners>
+			<mbid>008d4cb2-f471-48d9-9df0-861697d3a0d5</mbid>
+			<url>http://www.last.fm/music/Cher/_/Gypsies,+Tramps+and+Thieves</url>
+			<streamable fulltrack="0">1</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/73100658.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/73100658.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/73100658.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/73100658.png</image>
+		</track>
+		<track rank="8">
+			<name>I Found Someone</name>
+			<duration>225</duration>
+			<playcount>18566</playcount>
+			<listeners>7273</listeners>
+			<mbid>044c3d2a-be91-4899-b690-9f6db2d85929</mbid>
+			<url>http://www.last.fm/music/Cher/_/I+Found+Someone</url>
+			<streamable fulltrack="0">1</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/41161483.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/41161483.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/41161483.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/41161483.png</image>
+		</track>
+		<track rank="9">
+			<name>All or Nothing</name>
+			<duration>237</duration>
+			<playcount>18658</playcount>
+			<listeners>6541</listeners>
+			<mbid>12e9720f-c14f-45f1-8c47-de8a3a08f4c0</mbid>
+			<url>http://www.last.fm/music/Cher/_/All+or+Nothing</url>
+			<streamable fulltrack="0">1</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/41161483.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/41161483.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/41161483.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/41161483.png</image>
+		</track>
+		<track rank="10">
+			<name>Walking in Memphis</name>
+			<duration>235</duration>
+			<playcount>13836</playcount>
+			<listeners>5001</listeners>
+			<mbid>2a198833-0dba-4e9e-87ce-4e6cd3fe54b1</mbid>
+			<url>http://www.last.fm/music/Cher/_/Walking+in+Memphis</url>
+			<streamable fulltrack="0">0</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/41161483.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/41161483.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/41161483.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/41161483.png</image>
+		</track>
+		<track rank="11">
+			<name>You Haven't Seen the Last of Me</name>
+			<duration>209</duration>
+			<playcount>17128</playcount>
+			<listeners>4755</listeners>
+			<mbid>7538c485-ac26-4370-8c96-e1ac876895aa</mbid>
+			<url>http://www.last.fm/music/Cher/_/You+Haven%27t+Seen+the+Last+of+Me</url>
+			<streamable fulltrack="0">1</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/54578571.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/54578571.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/54578571.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/54578571.png</image>
+		</track>
+		<track rank="12">
+			<name>Dark Lady</name>
+			<duration>207</duration>
+			<playcount>13285</playcount>
+			<listeners>4414</listeners>
+			<mbid>00f200b6-3b51-4dca-8b0f-d654b3c385db</mbid>
+			<url>http://www.last.fm/music/Cher/_/Dark+Lady</url>
+			<streamable fulltrack="0">1</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/62742881.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/62742881.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/62742881.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/62742881.png</image>
+		</track>
+		<track rank="13">
+			<name>Love and Understanding</name>
+			<duration>284</duration>
+			<playcount>9145</playcount>
+			<listeners>4070</listeners>
+			<mbid>05e41eb6-3139-40ab-8097-4135be959391</mbid>
+			<url>http://www.last.fm/music/Cher/_/Love+and+Understanding</url>
+			<streamable fulltrack="0">1</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/41161483.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/41161483.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/41161483.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/41161483.png</image>
+		</track>
+		<track rank="14">
+			<name>Heart of Stone</name>
+			<duration>256</duration>
+			<playcount>10357</playcount>
+			<listeners>4028</listeners>
+			<mbid>0603c8be-d1ed-44a1-96e0-60c35f393262</mbid>
+			<url>http://www.last.fm/music/Cher/_/Heart+of+Stone</url>
+			<streamable fulltrack="0">1</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/41161483.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/41161483.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/41161483.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/41161483.png</image>
+		</track>
+		<track rank="15">
+			<name>All I Really Want to Do</name>
+			<duration>177</duration>
+			<playcount>7179</playcount>
+			<listeners>3565</listeners>
+			<mbid>00c088e1-f37a-489f-a276-1db9fd6328a2</mbid>
+			<url>http://www.last.fm/music/Cher/_/All+I+Really+Want+to+Do</url>
+			<streamable fulltrack="0">1</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/41161483.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/41161483.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/41161483.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/41161483.png</image>
+		</track>
+		<track rank="16">
+			<name>Save Up All Your Tears</name>
+			<duration>243</duration>
+			<playcount>9766</playcount>
+			<listeners>3519</listeners>
+			<mbid>269b25c2-848c-4bb5-9c1c-53dc377150e5</mbid>
+			<url>http://www.last.fm/music/Cher/_/Save+Up+All+Your+Tears</url>
+			<streamable fulltrack="0">1</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/41161483.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/41161483.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/41161483.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/41161483.png</image>
+		</track>
+		<track rank="17">
+			<name>We All Sleep Alone</name>
+			<duration>233</duration>
+			<playcount>9971</playcount>
+			<listeners>3446</listeners>
+			<mbid>01e182ec-7c89-4965-98c6-e46f6fec2706</mbid>
+			<url>http://www.last.fm/music/Cher/_/We+All+Sleep+Alone</url>
+			<streamable fulltrack="0">1</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/72903330.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/72903330.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/72903330.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/72903330.png</image>
+		</track>
+		<track rank="18">
+			<name>Song for the Lonely</name>
+			<duration>202</duration>
+			<playcount>9721</playcount>
+			<listeners>3114</listeners>
+			<mbid>18f9004b-c892-4949-bf95-c3943c304376</mbid>
+			<url>http://www.last.fm/music/Cher/_/Song+for+the+Lonely</url>
+			<streamable fulltrack="0">1</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/53023329.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/53023329.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/53023329.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/53023329.png</image>
+		</track>
+		<track rank="19">
+			<name>Bang Bang (My Baby Shot Me Down)</name>
+			<duration>165</duration>
+			<playcount>7388</playcount>
+			<listeners>3104</listeners>
+			<mbid>05e23123-363a-4bd4-b035-dbd3699f7025</mbid>
+			<url>http://www.last.fm/music/Cher/_/Bang+Bang+(My+Baby+Shot+Me+Down)</url>
+			<streamable fulltrack="0">1</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/41161483.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/41161483.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/41161483.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/41161483.png</image>
+		</track>
+		<track rank="20">
+			<name>One by One</name>
+			<duration>303</duration>
+			<playcount>8046</playcount>
+			<listeners>3038</listeners>
+			<mbid>02ad3067-7d01-4cc2-a7b3-62cb1d35c253</mbid>
+			<url>http://www.last.fm/music/Cher/_/One+by+One</url>
+			<streamable fulltrack="0">1</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/41161483.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/41161483.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/41161483.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/41161483.png</image>
+		</track>
+		<track rank="21">
+			<name>Half-Breed</name>
+			<duration>163</duration>
+			<playcount>7053</playcount>
+			<listeners>2887</listeners>
+			<mbid>02ba4a50-d42b-4c4b-9705-776465011ca4</mbid>
+			<url>http://www.last.fm/music/Cher/_/Half-Breed</url>
+			<streamable fulltrack="0">1</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/73100658.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/73100658.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/73100658.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/73100658.png</image>
+		</track>
+		<track rank="22">
+			<name>Love Hurts</name>
+			<duration>257</duration>
+			<playcount>6020</playcount>
+			<listeners>2354</listeners>
+			<mbid>10718073-0caa-463e-81d1-0218976e7d31</mbid>
+			<url>http://www.last.fm/music/Cher/_/Love+Hurts</url>
+			<streamable fulltrack="0">1</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/71998552.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/71998552.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/71998552.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/71998552.png</image>
+		</track>
+		<track rank="23">
+			<name>Take Me Home</name>
+			<duration>406</duration>
+			<playcount>4864</playcount>
+			<listeners>2218</listeners>
+			<mbid>169f57b3-5806-46ef-a47a-6990df6d19da</mbid>
+			<url>http://www.last.fm/music/Cher/_/Take+Me+Home</url>
+			<streamable fulltrack="0">1</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/62743251.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/62743251.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/62743251.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/62743251.png</image>
+		</track>
+		<track rank="24">
+			<name>You Haven’t Seen the Last of Me</name>
+			<duration>216</duration>
+			<playcount>9832</playcount>
+			<listeners>2145</listeners>
+			<mbid></mbid>
+			<url>http://www.last.fm/music/Cher/_/You+Haven%E2%80%99t+Seen+the+Last+of+Me</url>
+			<streamable fulltrack="0">0</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+		</track>
+		<track rank="25">
+			<name>Bang Bang</name>
+			<duration>234</duration>
+			<playcount>4955</playcount>
+			<listeners>2135</listeners>
+			<mbid>17f70f11-7c53-491a-ac40-03c1b36a6b30</mbid>
+			<url>http://www.last.fm/music/Cher/_/Bang+Bang</url>
+			<streamable fulltrack="0">1</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/71998552.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/71998552.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/71998552.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/71998552.png</image>
+		</track>
+		<track rank="26">
+			<name>Runaway</name>
+			<duration>286</duration>
+			<playcount>5395</playcount>
+			<listeners>1858</listeners>
+			<mbid>379f760d-1f29-4317-ab04-06a8218a874d</mbid>
+			<url>http://www.last.fm/music/Cher/_/Runaway</url>
+			<streamable fulltrack="0">0</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/72903330.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/72903330.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/72903330.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/72903330.png</image>
+		</track>
+		<track rank="27">
+			<name>You Haven't Seen The Last Of Me - Burlesque Original Motion Picture Soundtrack</name>
+			<duration>211</duration>
+			<playcount>5307</playcount>
+			<listeners>1786</listeners>
+			<mbid></mbid>
+			<url>http://www.last.fm/music/Cher/_/You+Haven%27t+Seen+The+Last+Of+Me+-+Burlesque+Original+Motion+Picture+Soundtrack</url>
+			<streamable fulltrack="0">0</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+		</track>
+		<track rank="28">
+			<name>The Power</name>
+			<duration>236</duration>
+			<playcount>4309</playcount>
+			<listeners>1739</listeners>
+			<mbid>173cf503-cc44-4291-ab91-2286aafe6efa</mbid>
+			<url>http://www.last.fm/music/Cher/_/The+Power</url>
+			<streamable fulltrack="0">0</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/72903330.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/72903330.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/72903330.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/72903330.png</image>
+		</track>
+		<track rank="29">
+			<name>The Shoop Shoop Song</name>
+			<duration>167</duration>
+			<playcount>4770</playcount>
+			<listeners>1713</listeners>
+			<mbid>107e65af-ffe6-4928-bde1-24672d334d81</mbid>
+			<url>http://www.last.fm/music/Cher/_/The+Shoop+Shoop+Song</url>
+			<streamable fulltrack="0">0</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/62742881.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/62742881.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/62742881.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/62742881.png</image>
+		</track>
+		<track rank="30">
+			<name>Welcome To Burlesque - Burlesque Original Motion Picture Soundtrack</name>
+			<duration>166</duration>
+			<playcount>4882</playcount>
+			<listeners>1692</listeners>
+			<mbid></mbid>
+			<url>http://www.last.fm/music/Cher/_/Welcome+To+Burlesque+-+Burlesque+Original+Motion+Picture+Soundtrack</url>
+			<streamable fulltrack="0">0</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+		</track>
+		<track rank="31">
+			<name>Alive Again</name>
+			<duration>258</duration>
+			<playcount>6084</playcount>
+			<listeners>1591</listeners>
+			<mbid>0ace6693-4fed-4498-a4e6-c733bbffd7ef</mbid>
+			<url>http://www.last.fm/music/Cher/_/Alive+Again</url>
+			<streamable fulltrack="0">0</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/53023329.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/53023329.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/53023329.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/53023329.png</image>
+		</track>
+		<track rank="32">
+			<name>The Way of Love</name>
+			<duration>150</duration>
+			<playcount>4342</playcount>
+			<listeners>1538</listeners>
+			<mbid>0529403f-e2b3-4530-993d-a01521eba460</mbid>
+			<url>http://www.last.fm/music/Cher/_/The+Way+of+Love</url>
+			<streamable fulltrack="0">1</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/73100658.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/73100658.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/73100658.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/73100658.png</image>
+		</track>
+		<track rank="33">
+			<name>The Music's No Good Without You</name>
+			<duration>240</duration>
+			<playcount>5821</playcount>
+			<listeners>1422</listeners>
+			<mbid>0b540a98-edec-4f26-96f0-cc3defacb214</mbid>
+			<url>http://www.last.fm/music/Cher/_/The+Music%27s+No+Good+Without+You</url>
+			<streamable fulltrack="0">0</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/71997796.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/71997796.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/71997796.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/71997796.png</image>
+		</track>
+		<track rank="34">
+			<name>Dov'e L'amore</name>
+			<duration>212</duration>
+			<playcount>3961</playcount>
+			<listeners>1399</listeners>
+			<mbid>0b176a49-0f48-48b0-af27-f02083faceb9</mbid>
+			<url>http://www.last.fm/music/Cher/_/Dov%27e+L%27amore</url>
+			<streamable fulltrack="0">0</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/73738644.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/73738644.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/73738644.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/73738644.png</image>
+		</track>
+		<track rank="35">
+			<name>Taxi Taxi</name>
+			<duration>304</duration>
+			<playcount>3566</playcount>
+			<listeners>1375</listeners>
+			<mbid>66f526c9-b135-4458-86cf-77065ce8f0aa</mbid>
+			<url>http://www.last.fm/music/Cher/_/Taxi+Taxi</url>
+			<streamable fulltrack="0">0</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/72903330.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/72903330.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/72903330.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/72903330.png</image>
+		</track>
+		<track rank="36">
+			<name>Love Is the Groove</name>
+			<duration>271</duration>
+			<playcount>3210</playcount>
+			<listeners>1241</listeners>
+			<mbid>832f8f9a-95e4-476b-b108-14dec1dc84ba</mbid>
+			<url>http://www.last.fm/music/Cher/_/Love+Is+the+Groove</url>
+			<streamable fulltrack="0">0</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/72903330.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/72903330.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/72903330.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/72903330.png</image>
+		</track>
+		<track rank="37">
+			<name>Takin' Back My Heart</name>
+			<duration>272</duration>
+			<playcount>2974</playcount>
+			<listeners>1225</listeners>
+			<mbid>07a38e80-ba81-494a-a61a-e8d81a40413e</mbid>
+			<url>http://www.last.fm/music/Cher/_/Takin%27+Back+My+Heart</url>
+			<streamable fulltrack="0">0</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/72903330.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/72903330.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/72903330.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/72903330.png</image>
+		</track>
+		<track rank="38">
+			<name>A Different Kind of Love Song</name>
+			<duration>210</duration>
+			<playcount>4331</playcount>
+			<listeners>1176</listeners>
+			<mbid>648fa90a-ea29-4043-a6ac-daa7eba13bcf</mbid>
+			<url>http://www.last.fm/music/Cher/_/A+Different+Kind+of+Love+Song</url>
+			<streamable fulltrack="0">0</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/41161483.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/41161483.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/41161483.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/41161483.png</image>
+		</track>
+		<track rank="39">
+			<name>Dead Ringer for Love</name>
+			<duration>262</duration>
+			<playcount>2241</playcount>
+			<listeners>1082</listeners>
+			<mbid></mbid>
+			<url>http://www.last.fm/music/Cher/_/Dead+Ringer+for+Love</url>
+			<streamable fulltrack="0">0</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/71929800.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/71929800.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/71929800.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/71929800.png</image>
+		</track>
+		<track rank="40">
+			<name>I Got You Babe</name>
+			<duration>187</duration>
+			<playcount>2550</playcount>
+			<listeners>1054</listeners>
+			<mbid>07618f55-3934-4347-9db9-a52fb8435472</mbid>
+			<url>http://www.last.fm/music/Cher/_/I+Got+You+Babe</url>
+			<streamable fulltrack="0">0</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/41161483.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/41161483.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/41161483.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/41161483.png</image>
+		</track>
+		<track rank="41">
+			<name>Gypsies, Tramps &amp; Thieves</name>
+			<duration>90</duration>
+			<playcount>2954</playcount>
+			<listeners>1023</listeners>
+			<mbid>07dd987e-b8d2-4702-aa94-67e107970892</mbid>
+			<url>http://www.last.fm/music/Cher/_/Gypsies,+Tramps+&amp;+Thieves</url>
+			<streamable fulltrack="0">0</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/41161483.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/41161483.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/41161483.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/41161483.png</image>
+		</track>
+		<track rank="42">
+			<name>Sunny</name>
+			<duration>192</duration>
+			<playcount>2009</playcount>
+			<listeners>963</listeners>
+			<mbid>0cf1a55c-58ed-434d-bc5b-2da3395f04f3</mbid>
+			<url>http://www.last.fm/music/Cher/_/Sunny</url>
+			<streamable fulltrack="0">1</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/52238793.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/52238793.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/52238793.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/52238793.png</image>
+		</track>
+		<track rank="43">
+			<name>When the Money's Gone</name>
+			<duration>277</duration>
+			<playcount>2993</playcount>
+			<listeners>906</listeners>
+			<mbid>00a57d24-8429-4928-a190-ead9c7641cae</mbid>
+			<url>http://www.last.fm/music/Cher/_/When+the+Money%27s+Gone</url>
+			<streamable fulltrack="0">0</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/53023329.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/53023329.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/53023329.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/53023329.png</image>
+		</track>
+		<track rank="44">
+			<name>Train of Thought</name>
+			<duration>155</duration>
+			<playcount>1939</playcount>
+			<listeners>809</listeners>
+			<mbid>06458e44-28b2-48f1-8a4d-6e4073b52f51</mbid>
+			<url>http://www.last.fm/music/Cher/_/Train+of+Thought</url>
+			<streamable fulltrack="0">1</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/73100658.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/73100658.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/73100658.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/73100658.png</image>
+		</track>
+		<track rank="45">
+			<name>You Wouldn't Know Love</name>
+			<duration>210</duration>
+			<playcount>2332</playcount>
+			<listeners>793</listeners>
+			<mbid>48ae603e-032e-4097-8a8d-c84b594be4ab</mbid>
+			<url>http://www.last.fm/music/Cher/_/You+Wouldn%27t+Know+Love</url>
+			<streamable fulltrack="0">0</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/62742713.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/62742713.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/62742713.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/62742713.png</image>
+		</track>
+		<track rank="46">
+			<name>Love One Another</name>
+			<duration>224</duration>
+			<playcount>2560</playcount>
+			<listeners>744</listeners>
+			<mbid>542b4c96-0999-4610-9ce7-c9a4edbe75da</mbid>
+			<url>http://www.last.fm/music/Cher/_/Love+One+Another</url>
+			<streamable fulltrack="0">0</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/53023329.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/53023329.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/53023329.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/53023329.png</image>
+		</track>
+		<track rank="47">
+			<name>Love Is a Lonely Place Without You</name>
+			<duration>232</duration>
+			<playcount>2723</playcount>
+			<listeners>740</listeners>
+			<mbid>a15e8f4b-cd58-486e-b53c-2ac886a1a908</mbid>
+			<url>http://www.last.fm/music/Cher/_/Love+Is+a+Lonely+Place+Without+You</url>
+			<streamable fulltrack="0">0</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/53023329.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/53023329.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/53023329.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/53023329.png</image>
+		</track>
+		<track rank="48">
+			<name>Dov'è L'amore</name>
+			<duration>258</duration>
+			<playcount>2702</playcount>
+			<listeners>723</listeners>
+			<mbid>08d88e27-6245-4684-aada-c78a8eb996be</mbid>
+			<url>http://www.last.fm/music/Cher/_/Dov%27%C3%A8+L%27amore</url>
+			<streamable fulltrack="0">0</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/72903330.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/72903330.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/72903330.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/72903330.png</image>
+		</track>
+		<track rank="49">
+			<name>Real Love</name>
+			<duration>234</duration>
+			<playcount>2383</playcount>
+			<listeners>706</listeners>
+			<mbid>00dce762-11a4-4d49-96ca-03ef71cba291</mbid>
+			<url>http://www.last.fm/music/Cher/_/Real+Love</url>
+			<streamable fulltrack="0">0</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/53023329.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/53023329.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/53023329.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/53023329.png</image>
+		</track>
+		<track rank="50">
+			<name>Dov'é l'amore</name>
+			<duration>258</duration>
+			<playcount>1497</playcount>
+			<listeners>675</listeners>
+			<mbid>25d2da35-ae28-4870-9562-6f9d10fe439f</mbid>
+			<url>http://www.last.fm/music/Cher/_/Dov%27%C3%A9+l%27amore</url>
+			<streamable fulltrack="0">0</streamable>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/7266131.jpg</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/7266131.jpg</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/7266131.jpg</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/7266131.jpg</image>
+		</track>
+	</toptracks>
+</lfm>

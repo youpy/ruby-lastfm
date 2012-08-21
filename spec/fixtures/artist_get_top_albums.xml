@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+	<topalbums artist="Cher"  page="1" perPage="50" totalPages="3" total="123">
+
+		<album rank="1">
+			<name>The Very Best of Cher</name>
+			<playcount>111524</playcount>
+			<mbid>00d677bf-46f2-34a4-86ad-e922d8466943</mbid>
+			<url>http://www.last.fm/music/Cher/The+Very+Best+of+Cher</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/41161483.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/41161483.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/41161483.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/41161483.png</image>
+		</album>
+		<album rank="2">
+			<name>Believe</name>
+			<playcount>91252</playcount>
+			<mbid>250e1aa0-fbb9-4f15-8321-3550b6c742ac</mbid>
+			<url>http://www.last.fm/music/Cher/Believe</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/72903330.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/72903330.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/72903330.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/72903330.png</image>
+		</album>
+		<album rank="3">
+			<name>Cher's Greatest Hits: 1965-1992</name>
+			<playcount>27143</playcount>
+			<mbid>063d0d31-6dcd-423b-9ed2-d3330e3e466e</mbid>
+			<url>http://www.last.fm/music/Cher/Cher%27s+Greatest+Hits:+1965-1992</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/61446673.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/61446673.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/61446673.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/61446673.png</image>
+		</album>
+		<album rank="4">
+			<name>Half Breed</name>
+			<playcount>10366</playcount>
+			<mbid></mbid>
+			<url>http://www.last.fm/music/Cher/Half+Breed</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/73100658.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/73100658.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/73100658.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/73100658.png</image>
+		</album>
+		<album rank="5">
+			<name>The Greatest Hits</name>
+			<playcount>34044</playcount>
+			<mbid>023af53b-2a8f-467e-aadc-307b3372ecc2</mbid>
+			<url>http://www.last.fm/music/Cher/The+Greatest+Hits</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/71998552.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/71998552.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/71998552.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/71998552.png</image>
+		</album>
+		<album rank="6">
+			<name>Living Proof</name>
+			<playcount>38260</playcount>
+			<mbid>182a2ec8-f717-4e06-a88e-604db80ab4aa</mbid>
+			<url>http://www.last.fm/music/Cher/Living+Proof</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/53023329.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/53023329.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/53023329.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/53023329.png</image>
+		</album>
+		<album rank="7">
+			<name>Strong Enough</name>
+			<playcount>9576</playcount>
+			<mbid>6bcd9585-8a2c-4fe6-85e7-ab7ac631a6b3</mbid>
+			<url>http://www.last.fm/music/Cher/Strong+Enough</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/71900078.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/71900078.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/71900078.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/71900078.png</image>
+		</album>
+		<album rank="8">
+			<name>Heart of Stone</name>
+			<playcount>24922</playcount>
+			<mbid>7468fc70-9cba-4bad-a2a8-4201221f54fe</mbid>
+			<url>http://www.last.fm/music/Cher/Heart+of+Stone</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/62742713.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/62742713.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/62742713.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/62742713.png</image>
+		</album>
+		<album rank="9">
+			<name>Cher</name>
+			<playcount>15512</playcount>
+			<mbid>0f56acde-0a8a-435d-b0c5-2b2980e20543</mbid>
+			<url>http://www.last.fm/music/Cher/Cher</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/59858629.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/59858629.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/59858629.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/59858629.png</image>
+		</album>
+		<album rank="10">
+			<name>The Best of Cher</name>
+			<playcount>3278</playcount>
+			<mbid>0128541a-3b4e-4bb9-8b82-344ab851c6de</mbid>
+			<url>http://www.last.fm/music/Cher/The+Best+of+Cher</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/62742881.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/62742881.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/62742881.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/62742881.png</image>
+		</album>
+		<album rank="11">
+			<name>Love Hurts</name>
+			<playcount>14759</playcount>
+			<mbid>0892f6d2-c82f-447b-af11-a231fca35391</mbid>
+			<url>http://www.last.fm/music/Cher/Love+Hurts</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/60094191.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/60094191.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/60094191.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/60094191.png</image>
+		</album>
+		<album rank="12">
+			<name>Gold</name>
+			<playcount>6988</playcount>
+			<mbid>96fad267-5e89-444c-84a8-449ffb0161e3</mbid>
+			<url>http://www.last.fm/music/Cher/Gold</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/71901382.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/71901382.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/71901382.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/71901382.png</image>
+		</album>
+		<album rank="13">
+			<name>It's a Man's World</name>
+			<playcount>12795</playcount>
+			<mbid>c6069da6-2953-43a0-960d-b75e6cf32cb7</mbid>
+			<url>http://www.last.fm/music/Cher/It%27s+a+Man%27s+World</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/73873916.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/73873916.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/73873916.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/73873916.png</image>
+		</album>
+		<album rank="14">
+			<name>If I Could Turn Back Time - Cher's Greatest Hits</name>
+			<playcount>5614</playcount>
+			<mbid></mbid>
+			<url>http://www.last.fm/music/Cher/If+I+Could+Turn+Back+Time+-+Cher%27s+Greatest+Hits</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/71900378.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/71900378.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/71900378.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/71900378.png</image>
+		</album>
+		<album rank="15">
+			<name>Greatest Hits</name>
+			<playcount>4565</playcount>
+			<mbid>4b112d60-2bb2-4533-8f3a-e3c7977e813c</mbid>
+			<url>http://www.last.fm/music/Cher/Greatest+Hits</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/71900592.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/71900592.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/71900592.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/71900592.png</image>
+		</album>
+		<album rank="16">
+			<name>Gypsys, Tramps &amp; Thieves</name>
+			<playcount>5329</playcount>
+			<mbid>ac1d49a5-611e-4895-921d-83cbec6d1df6</mbid>
+			<url>http://www.last.fm/music/Cher/Gypsys,+Tramps+&amp;+Thieves</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/71900074.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/71900074.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/71900074.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/71900074.png</image>
+		</album>
+		<album rank="17">
+			<name>The Best of Cher (The Imperial Recordings: 1965-1968)</name>
+			<playcount>3757</playcount>
+			<mbid></mbid>
+			<url>http://www.last.fm/music/Cher/The+Best+of+Cher+(The+Imperial+Recordings:+1965-1968)</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/71931432.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/71931432.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/71931432.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/71931432.png</image>
+		</album>
+		<album rank="18">
+			<name>All I Really Want to Do</name>
+			<playcount>5359</playcount>
+			<mbid>2f498187-9abb-48f4-b86c-27ef8b041a08</mbid>
+			<url>http://www.last.fm/music/Cher/All+I+Really+Want+to+Do</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/52238793.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/52238793.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/52238793.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/52238793.png</image>
+		</album>
+		<album rank="19">
+			<name>Take Me Home &amp; Prisoner</name>
+			<playcount>1015</playcount>
+			<mbid></mbid>
+			<url>http://www.last.fm/music/Cher/Take+Me+Home+&amp;+Prisoner</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/62743251.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/62743251.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/62743251.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/62743251.png</image>
+		</album>
+		<album rank="20">
+			<name>Chronicles</name>
+			<playcount>2201</playcount>
+			<mbid></mbid>
+			<url>http://www.last.fm/music/Cher/Chronicles</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/57023673.jpg</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/57023673.jpg</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/57023673.jpg</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/57023673.jpg</image>
+		</album>
+		<album rank="21">
+			<name>Bang Bang: The Early Years</name>
+			<playcount>1778</playcount>
+			<mbid></mbid>
+			<url>http://www.last.fm/music/Cher/Bang+Bang:+The+Early+Years</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/71931356.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/71931356.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/71931356.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/71931356.png</image>
+		</album>
+		<album rank="22">
+			<name>Not.Com.Mercial</name>
+			<playcount>5105</playcount>
+			<mbid>08fcd909-3ff3-4a5f-8687-c40301fc3e8d</mbid>
+			<url>http://www.last.fm/music/Cher/Not.Com.Mercial</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/69187676.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/69187676.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/69187676.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/69187676.png</image>
+		</album>
+		<album rank="23">
+			<name>3614 Jackson Highway</name>
+			<playcount>3687</playcount>
+			<mbid>a67bf28f-d1f5-4fcc-b408-4ef625402dc2</mbid>
+			<url>http://www.last.fm/music/Cher/3614+Jackson+Highway</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/71928950.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/71928950.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/71928950.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/71928950.png</image>
+		</album>
+		<album rank="24">
+			<name>Essential Collection:  Cher</name>
+			<playcount>1413</playcount>
+			<mbid></mbid>
+			<url>http://www.last.fm/music/Cher/Essential+Collection:++Cher</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/71929800.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/71929800.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/71929800.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/71929800.png</image>
+		</album>
+		<album rank="25">
+			<name>The Best Of Cher Volume 2 20th Century Masters The Millennium Collection</name>
+			<playcount>1627</playcount>
+			<mbid></mbid>
+			<url>http://www.last.fm/music/Cher/The+Best+Of+Cher+Volume+2+20th+Century+Masters+The+Millennium+Collection</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/79659821.jpg</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/79659821.jpg</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/79659821.jpg</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/79659821.jpg</image>
+		</album>
+		<album rank="26">
+			<name>Live: The Farewell Tour</name>
+			<playcount>6674</playcount>
+			<mbid>aba9daaa-1e9c-427c-9595-e9013dee3c9d</mbid>
+			<url>http://www.last.fm/music/Cher/Live:+The+Farewell+Tour</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/71931872.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/71931872.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/71931872.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/71931872.png</image>
+		</album>
+		<album rank="27">
+			<name>This Is Cher</name>
+			<playcount>1150</playcount>
+			<mbid></mbid>
+			<url>http://www.last.fm/music/Cher/This+Is+Cher</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/71203940.jpg</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/71203940.jpg</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/71203940.jpg</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/71203940.jpg</image>
+		</album>
+		<album rank="28">
+			<name>Take Me Home</name>
+			<playcount>2669</playcount>
+			<mbid>9cd2ad21-ad13-4490-bc58-22943cd89380</mbid>
+			<url>http://www.last.fm/music/Cher/Take+Me+Home</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/59150819.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/59150819.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/59150819.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/59150819.png</image>
+		</album>
+		<album rank="29">
+			<name>I Paralyze</name>
+			<playcount>3852</playcount>
+			<mbid>724a7115-5ebf-4d21-8449-d579c477188e</mbid>
+			<url>http://www.last.fm/music/Cher/I+Paralyze</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/62742439.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/62742439.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/62742439.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/62742439.png</image>
+		</album>
+		<album rank="30">
+			<name>You Haven't Seen The Last Of Me</name>
+			<playcount>722</playcount>
+			<mbid>f4c77050-ca2a-4c24-8a99-bdee409f8f19</mbid>
+			<url>http://www.last.fm/music/Cher/You+Haven%27t+Seen+The+Last+Of+Me</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/75177024.jpg</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/75177024.jpg</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/75177024.jpg</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/75177024.jpg</image>
+		</album>
+		<album rank="31">
+			<name>Collection 2000</name>
+			<playcount>406</playcount>
+			<mbid>cf594b36-16e8-4259-bd39-bd07b1a5ffd9</mbid>
+			<url>http://www.last.fm/music/Cher/Collection+2000</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/73738644.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/73738644.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/73738644.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/73738644.png</image>
+		</album>
+		<album rank="32">
+			<name>The Very Best of Cher (disc 1)</name>
+			<playcount>3168</playcount>
+			<mbid></mbid>
+			<url>http://www.last.fm/music/Cher/The+Very+Best+of+Cher+(disc+1)</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/71997696.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/71997696.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/71997696.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/71997696.png</image>
+		</album>
+		<album rank="33">
+			<name>Universal Masters Collection</name>
+			<playcount>698</playcount>
+			<mbid></mbid>
+			<url>http://www.last.fm/music/Cher/Universal+Masters+Collection</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/8834135.jpg</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/8834135.jpg</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/8834135.jpg</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/8834135.jpg</image>
+		</album>
+		<album rank="34">
+			<name>The Very Best of Cher (disc 2)</name>
+			<playcount>2051</playcount>
+			<mbid></mbid>
+			<url>http://www.last.fm/music/Cher/The+Very+Best+of+Cher+(disc+2)</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/71997796.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/71997796.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/71997796.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/71997796.png</image>
+		</album>
+		<album rank="35">
+			<name>Black Rose</name>
+			<playcount>1816</playcount>
+			<mbid>87d593a4-22bd-4a32-bfac-068decf23040</mbid>
+			<url>http://www.last.fm/music/Cher/Black+Rose</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/59692465.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/59692465.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/59692465.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/59692465.png</image>
+		</album>
+		<album rank="36">
+			<name>All Or Nothing</name>
+			<playcount>612</playcount>
+			<mbid>28e23680-1c42-4d87-83ae-d74752538d3c</mbid>
+			<url>http://www.last.fm/music/Cher/All+Or+Nothing</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/72654464.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/72654464.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/72654464.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/72654464.png</image>
+		</album>
+		<album rank="37">
+			<name>If I Could Turn Back Time</name>
+			<playcount>785</playcount>
+			<mbid>c30e7b5a-36b8-41d7-b625-3f613ef66783</mbid>
+			<url>http://www.last.fm/music/Cher/If+I+Could+Turn+Back+Time</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/75880482.jpg</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/75880482.jpg</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/75880482.jpg</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/75880482.jpg</image>
+		</album>
+		<album rank="38">
+			<name>The Music's No Good Without You</name>
+			<playcount>426</playcount>
+			<mbid>641eddb3-33e7-4f70-9eeb-5e8541b61362</mbid>
+			<url>http://www.last.fm/music/Cher/The+Music%27s+No+Good+Without+You</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/72652062.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/72652062.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/72652062.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/72652062.png</image>
+		</album>
+		<album rank="39">
+			<name>The Best Of Cher - Green Series</name>
+			<playcount>243</playcount>
+			<mbid></mbid>
+			<url>http://www.last.fm/music/Cher/The+Best+Of+Cher+-+Green+Series</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/12729477.jpg</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/12729477.jpg</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/12729477.jpg</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/12729477.jpg</image>
+		</album>
+		<album rank="40">
+			<name>20th Century Masters: The Millennium Collection: Best Of Cher</name>
+			<playcount>441</playcount>
+			<mbid></mbid>
+			<url>http://www.last.fm/music/Cher/20th+Century+Masters:+The+Millennium+Collection:+Best+Of+Cher</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/61057859.jpg</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/61057859.jpg</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/61057859.jpg</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/61057859.jpg</image>
+		</album>
+		<album rank="41">
+			<name>The Way of Love:  The Cher Collection</name>
+			<playcount>246</playcount>
+			<mbid></mbid>
+			<url>http://www.last.fm/music/Cher/The+Way+of+Love:++The+Cher+Collection</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/71928136.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/71928136.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/71928136.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/71928136.png</image>
+		</album>
+		<album rank="42">
+			<name>Song for the Lonely</name>
+			<playcount>257</playcount>
+			<mbid>cd4de50c-905a-4045-89a3-6576cc2f4f5b</mbid>
+			<url>http://www.last.fm/music/Cher/Song+for+the+Lonely</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/53023579.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/53023579.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/53023579.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/53023579.png</image>
+		</album>
+		<album rank="43">
+			<name>All I Really Want to Do/The Sonny Side of Cher</name>
+			<playcount>256</playcount>
+			<mbid></mbid>
+			<url>http://www.last.fm/music/Cher/All+I+Really+Want+to+Do%2FThe+Sonny+Side+of+Cher</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://images.amazon.com/images/P/B0007ZB39U.01._SCMZZZZZZZ_.jpg</image>
+			<image size="medium">http://images.amazon.com/images/P/B0007ZB39U.01._SCMZZZZZZZ_.jpg</image>
+			<image size="large">http://images.amazon.com/images/P/B0007ZB39U.01._SCMZZZZZZZ_.jpg</image>
+			<image size="extralarge">http://images.amazon.com/images/P/B0007ZB39U.01._SCMZZZZZZZ_.jpg</image>
+		</album>
+		<album rank="44">
+			<name>The Ultimate Collection</name>
+			<playcount>505</playcount>
+			<mbid></mbid>
+			<url>http://www.last.fm/music/Cher/The+Ultimate+Collection</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/10078255.jpg</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/10078255.jpg</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/10078255.jpg</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/10078255.jpg</image>
+		</album>
+		<album rank="45">
+			<name>Lost &amp; Found: Cher</name>
+			<playcount>225</playcount>
+			<mbid></mbid>
+			<url>http://www.last.fm/music/Cher/Lost+&amp;+Found:+Cher</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/57347843.jpg</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/57347843.jpg</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/57347843.jpg</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/57347843.jpg</image>
+		</album>
+		<album rank="46">
+			<name>Bittersweet - The Love Songs Collection</name>
+			<playcount>272</playcount>
+			<mbid></mbid>
+			<url>http://www.last.fm/music/Cher/Bittersweet+-+The+Love+Songs+Collection</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/71933900.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/71933900.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/71933900.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/71933900.png</image>
+		</album>
+		<album rank="47">
+			<name>A Different Kind of Love Song</name>
+			<playcount>298</playcount>
+			<mbid>f8912620-c18c-446b-9183-c558935b7689</mbid>
+			<url>http://www.last.fm/music/Cher/A+Different+Kind+of+Love+Song</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/71934042.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/71934042.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/71934042.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/71934042.png</image>
+		</album>
+		<album rank="48">
+			<name>Prisoner/Take Me Home</name>
+			<playcount>287</playcount>
+			<mbid></mbid>
+			<url>http://www.last.fm/music/Cher/Prisoner%2FTake+Me+Home</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/71898222.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/71898222.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/71898222.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/71898222.png</image>
+		</album>
+		<album rank="49">
+			<name>The Casablanca Years</name>
+			<playcount>475</playcount>
+			<mbid>eda9fa9c-08f6-4d23-a08c-453acddf7cb7</mbid>
+			<url>http://www.last.fm/music/Cher/The+Casablanca+Years</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://userserve-ak.last.fm/serve/34s/71900116.png</image>
+			<image size="medium">http://userserve-ak.last.fm/serve/64s/71900116.png</image>
+			<image size="large">http://userserve-ak.last.fm/serve/126/71900116.png</image>
+			<image size="extralarge">http://userserve-ak.last.fm/serve/300x300/71900116.png</image>
+		</album>
+		<album rank="50">
+			<name>20th Century Masters - The Millennium Collection: The Best of Cher, Vol. 2</name>
+			<playcount>210</playcount>
+			<mbid></mbid>
+			<url>http://www.last.fm/music/Cher/20th+Century+Masters+-+The+Millennium+Collection:+The+Best+of+Cher,+Vol.+2</url>
+			<artist>
+				<name>Cher</name>
+				<mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+				<url>http://www.last.fm/music/Cher</url>
+			</artist>
+			<image size="small">http://images.amazon.com/images/P/B00016MSXA.01._SCMZZZZZZZ_.jpg</image>
+			<image size="medium">http://images.amazon.com/images/P/B00016MSXA.01._SCMZZZZZZZ_.jpg</image>
+			<image size="large">http://images.amazon.com/images/P/B00016MSXA.01._SCMZZZZZZZ_.jpg</image>
+			<image size="extralarge">http://images.amazon.com/images/P/B00016MSXA.01._SCMZZZZZZZ_.jpg</image>
+		</album>
+	</topalbums>
+</lfm>
