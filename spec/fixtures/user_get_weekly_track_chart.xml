@@ -1,0 +1,34 @@
+<lfm status="ok">
+  <weeklytrackchart user="RJ" from="1348401600" to="1349006400">
+    <track rank="1">
+      <artist mbid="c0b2500e-0cef-4130-869d-732b23ed9df5">Tori Amos</artist>
+      <name>Crucify</name>
+      <mbid>00d460e6-bd75-499b-900e-51f889668480</mbid>
+      <playcount>2</playcount>
+      <image size="small">http://userserve-ak.last.fm/serve/34/45001803.png</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64/45001803.png</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/45001803.png</image>
+      <url>www.last.fm/music/Tori+Amos/_/Crucify</url>
+    </track>
+    <track rank="2">
+      <artist mbid="614e3804-7d34-41ba-857f-811bad7c2b7a">Dire Straits</artist>
+      <name>Money for Nothing</name>
+      <mbid>0430ad05-7580-4703-9649-e6f870457805</mbid>
+      <playcount>2</playcount>
+      <image size="small">http://userserve-ak.last.fm/serve/34/135149.jpg</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64/135149.jpg</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/135149.jpg</image>
+      <url>www.last.fm/music/Dire+Straits/_/Money+for+Nothing</url>
+    </track>
+    <track rank="3">
+      <artist mbid="614e3804-7d34-41ba-857f-811bad7c2b7a">Dire Straits</artist>
+      <name>So Far Away - Full Version</name>
+      <mbid/>
+      <playcount>2</playcount>
+      <image size="small">http://userserve-ak.last.fm/serve/34/135149.jpg</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64/135149.jpg</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/135149.jpg</image>
+      <url>www.last.fm/music/Dire+Straits/_/So+Far+Away+-+Full+Version</url>
+    </track>
+  </weeklytrackchart>
+</lfm>

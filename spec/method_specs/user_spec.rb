@@ -225,4 +225,66 @@ describe '#user' do
       tags.size.should == 5
     end
   end
+
+  describe '#get_weekly_chart_list' do
+    it 'should get user\'s weekly chart list' do
+      @lastfm.should_receive(:request).with('user.getWeeklyChartList', {
+        :user => 'test',
+        :limit => nil,
+      }).and_return(make_response('user_get_weekly_chart_list'))
+      weekly_charts = @lastfm.user.get_weekly_chart_list(:user => 'test')
+      weekly_charts[0]['from'].should == "1108296002"
+      weekly_charts[0]['to'].should == "1108900802"
+      weekly_charts[1]['from'].should == "1108900801"
+      weekly_charts.size.should == 8
+    end
+  end
+
+  describe '#get_weekly_artist_chart' do
+    it 'should get user\'s weekly artist chart' do
+      @lastfm.should_receive(:request).with('user.getWeeklyArtistChart', {
+        :user => 'test',
+        :limit => nil,
+        :to => nil,
+        :from => nil
+      }).and_return(make_response('user_get_weekly_artist_chart'))
+      weekly_artists = @lastfm.user.get_weekly_artist_chart(:user => 'test')
+      weekly_artists[0]['name'].should == "Leonard Cohen"
+      weekly_artists[0]['playcount'].should == "46"
+      weekly_artists[1]['playcount'].should == "44"
+      weekly_artists.size.should == 4
+    end
+  end
+
+  describe '#get_weekly_album_chart' do
+    it 'should get user\'s weekly album chart' do
+      @lastfm.should_receive(:request).with('user.getWeeklyAlbumChart', {
+        :user => 'test',
+        :limit => nil,
+        :to => nil,
+        :from => nil
+      }).and_return(make_response('user_get_weekly_album_chart'))
+      weekly_albums = @lastfm.user.get_weekly_album_chart(:user => 'test')
+      weekly_albums[0]['artist']['content'].should == "Leonard Cohen"
+      weekly_albums[0]['playcount'].should == "25"
+      weekly_albums[1]['playcount'].should == "18"
+      weekly_albums.size.should == 3
+    end
+  end
+
+  describe '#get_weekly_track_chart' do
+    it 'should get user\'s weekly track chart' do
+      @lastfm.should_receive(:request).with('user.getWeeklyTrackChart', {
+        :user => 'test',
+        :limit => nil,
+        :to => nil,
+        :from => nil
+      }).and_return(make_response('user_get_weekly_track_chart'))
+      weekly_tracks = @lastfm.user.get_weekly_track_chart(:user => 'test')
+      weekly_tracks[0]['artist']['content'].should == "Tori Amos"
+      weekly_tracks[0]['playcount'].should == "2"
+      weekly_tracks[1]['playcount'].should == "2"
+      weekly_tracks.size.should == 3
+    end
+  end
 end

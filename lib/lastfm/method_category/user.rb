@@ -52,6 +52,22 @@ class Lastfm
       regular_method :get_top_tracks, [:user], [[:period, nil], [:limit, nil], [:page, nil]] do |response|
         response.xml['toptracks']['track']
       end
+
+      regular_method :get_weekly_chart_list, [:user], [[:limit, nil]] do |response|
+        response.xml['weeklychartlist']['chart']
+      end
+
+      regular_method :get_weekly_artist_chart, [:user], [[:from, nil], [:to, nil], [:limit, nil]] do |response|
+        response.xml['weeklyartistchart']['artist']
+      end
+
+      regular_method :get_weekly_album_chart, [:user], [[:from, nil], [:to, nil], [:limit, nil]] do |response|
+        response.xml['weeklyalbumchart']['album']
+      end
+
+      regular_method :get_weekly_track_chart, [:user], [[:from, nil], [:to, nil], [:limit, nil]] do |response|
+        response.xml['weeklytrackchart']['track']
+      end
     end
   end
 end

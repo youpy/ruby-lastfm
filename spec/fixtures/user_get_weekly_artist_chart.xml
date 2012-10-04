@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+  <weeklyartistchart user="RJ" from="1348401600" to="1349006400">
+    <artist rank="1">
+      <name>Leonard Cohen</name>
+      <mbid>65314b12-0e08-43fa-ba33-baaa7b874c15</mbid>
+      <playcount>46</playcount>
+      <url>http://www.last.fm/music/Leonard+Cohen</url>
+    </artist>
+    <artist rank="2">
+      <name>Mark Knopfler</name>
+      <mbid>e49f69da-17d5-4c5c-bac0-dadcb0e588f5</mbid>
+      <playcount>44</playcount>
+      <url>http://www.last.fm/music/Mark+Knopfler</url>
+    </artist>
+    <artist rank="3">
+      <name>Katy Perry</name>
+      <mbid>122d63fc-8671-43e4-9752-34e846d62a9c</mbid>
+      <playcount>30</playcount>
+      <url>http://www.last.fm/music/Katy+Perry</url>
+    </artist>
+    <artist rank="4">
+      <name>Chris Rea</name>
+      <mbid>c707b37e-cb5c-4694-be4d-46beefcb2475</mbid>
+      <playcount>16</playcount>
+      <url>http://www.last.fm/music/Chris+Rea</url>
+    </artist>
+  </weeklyartistchart>
+</lfm>
