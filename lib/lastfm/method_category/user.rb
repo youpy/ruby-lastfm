@@ -60,6 +60,10 @@ class Lastfm
       regular_method :get_weekly_artist_chart, [:user], [[:from, nil], [:to, nil], [:limit, nil]] do |response|
         response.xml['weeklyartistchart']['artist']
       end
+
+      regular_method :get_weekly_album_chart, [:user], [[:from, nil], [:to, nil], [:limit, nil]] do |response|
+        response.xml['weeklyalbumchart']['album']
+      end
     end
   end
 end

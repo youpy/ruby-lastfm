@@ -255,4 +255,20 @@ describe '#user' do
       weekly_artists.size.should == 4
     end
   end
+
+  describe '#get_weekly_album_chart' do
+    it 'should get user\'s weekly album chart' do
+      @lastfm.should_receive(:request).with('user.getWeeklyAlbumChart', {
+        :user => 'test',
+        :limit => nil,
+        :to => nil,
+        :from => nil
+      }).and_return(make_response('user_get_weekly_album_chart'))
+      weekly_albums = @lastfm.user.get_weekly_album_chart(:user => 'test')
+      weekly_albums[0]['artist']['content'].should == "Leonard Cohen"
+      weekly_albums[0]['playcount'].should == "25"
+      weekly_albums[1]['playcount'].should == "18"
+      weekly_albums.size.should == 3
+    end
+  end
 end
