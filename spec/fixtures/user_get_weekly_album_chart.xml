@@ -1,0 +1,25 @@
+<lfm status="ok">
+  <weeklyalbumchart user="RJ" from="1348401600" to="1349006400">
+    <album rank="1">
+      <artist mbid="65314b12-0e08-43fa-ba33-baaa7b874c15">Leonard Cohen</artist>
+      <name>Live In London</name>
+      <mbid>04297356-de27-4988-9871-af2d75a98740</mbid>
+      <playcount>25</playcount>
+      <url>http://www.last.fm/music/Leonard+Cohen/Live+In+London</url>
+    </album>
+    <album rank="2">
+      <artist mbid="e49f69da-17d5-4c5c-bac0-dadcb0e588f5">Mark Knopfler</artist>
+      <name>Privateering</name>
+      <mbid>767c253e-1454-46b3-b568-7142038c72e4</mbid>
+      <playcount>18</playcount>
+      <url>http://www.last.fm/music/Mark+Knopfler/Privateering</url>
+    </album>
+    <album rank="3">
+      <artist mbid="122d63fc-8671-43e4-9752-34e846d62a9c">Katy Perry</artist>
+      <name>Katy Perry - Teenage Dream: The Complete Confection</name>
+      <mbid/>
+      <playcount>18</playcount>
+      <url>http://www.last.fm/music/Katy+Perry/Katy+Perry+-+Teenage+Dream:+The+Complete+Confection</url>
+    </album>
+  </weeklyalbumchart>
+</lfm>
