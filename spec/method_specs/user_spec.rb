@@ -226,6 +226,20 @@ describe '#user' do
     end
   end
 
+  describe '#get_weekly_chart_list' do
+    it 'should get user\'s weekly chart list' do
+      @lastfm.should_receive(:request).with('user.getWeeklyChartList', {
+        :user => 'test',
+        :limit => nil,
+      }).and_return(make_response('user_get_weekly_chart_list'))
+      weekly_charts = @lastfm.user.get_weekly_chart_list(:user => 'test')
+      weekly_charts[0]['from'].should == "1108296002"
+      weekly_charts[0]['to'].should == "1108900802"
+      weekly_charts[1]['from'].should == "1108900801"
+      weekly_charts.size.should == 8
+    end
+  end
+
   describe '#get_weekly_artist_chart' do
     it 'should get user\'s weekly artist chart' do
       @lastfm.should_receive(:request).with('user.getWeeklyArtistChart', {
@@ -239,7 +253,6 @@ describe '#user' do
       weekly_artists[0]['playcount'].should == "46"
       weekly_artists[1]['playcount'].should == "44"
       weekly_artists.size.should == 4
-
     end
   end
 end
