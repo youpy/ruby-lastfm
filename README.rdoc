@@ -52,6 +52,10 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 
 * {tag.getTopArtists}[http://www.lastfm.jp/api/show/tag.getTopArtists]
 
+=== Tasteometer
+
+* {tasteometer.compare}[http://www.lastfm.jp/api/show/tasteometer.compare]
+
 === Track
 
 * {track.addTags}[http://www.lastfm.jp/api/show?service=304]
