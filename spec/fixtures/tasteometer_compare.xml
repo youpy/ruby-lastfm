@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<lfm status="ok">
+    <comparison>
+        <result>
+            <score>0.74</score>
+            <artists matches="43">
+                <artist>
+                    <name>Radiohead</name>
+                    <url>http://www.last.fm/music/Radiohead</url>
+                    <image size="large">http://userserve-ak.last.fm/serve/160/169665.gif</image>
+                    <image size="medium">http://userserve-ak.last.fm/serve/85/169665.gif</image>
+                    <image size="small">http://userserve-ak.last.fm/serve/50/169665.gif</image>
+                </artist>
+                <artist>
+                    <name>The Beatles</name>
+                    <url>http://www.last.fm/music/The+Beatles</url>
+                    <image size="large">http://userserve-ak.last.fm/serve/160/153358.jpg</image>
+                    <image size="medium">http://userserve-ak.last.fm/serve/85/153358.jpg</image>
+                    <image size="small">http://userserve-ak.last.fm/serve/50/153358.jpg</image>
+                </artist>
+            </artists>
+        </result>
+        <input>
+            <user>
+                <name>jwheare</name>
+                <url>http://www.last.fm/user/jwheare/</url>
+                <image size="large">http://userserve-ak.last.fm/serve/160/857567.png</image>
+                <image size="medium">http://userserve-ak.last.fm/serve/85/857567.png</image>
+                <image size="small">http://userserve-ak.last.fm/serve/50/857567.png</image>
+            </user>
+            <myspace>
+                <url>http://www.myspace.com/mcscrobbler</url>
+                <image>http://x.myspace.com/images/clear.gif</image>
+            </myspace>
+        </input>
+    </comparison>
+</lfm>
