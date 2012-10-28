@@ -13,6 +13,7 @@ require 'lastfm/method_category/event'
 require 'lastfm/method_category/geo'
 require 'lastfm/method_category/library'
 require 'lastfm/method_category/tag'
+require 'lastfm/method_category/tasteometer'
 require 'lastfm/method_category/track'
 require 'lastfm/method_category/user'
 
@@ -65,6 +66,10 @@ class Lastfm
 
   def tag
     MethodCategory::Tag.new(self)
+  end
+
+  def tasteometer
+    MethodCategory::Tasteometer.new(self)
   end
 
   def track
