@@ -17,6 +17,10 @@ class Lastfm
         response.xml['events']['event']
       end
 
+      regular_method :get_images, [:artist], [] do |response|
+        response.xml['images']['image']
+      end
+
       regular_method :get_similar, [:artist], [] do |response|
         response.xml['similarartists']['artist']
       end

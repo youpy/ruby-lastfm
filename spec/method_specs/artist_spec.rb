@@ -17,7 +17,7 @@ describe '#artist' do
       top_tracks.size.should > 1
     end
   end
-  
+
   describe '#get_top_albums' do
     it 'should get top albums' do
       @lastfm.should_receive(:request).with('artist.getTopAlbums', {
@@ -64,6 +64,25 @@ describe '#artist' do
       events[0]['tickets']['ticket']['supplier'].should == 'TicketMaster'
       events[0]['tickets']['ticket']['content'].should == 'http://www.last.fm/affiliate/byid/29/1584537/12/ws.artist.events.b25b959554ed76058ac220b7b2e0a026'
       events[0]['tags']['tag'].should == ['pop', 'dance', 'female vocalists', '80s', 'cher']
+    end
+  end
+
+  describe '#get_images' do
+    it 'should get images' do
+      @lastfm.should_receive(:request).with('artist.getImages', {
+        :artist => 'Cher',
+      }).and_return(make_response('artist_get_images'))
+
+      images = @lastfm.artist.get_images(:artist => 'Cher')
+      images.count.should == 2
+      images[1]['title'].should == 'Early years'
+      images[1]['url'].should == 'http://www.last.fm/music/Cher/+images/34877783'
+      images[1]['dateadded'].should == 'Tue, 8 Sep 2009 05:40:36'
+      images[1]['format'].should == 'jpg'
+      images[1]['owner']['type'].should == 'user'
+      images[1]['owner']['name'].should == 'djosci_coelho'
+      images[1]['owner']['url'].should == 'http://www.last.fm/user/djosci_coelho'
+      images[1]['sizes']['size'].length.should == 6
     end
   end
 
