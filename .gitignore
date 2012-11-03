@@ -6,3 +6,4 @@ pkg
 vendor/bundle
 .bundle
 Gemfile.lock
+bin

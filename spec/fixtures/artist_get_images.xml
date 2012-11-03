@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+  <images artist="Cher" total="2">
+    <image>
+      <title>60's</title>
+      <url>http://www.last.fm/music/Cher/+images/34800607</url>
+      <dateadded>Sun, 6 Sep 2009 15:32:53</dateadded>
+      <format>jpg</format>
+      <owner type="user">
+        <name>djosci_coelho</name>
+        <url>http://www.last.fm/user/djosci_coelho</url>
+      </owner>
+      <sizes>
+        <size height="973" name="original" width="728">http://userserve-ak.last.fm/serve/_/34800607/Cher+60s.jpg</size>
+        <size height="168" name="large" width="126">http://userserve-ak.last.fm/serve/126/34800607.jpg</size>
+        <size height="126" name="largesquare" width="126">http://userserve-ak.last.fm/serve/126s/34800607.jpg</size>
+        <size height="86" name="medium" width="64">http://userserve-ak.last.fm/serve/64/34800607.jpg</size>
+        <size height="45" name="small" width="34">http://userserve-ak.last.fm/serve/34/34800607.jpg</size>
+        <size height="337" name="extralarge" width="252">http://userserve-ak.last.fm/serve/252/34800607.jpg</size>
+      </sizes>
+      <votes>
+        <thumbsup>36</thumbsup>
+        <thumbsdown>5</thumbsdown>
+      </votes>
+    </image>
+    <image>
+      <title>Early years</title>
+      <url>http://www.last.fm/music/Cher/+images/34877783</url>
+      <dateadded>Tue, 8 Sep 2009 05:40:36</dateadded>
+      <format>jpg</format>
+      <owner type="user">
+        <name>djosci_coelho</name>
+        <url>http://www.last.fm/user/djosci_coelho</url>
+      </owner>
+      <sizes>
+        <size height="2000" name="original" width="1988">http://userserve-ak.last.fm/serve/_/34877783/Cher+Early+years.jpg</size>
+        <size height="127" name="large" width="126">http://userserve-ak.last.fm/serve/126/34877783.jpg</size>
+        <size height="126" name="largesquare" width="126">http://userserve-ak.last.fm/serve/126s/34877783.jpg</size>
+        <size height="64" name="medium" width="64">http://userserve-ak.last.fm/serve/64/34877783.jpg</size>
+        <size height="34" name="small" width="34">http://userserve-ak.last.fm/serve/34/34877783.jpg</size>
+        <size height="254" name="extralarge" width="252">http://userserve-ak.last.fm/serve/252/34877783.jpg</size>
+      </sizes>
+      <votes>
+        <thumbsup>120</thumbsup>
+        <thumbsdown>43</thumbsdown>
+      </votes>
+    </image>
+  </images>
+</lfm>
