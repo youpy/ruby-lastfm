@@ -100,6 +100,10 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 * {library.getArtists}[http://www.lastfm.jp/api/show?service=322]
 * {library.getTracks}[http://www.last.fm/api/show/library.getTracks]
 
+=== Chart
+
+* {chart.getHypedArtists}[http://www.lastfm.jp/api/show/chart.getHypedArtists]
+
 == Installation
 
 === Archive Installation
