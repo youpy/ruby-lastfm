@@ -31,7 +31,7 @@ describe '#artist' do
   
   describe '#get_top_fans' do
     it 'should get top fans' do
-      @lasfm.should_receive(:request).with('artist.getTopFans'), {
+      @lastfm.should_receive(:request).with('artist.getTopFans', {
         :artist => 'Cher'
       }).and_return(make_response('artist_get_top_fans'))
       
