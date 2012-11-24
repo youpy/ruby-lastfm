@@ -28,6 +28,17 @@ describe '#artist' do
       top_albums.size.should > 1
     end
   end
+  
+  describe '#get_top_fans' do
+    it 'should get top fans' do
+      @lastfm.should_receive(:request).with('artist.getTopFans', {
+        :artist => 'Cher'
+      }).and_return(make_response('artist_get_top_fans'))
+      
+      top_fans = @lastfm.artist.get_top_fans(:artist => 'Cher')
+      top_fans.size.should > 1
+    end
+  end
 
   describe '#get_info' do
     it 'should get info' do
