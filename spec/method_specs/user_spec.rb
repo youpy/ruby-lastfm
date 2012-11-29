@@ -210,6 +210,17 @@ describe '#user' do
       tracks[1]['artist']['content'].should == 'Kylie Minogue'
       tracks.size.should == 2
     end
+    
+    it 'should not error when a user\'s recent tracks includes malformed data' do
+      @lastfm.should_receive(:request).with('user.getRecentTracks', {
+        :user => 'test',
+        :page => nil,
+        :limit => nil,
+        :to => nil,
+        :from => nil
+      }).and_return(make_response('user_get_recent_tracks_malformed'))
+      tracks = @lastfm.user.get_recent_tracks(:user => 'test')
+    end
   end
 
   describe '#get_top_tags' do
