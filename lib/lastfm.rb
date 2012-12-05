@@ -17,6 +17,7 @@ require 'lastfm/method_category/tasteometer'
 require 'lastfm/method_category/track'
 require 'lastfm/method_category/user'
 require 'lastfm/method_category/chart'
+require 'lastfm/method_category/radio'
 
 class Lastfm
   API_ROOT = 'http://ws.audioscrobbler.com/2.0'
@@ -83,6 +84,10 @@ class Lastfm
 
   def chart
     MethodCategory::Chart.new(self)
+  end
+
+  def radio
+    MethodCategory::Radio.new(self)
   end
 
   def request(method, params = {}, http_method = :get, with_signature = false, with_session = false)

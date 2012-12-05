@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+<playlist version="1" xmlns="http://xspf.org/ns/0/">
+<title>Pop Tag Radio</title>
+<creator>Last.fm</creator>
+<date>2012-12-04T01:48:10</date>
+<link rel="http://www.last.fm/expiry">3600</link>
+<trackList>
+    <track>
+        <location>http://play.last.fm/user/5d91bdcf9392915898ec2b35105bd2ef.mp3</location>
+        <title>All The Things She Said</title>
+        <identifier>1026968</identifier>
+        <album>Nachtschicht Vol. 37</album>
+        <creator>t.A.T.u.</creator>
+        <duration>207000</duration>
+        <image>http://userserve-ak.last.fm/serve/174s/47373527.jpg</image>        
+        
+        <extension application="http://www.last.fm">
+            <trackauth>75699</trackauth>
+            <albumid>234792586</albumid>
+            <artistid>1005290</artistid>        
+            <recording>118782567</recording>
+                
+            <artistpage>http://www.last.fm/music/t.A.T.u.</artistpage>
+            <albumpage>http://www.last.fm/music/Various/Nachtschicht+Vol.+37</albumpage>
+            <trackpage>http://www.last.fm/music/t.A.T.u./_/All+The+Things+She+Said</trackpage>
+            <buyTrackURL></buyTrackURL>
+            <buyAlbumURL></buyAlbumURL>
+            <freeTrackURL></freeTrackURL>
+
+                        <explicit>0</explicit>
+                        <loved>0</loved>
+            <streamid>8c926ea59eb105b6</streamid>
+            
+            
+            
+            
+        </extension>        
+    </track>
+</trackList>
+</playlist></lfm>
