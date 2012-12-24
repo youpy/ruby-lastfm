@@ -205,7 +205,7 @@ describe '#user' do
         :limit => nil,
         :to => nil,
         :from => nil
-      }).and_return(make_response('user_get_recent_tracks'))
+      }, :get, true, true).and_return(make_response('user_get_recent_tracks'))
       tracks = @lastfm.user.get_recent_tracks(:user => 'test')
       tracks[1]['artist']['content'].should == 'Kylie Minogue'
       tracks.size.should == 2
@@ -218,7 +218,7 @@ describe '#user' do
         :limit => nil,
         :to => nil,
         :from => nil
-      }).and_return(make_response('user_get_recent_tracks_malformed'))
+      }, :get, true, true).and_return(make_response('user_get_recent_tracks_malformed'))
       tracks = @lastfm.user.get_recent_tracks(:user => 'test')
     end
   end
