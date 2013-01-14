@@ -27,7 +27,10 @@ class Lastfm
       regular_method :get_similar, [:artist, :track], [] do |response|
         response.xml['similartracks']['track'][1 .. -1]
       end
-      regular_method :search, [:track], [[:artist, nil], [:limit, nil], [:page, nil]]
+      regular_method :search, [:track], [[:artist, nil], [:limit, nil], [:page, nil]] do |response|
+        response.xml['results']['trackmatches']['track'] = Util.force_array(response.xml['results']['trackmatches']['track'])
+        response.xml
+      end
 
       method_with_authentication :get_tags, [:artist, :track], [] do |response|
         response.xml['tags']['tag']
