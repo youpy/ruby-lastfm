@@ -298,4 +298,15 @@ describe '#user' do
       weekly_tracks.size.should == 3
     end
   end
+
+  describe '#get_recommended_events' do
+    it 'should get a user\'s list of recommended events' do
+      @lastfm.should_receive(:request).with('user.getRecommendedEvents', {}, :get, true, true) {
+        make_response('user_get_recommended_events') }
+
+      recommended_events = @lastfm.user.get_recommended_events
+      recommended_events[0]['artists']['headliner'].should == 'Toro y Moi'
+      recommended_events[1]['artists']['headliner'].should == 'Reel Big Fish'
+    end
+  end
 end
