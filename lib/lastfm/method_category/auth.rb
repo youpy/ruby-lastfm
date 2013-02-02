@@ -9,7 +9,7 @@ class Lastfm
         response.xml['session']
       end
 
-      method_for_authentication :get_mobile_session, [:username, :authToken], [] do |response|
+      method_for_secure_authentication :get_mobile_session, [:username, :password], [] do |response|
         response.xml['session']
       end
     end
