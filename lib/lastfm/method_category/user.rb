@@ -68,6 +68,10 @@ class Lastfm
       regular_method :get_weekly_track_chart, [:user], [[:from, nil], [:to, nil], [:limit, nil]] do |response|
         response.xml['weeklytrackchart']['track']
       end
+
+      method_with_authentication :get_recommended_events, [], [] do |response|
+        response.xml['events']['event']
+      end
     end
   end
 end
