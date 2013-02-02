@@ -3,10 +3,6 @@ require File.expand_path(File.dirname(__FILE__) + '/spec_helper')
 describe "Lastfm" do
   before { init_lastfm }
 
-  it 'should have base_uri' do
-    Lastfm.base_uri.should == 'http://ws.audioscrobbler.com/2.0'
-  end
-
   describe '.new' do
     it 'should instantiate' do
       @lastfm.should be_an_instance_of(Lastfm)
@@ -16,7 +12,7 @@ describe "Lastfm" do
   describe '#request' do
     it 'should post' do
       mock_response = mock(HTTParty::Response)
-      @lastfm.class.should_receive(:post).with('/', :body => {
+      HTTPRequest.should_receive(:post).with('/', :body => {
         :foo => 'bar',
         :method => 'xxx.yyy',
         :api_key => 'xxx',
@@ -27,7 +23,7 @@ describe "Lastfm" do
 
     it 'should post with signature' do
       mock_response = mock(HTTParty::Response)
-      @lastfm.class.should_receive(:post).with('/', :body => {
+      HTTPRequest.should_receive(:post).with('/', :body => {
         :foo => 'bar',
         :method => 'xxx.yyy',
         :api_key => 'xxx',
@@ -40,7 +36,7 @@ describe "Lastfm" do
     it 'should post with signature and session (request with authentication)' do
       mock_response = mock(HTTParty::Response)
       @lastfm.session = 'abcdef'
-      @lastfm.class.should_receive(:post).with('/', :body => {
+      HTTPRequest.should_receive(:post).with('/', :body => {
         :foo => 'bar',
         :method => 'xxx.yyy',
         :api_key => 'xxx',
@@ -53,7 +49,7 @@ describe "Lastfm" do
 
     it 'should get' do
       mock_response = mock(HTTParty::Response)
-      @lastfm.class.should_receive(:get).with('/', :query => {
+      HTTPRequest.should_receive(:get).with('/', :query => {
           :foo => 'bar',
           :method => 'xxx.yyy',
           :api_key => 'xxx',
@@ -64,7 +60,7 @@ describe "Lastfm" do
 
     it 'should get with signature (request for authentication)' do
       mock_response = mock(HTTParty::Response)
-      @lastfm.class.should_receive(:get).with('/', :query => {
+      HTTPRequest.should_receive(:get).with('/', :query => {
         :foo => 'bar',
         :method => 'xxx.yyy',
         :api_key => 'xxx',
@@ -77,7 +73,7 @@ describe "Lastfm" do
     it 'should get with signature and session' do
       mock_response = mock(HTTParty::Response)
       @lastfm.session = 'abcdef'
-      @lastfm.class.should_receive(:get).with('/', :query => {
+      HTTPRequest.should_receive(:get).with('/', :query => {
         :foo => 'bar',
         :method => 'xxx.yyy',
         :api_key => 'xxx',
@@ -91,7 +87,7 @@ describe "Lastfm" do
     it 'should raise an error if an api error is ocuured' do
       mock_response = mock(HTTParty::Response)
       mock_response.should_receive(:body).and_return(open(fixture('ng.xml')).read)
-      @lastfm.class.should_receive(:post).and_return(mock_response)
+      HTTPRequest.should_receive(:post).and_return(mock_response)
 
       lambda {
         @lastfm.request('xxx.yyy', { :foo => 'bar' }, :post)
