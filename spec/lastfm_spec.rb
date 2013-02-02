@@ -134,7 +134,7 @@ XML
 
     it 'should get mobile session' do
       @lastfm.should_receive(:request).
-        with('auth.getMobileSession', { :username => 'xxxyyyzzz', :authToken => 'xxxxAuthTokenxxxx' }, :get, true).
+        with('auth.getMobileSession', { :username => 'xxxyyyzzz', :password => 'sekretz' }, :post, true, false, true).
         and_return(make_response(<<XML))
 <?xml version="1.0" encoding="utf-8"?>
 <lfm status="ok">
@@ -145,7 +145,7 @@ XML
 	</session>
 </lfm>
 XML
-      session = @lastfm.auth.get_mobile_session('xxxyyyzzz', 'xxxxAuthTokenxxxx')
+      session = @lastfm.auth.get_mobile_session('xxxyyyzzz', 'sekretz')
       session['name'].should == 'MyLastFMUsername'
       session['key'].should == 'zzzyyyxxx'
     end

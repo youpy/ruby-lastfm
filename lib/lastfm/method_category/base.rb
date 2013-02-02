@@ -16,6 +16,10 @@ class Lastfm
           __define_method(:request_for_authentication, id, mandatory, optional, &block)
         end
 
+        def method_for_secure_authentication(id, mandatory, optional = [], &block)
+          __define_method(:request_for_secure_authentication, id, mandatory, optional, &block)
+        end
+
         def regular_method(id, mandatory, optional = [], &block)
           __define_method(:request, id, mandatory, optional, &block)
         end
@@ -45,6 +49,10 @@ class Lastfm
 
       def request_for_authentication(method, params = {})
         request(method, params, :get, true)
+      end
+
+      def request_for_secure_authentication(method, params = {})
+        request(method, params, :post, true, false, true)
       end
 
       def request(*args)
