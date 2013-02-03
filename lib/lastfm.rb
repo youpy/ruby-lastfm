@@ -103,7 +103,7 @@ class Lastfm
     params.update(:sk => @session) if with_session
     params.update(:api_sig => Digest::MD5.hexdigest(build_method_signature(params))) if with_signature
 
-    request_args = [http_method, '/', (http_method == :post ? :body : :query) => params]
+    request_args = [http_method, '/', { (http_method == :post ? :body : :query) => params }]
 
     response = if use_https
       HTTPSRequest.send(*request_args)
