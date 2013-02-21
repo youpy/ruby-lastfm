@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+  <toptracks tag="Disco" page="1" perPage="5" totalPages="200" total="1000">
+
+    <track rank="1">
+      <name>Stayin' Alive</name>
+      <duration>281</duration>
+
+      <mbid>14018054-d7fa-45e4-9689-33792aade877</mbid>
+
+
+      <url>http://www.last.fm/music/Bee+Gees/_/Stayin%27+Alive</url>
+      <streamable fulltrack="0">1</streamable>
+      <artist>
+        <name>Bee Gees</name>
+        <mbid>bf0f7e29-dfe1-416c-b5c6-f9ebc19ea810</mbid>
+
+        <url>http://www.last.fm/music/Bee+Gees</url>
+      </artist>
+      <image size="small">http://userserve-ak.last.fm/serve/34s/72573304.png</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64s/72573304.png</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/72573304.png</image>
+      <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/72573304.png</image>
+      </track>                    <track rank="2">
+      <name>September</name>
+      <duration>218</duration>
+
+      <mbid>0548a4b8-6b8f-4266-8f9b-db822d09c30c</mbid>
+
+
+      <url>http://www.last.fm/music/Earth,+Wind+&amp;+Fire/_/September</url>
+      <streamable fulltrack="0">1</streamable>
+      <artist>
+        <name>Earth, Wind &amp; Fire</name>
+        <mbid>535afeda-2538-435d-9dd1-5e10be586774</mbid>
+
+        <url>http://www.last.fm/music/Earth,+Wind+&amp;+Fire</url>
+      </artist>
+      <image size="small">http://userserve-ak.last.fm/serve/34s/9699191.jpg</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64s/9699191.jpg</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/9699191.jpg</image>
+      <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/9699191.jpg</image>
+      </track>                    <track rank="3">
+      <name>Dancing Queen</name>
+      <duration>228</duration>
+
+      <mbid>0106d274-9da9-41c2-8f62-8ba327e38530</mbid>
+
+
+      <url>http://www.last.fm/music/ABBA/_/Dancing+Queen</url>
+      <streamable fulltrack="0">1</streamable>
+      <artist>
+        <name>ABBA</name>
+        <mbid>d87e52c5-bb8d-4da8-b941-9f4928627dc8</mbid>
+
+        <url>http://www.last.fm/music/ABBA</url>
+      </artist>
+      <image size="small">http://userserve-ak.last.fm/serve/34s/41774271.png</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64s/41774271.png</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/41774271.png</image>
+      <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/41774271.png</image>
+      </track>                    <track rank="4">
+      <name>I Will Survive</name>
+      <duration>190</duration>
+
+      <mbid>b2f17e7a-ac67-4513-8676-148ed235cc76</mbid>
+
+
+      <url>http://www.last.fm/music/Gloria+Gaynor/_/I+Will+Survive</url>
+      <streamable fulltrack="0">1</streamable>
+      <artist>
+        <name>Gloria Gaynor</name>
+        <mbid>0efc0853-78ed-40f7-b5be-b1b4cc866dba</mbid>
+
+        <url>http://www.last.fm/music/Gloria+Gaynor</url>
+      </artist>
+      <image size="small">http://userserve-ak.last.fm/serve/34s/4351744.jpg</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64s/4351744.jpg</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/4351744.jpg</image>
+      <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/4351744.jpg</image>
+      </track>                    <track rank="5">
+      <name>Night Fever</name>
+      <duration>211</duration>
+
+      <mbid>c2d35928-c017-4491-9da3-f59ed8e6d7c8</mbid>
+
+
+      <url>http://www.last.fm/music/Bee+Gees/_/Night+Fever</url>
+      <streamable fulltrack="0">0</streamable>
+      <artist>
+        <name>Bee Gees</name>
+        <mbid>bf0f7e29-dfe1-416c-b5c6-f9ebc19ea810</mbid>
+
+        <url>http://www.last.fm/music/Bee+Gees</url>
+      </artist>
+      <image size="small">http://userserve-ak.last.fm/serve/34s/72573304.png</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64s/72573304.png</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/72573304.png</image>
+      <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/72573304.png</image>
+</track></toptracks></lfm>
+
