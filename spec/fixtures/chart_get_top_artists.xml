@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+  <artists page="3" perPage="10" totalPages="100" total="1000">
+    <artist>
+      <name>Kanye West</name>
+      <playcount>275763</playcount>
+      <listeners>55568</listeners>
+      <mbid>164f0d73-1234-4e2c-8743-d77bf2191051</mbid>
+      <url>http://www.last.fm/music/Kanye+West</url>
+      <streamable>1</streamable>
+      <image size="small">http://userserve-ak.last.fm/serve/34/53929075.png</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64/53929075.png</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/53929075.png</image>
+      <image size="extralarge">http://userserve-ak.last.fm/serve/252/53929075.png</image>
+      <image size="mega">http://userserve-ak.last.fm/serve/_/53929075/Kanye+West+My+Beautiful+Dark+Twisted+Fant.png</image>
+    </artist>
+    <artist>
+      <name>Bruno Mars</name>
+      <playcount>255638</playcount>
+      <listeners>57817</listeners>
+      <mbid>afb680f2-b6eb-4cd7-a70b-a63b25c763d5</mbid>
+      <url>http://www.last.fm/music/Bruno+Mars</url>
+      <streamable>1</streamable>
+      <image size="small">http://userserve-ak.last.fm/serve/34/83154547.png</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64/83154547.png</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/83154547.png</image>
+      <image size="extralarge">http://userserve-ak.last.fm/serve/252/83154547.png</image>
+      <image size="mega">http://userserve-ak.last.fm/serve/_/83154547/Bruno+Mars++PNG.png</image>
+    </artist>
+    <artist>
+      <name>Foo Fighters</name>
+      <playcount>313885</playcount>
+      <listeners>54326</listeners>
+      <mbid>67f66c07-6e61-4026-ade5-7e782fad3a5d</mbid>
+      <url>http://www.last.fm/music/Foo+Fighters</url>
+      <streamable>1</streamable>
+      <image size="small">http://userserve-ak.last.fm/serve/34/213682.jpg</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64/213682.jpg</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/213682.jpg</image>
+      <image size="extralarge">http://userserve-ak.last.fm/serve/252/213682.jpg</image>
+      <image size="mega">http://userserve-ak.last.fm/serve/_/213682/Foo+Fighters.jpg</image>
+    </artist>
+    <artist>
+      <name>David Guetta</name>
+      <playcount>197031</playcount>
+      <listeners>56376</listeners>
+      <mbid>1bb1eec6-88c3-4028-8920-a985c4b9081a</mbid>
+      <url>http://www.last.fm/music/David+Guetta</url>
+      <streamable>1</streamable>
+      <image size="small">http://userserve-ak.last.fm/serve/34/45807247.png</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64/45807247.png</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/45807247.png</image>
+      <image size="extralarge">http://userserve-ak.last.fm/serve/252/45807247.png</image>
+      <image size="mega">http://userserve-ak.last.fm/serve/500/45807247/David+Guetta+png.png</image>
+    </artist>
+    <artist>
+      <name>Ellie Goulding</name>
+      <playcount>312349</playcount>
+      <listeners>55415</listeners>
+      <mbid>33ca19f4-18c8-4411-98df-ac23890ce9f5</mbid>
+      <url>http://www.last.fm/music/Ellie+Goulding</url>
+      <streamable>1</streamable>
+      <image size="small">http://userserve-ak.last.fm/serve/34/50346567.png</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64/50346567.png</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/50346567.png</image>
+      <image size="extralarge">http://userserve-ak.last.fm/serve/252/50346567.png</image>
+      <image size="mega">http://userserve-ak.last.fm/serve/_/50346567/Ellie+Goulding+ELLIEPNG.png</image>
+    </artist>
+    <artist>
+      <name>The Rolling Stones</name>
+      <playcount>297968</playcount>
+      <listeners>54618</listeners>
+      <mbid>b071f9fa-14b0-4217-8e97-eb41da73f598</mbid>
+      <url>http://www.last.fm/music/The+Rolling+Stones</url>
+      <streamable>1</streamable>
+      <image size="small">http://userserve-ak.last.fm/serve/34/3992023.jpg</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64/3992023.jpg</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/3992023.jpg</image>
+      <image size="extralarge">http://userserve-ak.last.fm/serve/252/3992023.jpg</image>
+      <image size="mega">http://userserve-ak.last.fm/serve/_/3992023/The+Rolling+Stones+stones.jpg</image>
+    </artist>
+    <artist>
+      <name>The Lumineers</name>
+      <playcount>282275</playcount>
+      <listeners>53615</listeners>
+      <mbid>bfcb6630-9b31-4e63-b11f-7b0363be72b5</mbid>
+      <url>http://www.last.fm/music/The+Lumineers</url>
+      <streamable>1</streamable>
+      <image size="small">http://userserve-ak.last.fm/serve/34/85176341.png</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64/85176341.png</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/85176341.png</image>
+      <image size="extralarge">http://userserve-ak.last.fm/serve/252/85176341.png</image>
+      <image size="mega">http://userserve-ak.last.fm/serve/500/85176341/The+Lumineers.png</image>
+    </artist>
+    <artist>
+      <name>Queen</name>
+      <playcount>323135</playcount>
+      <listeners>54560</listeners>
+      <mbid>0383dadf-2a4e-4d10-a46a-e9e041da8eb3</mbid>
+      <url>http://www.last.fm/music/Queen</url>
+      <streamable>1</streamable>
+      <image size="small">http://userserve-ak.last.fm/serve/34/45625545.png</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64/45625545.png</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/45625545.png</image>
+      <image size="extralarge">http://userserve-ak.last.fm/serve/252/45625545.png</image>
+      <image size="mega">http://userserve-ak.last.fm/serve/500/45625545/Queen+PNG.png</image>
+    </artist>
+    <artist>
+      <name>The Strokes</name>
+      <playcount>326678</playcount>
+      <listeners>50450</listeners>
+      <mbid>f181961b-20f7-459e-89de-920ef03c7ed0</mbid>
+      <url>http://www.last.fm/music/The+Strokes</url>
+      <streamable>1</streamable>
+      <image size="small">http://userserve-ak.last.fm/serve/34/1110.jpg</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64/1110.jpg</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/1110.jpg</image>
+      <image size="extralarge">http://userserve-ak.last.fm/serve/252/1110.jpg</image>
+      <image size="mega">http://userserve-ak.last.fm/serve/_/1110/The+Strokes.jpg</image>
+    </artist>
+    <artist>
+      <name>Metallica</name>
+      <playcount>395373</playcount>
+      <listeners>52913</listeners>
+      <mbid>65f4f0c5-ef9e-490c-aee3-909e7ae6b2ab</mbid>
+      <url>http://www.last.fm/music/Metallica</url>
+      <streamable>0</streamable>
+      <image size="small">http://userserve-ak.last.fm/serve/34/2147116.jpg</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/64/2147116.jpg</image>
+      <image size="large">http://userserve-ak.last.fm/serve/126/2147116.jpg</image>
+      <image size="extralarge">http://userserve-ak.last.fm/serve/252/2147116.jpg</image>
+      <image size="mega">http://userserve-ak.last.fm/serve/500/2147116/Metallica.jpg</image>
+    </artist>
+  </artists>
+</lfm>
