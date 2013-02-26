@@ -110,6 +110,11 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 === Chart
 
 * {chart.getHypedArtists}[http://www.lastfm.jp/api/show/chart.getHypedArtists]
+* {chart.getHypedTracks}[http://www.lastfm.jp/api/show/chart.getHypedTracks]
+* {chart.getLovedTracks}[http://www.lastfm.jp/api/show/chart.getLovedTracks]
+* {chart.getTopArtists}[http://www.lastfm.jp/api/show/chart.getTopArtists]
+* {chart.getTopTags}[http://www.lastfm.jp/api/show/chart.getTopTags]
+* {chart.getTopTracks}[http://www.lastfm.jp/api/show/chart.getTopTracks]
 
 == Installation
 
