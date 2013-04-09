@@ -8,10 +8,20 @@ describe '#user' do
   end
 
   describe '#get_info' do
-    it 'should get user info' do
-      @lastfm.should_receive(:request).with('user.getInfo', {:user => 'test'}).and_return(make_response('user_get_info'))
-      info = @lastfm.user.get_info(:user => 'test')
-      info['id'].should == '1000002'
+    context 'with params' do
+      it 'should get user info' do
+        @lastfm.should_receive(:request).with('user.getInfo', {:user => 'test'}).and_return(make_response('user_get_info'))
+        info = @lastfm.user.get_info(:user => 'test')
+        info['id'].should == '1000002'
+      end
+    end
+
+    context 'without params' do
+      it 'should get current user info' do
+        @lastfm.should_receive(:request).with('user.getInfo', {}, :get, true, true).and_return(make_response('user_get_info'))
+        info = @lastfm.user.get_info
+        info['id'].should == '1000002'
+      end
     end
   end
 
@@ -210,7 +220,7 @@ describe '#user' do
       tracks[1]['artist']['content'].should == 'Kylie Minogue'
       tracks.size.should == 2
     end
-    
+
     it 'should not error when a user\'s recent tracks includes malformed data' do
       @lastfm.should_receive(:request).with('user.getRecentTracks', {
         :user => 'test',
