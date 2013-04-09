@@ -13,8 +13,19 @@ class Lastfm
     end
 
     def self.build_options_from_hash(options, mandatory, optional)
-      mandatory.each do |name|
-        raise ArgumentError.new("%s is required" % name) unless options[name]
+      candidates = mandatory.kind_of?(AnyParams) ? mandatory.candidates : [mandatory]
+      candidates.each_with_index do |params, index|
+        Array(params).each do |param|
+          if !options.has_key?(param)
+            if params.equal? candidates.last
+              raise ArgumentError.new("%s is required" % param)
+            else
+              next
+            end
+          end
+        end
+
+        break
       end
 
       optional.each do |name, value|

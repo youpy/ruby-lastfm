@@ -1,17 +1,17 @@
 class Lastfm
-  class AnyArgs
-    attr_reader :candidate_params
+  class AnyParams
+    attr_reader :candidates
 
-    def initialize(candidate_params)
-      @candidate_params = candidate_params
+    def initialize(candidates)
+      @candidates = candidates
     end
   end
 
   module MethodCategory
     class Base
       class << self
-        def any(*args)
-          AnyArgs.new(args)
+        def any_params(*args)
+          AnyParams.new(args)
         end
 
         def write_method(id, params = {})
