@@ -40,7 +40,7 @@ class Lastfm
 
       regular_method(
         :get_info,
-        :required => [:artist, :track],
+        :required => any_params([:artist, :track], :mbid),
         :optional => [
           [:username, nil]
         ]

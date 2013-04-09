@@ -35,7 +35,7 @@ describe '#track' do
   end
 
   describe '#get_info' do
-    it 'should get info' do
+    it 'should get info by track and artist' do
       @lastfm.should_receive(:request).with('track.getInfo', {
         :artist => 'Cher',
         :track => 'Believe',
@@ -46,6 +46,24 @@ describe '#track' do
         :artist => 'Cher',
         :track => 'Believe',
         :username => 'youpy')
+      track['name'].should == 'Believe'
+      track['album']['image'].size.should == 4
+      track['album']['image'].first['size'].should == 'small'
+      track['album']['image'].first['content'].should == 'http://userserve-ak.last.fm/serve/64s/8674593.jpg'
+      track['toptags']['tag'].size.should == 5
+      track['toptags']['tag'].first['name'].should == 'pop'
+    end
+
+    it 'should get info by mbid' do
+      @lastfm.should_receive(:request).with('track.getInfo', {
+          :mbid => 'xxx',
+          :username => nil
+        }
+      ).and_return(make_response('track_get_info'))
+
+      track = @lastfm.track.get_info(
+        :mbid => 'xxx'
+      )
       track['name'].should == 'Believe'
       track['album']['image'].size.should == 4
       track['album']['image'].first['size'].should == 'small'
