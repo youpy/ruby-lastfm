@@ -5,7 +5,14 @@ class Lastfm
         response.xml['friends']['user']
       end
 
-      regular_method :get_info, [:user], [] do |response|
+      def get_info(*args)
+        method = :get_info.to_s.camelize(:lower)
+        response = if args.any?
+          options = Lastfm::Util.build_options(args, [:user], [])
+          request(method, options)
+        else
+          request_with_authentication(method)
+        end
         response.xml['user'][0]
       end
 
