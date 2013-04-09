@@ -1,8 +1,8 @@
 class Lastfm
   module MethodCategory
     class Radio < Base
-      write_method :tune, [:station]
-      method_with_authentication :get_playlist, [], [] do |response|
+      write_method :tune, :required => [:station]
+      method_with_authentication :get_playlist do |response|
         playlist = response.xml['playlist']
         tracklist = playlist['trackList']['track']
 

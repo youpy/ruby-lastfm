@@ -1,38 +1,98 @@
 class Lastfm
   module MethodCategory
     class Track < Base
-      write_method :add_tags, [:artist, :track, :tags]
-      write_method :remove_tag, [:artist, :track, :tag]
-      write_method :ban, [:artist, :track]
-      write_method :love, [:artist, :track]
-      write_method :share, [:artist, :track, :recipient], [[:message, nil]]
-      write_method :scrobble, [:artist, :track], [[:timestamp, Proc.new { Time.now.utc.to_i }], [:album, nil], [:trackNumber, nil], [:mbid, nil], [:duration, nil], [:albumArtist, nil]]
-      write_method :update_now_playing, [:artist, :track], [[:album, nil], [:trackNumber, nil], [:mbid, nil], [:duration, nil], [:albumArtist, nil]]
-      write_method :unlove, [:artist, :track]
+      write_method :add_tags, :required => [:artist, :track, :tags]
 
-      regular_method :get_info, [:artist, :track], [[:username, nil]] do |response|
+      write_method :remove_tag, :required => [:artist, :track, :tag]
+
+      write_method :ban, :required => [:artist, :track]
+
+      write_method :love, :required => [:artist, :track]
+
+      write_method :share, :required => [:artist, :track, :recipient], :optional => [[:message, nil]]
+
+      write_method(
+        :scrobble,
+        :required => [:artist, :track],
+        :optional => [
+          [:timestamp, Proc.new { Time.now.utc.to_i }],
+          [:album, nil],
+          [:trackNumber, nil],
+          [:mbid, nil],
+          [:duration, nil],
+          [:albumArtist, nil]
+        ]
+      )
+
+      write_method(
+        :update_now_playing,
+        :required => [:artist, :track],
+        :optional => [
+          [:album, nil],
+          [:trackNumber, nil],
+          [:mbid, nil],
+          [:duration, nil],
+          [:albumArtist, nil]
+        ]
+      )
+
+      write_method :unlove, :required => [:artist, :track]
+
+      regular_method(
+        :get_info,
+        :required => [:artist, :track],
+        :optional => [
+          [:username, nil]
+        ]
+      ) do |response|
         response.xml['track']
       end
 
-      regular_method :get_correction, [:artist, :track], [] do |response|
+      regular_method(
+        :get_correction,
+        :required => [:artist, :track]
+      ) do |response|
         response.xml['corrections']['correction']
       end
 
-      regular_method :get_top_fans, [:artist, :track], [] do |response|
+      regular_method(
+        :get_top_fans,
+        :required => [:artist, :track]
+      ) do |response|
         response.xml['topfans']['user']
       end
-      regular_method :get_top_tags, [:artist, :track], [] do |response|
+
+      regular_method(
+        :get_top_tags,
+        :required => [:artist, :track]
+      ) do |response|
         response.xml['toptags']['tag']
       end
-      regular_method :get_similar, [:artist, :track], [] do |response|
+
+      regular_method(
+        :get_similar,
+        :required => [:artist, :track]
+      ) do |response|
         response.xml['similartracks']['track'][1 .. -1]
       end
-      regular_method :search, [:track], [[:artist, nil], [:limit, nil], [:page, nil]] do |response|
+
+      regular_method(
+        :search,
+        :required => [:track],
+        :optional => [
+          [:artist, nil],
+          [:limit, nil],
+          [:page, nil]
+        ]
+      ) do |response|
         response.xml['results']['trackmatches']['track'] = Util.force_array(response.xml['results']['trackmatches']['track'])
         response.xml
       end
 
-      method_with_authentication :get_tags, [:artist, :track], [] do |response|
+      method_with_authentication(
+        :get_tags,
+        :required => [:artist, :track]
+      ) do |response|
         response.xml['tags']['tag']
       end
     end

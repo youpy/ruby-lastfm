@@ -6,9 +6,9 @@ class Lastfm
 
     def self.build_options(args, mandatory, optional)
       if args.first.is_a?(Hash)
-        build_options_from_hash(args.first, mandatory, optional)
+        build_options_from_hash(args.first, mandatory || [], optional || [])
       else
-        build_options_from_array(args, mandatory, optional)
+        build_options_from_array(args, mandatory || [], optional || [])
       end
     end
 
