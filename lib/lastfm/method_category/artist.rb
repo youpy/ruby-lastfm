@@ -62,6 +62,17 @@ class Lastfm
       end
 
       regular_method(
+        :get_top_tags,
+        :required => [:artist],
+        :optional => [
+          [:mbid, nil],
+          [:autocorrect, nil]
+        ]
+      ) do |response|
+        response.xml['toptags']['tag']
+      end
+
+      regular_method(
         :search,
         :required => [:artist],
         :optional => [
