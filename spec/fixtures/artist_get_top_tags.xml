@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+  <toptags artist="Giorgio Moroder">
+    <tag>
+      <name>electronic</name>
+      <count>100</count>
+      <url>http://www.last.fm/tag/electronic</url>
+    </tag>
+    <tag>
+      <name>Disco</name>
+      <count>97</count>
+      <url>http://www.last.fm/tag/disco</url>
+    </tag>
+    <tag>
+      <name>synthpop</name>
+      <count>63</count>
+      <url>http://www.last.fm/tag/synthpop</url>
+    </tag>
+    <tag>
+      <name>Soundtrack</name>
+      <count>51</count>
+      <url>http://www.last.fm/tag/soundtrack</url>
+    </tag>
+    <tag>
+      <name>80s</name>
+      <count>43</count>
+      <url>http://www.last.fm/tag/80s</url>
+    </tag>
+  </toptags>
+</lfm>
