@@ -3,4 +3,5 @@ class HTTPRequest
 
   include HTTParty
   base_uri API_ROOT
+  format :plain
 end
