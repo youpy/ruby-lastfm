@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+  <recommendations user="joanofarctan" page="4" perPage="50" totalPages="6" total="276">
+    <artist>
+      <name>Quest.Room.Project</name>
+      <mbid/>
+      <url>http://www.last.fm/music/Quest.Room.Project</url>
+      <streamable>1</streamable>
+      <image size="small">http://userserve-ak.last.fm/serve/34/53572699.png</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/34/53572699.png</image>
+      <image size="large">http://userserve-ak.last.fm/serve/34/53572699.png</image>
+    </artist>
+    <artist>
+      <name>Senior Soul</name>
+      <mbid>a25cebd7-679f-40c5-b451-7f40c1f25c5b</mbid>
+      <url>http://www.last.fm/music/Senior+Soul</url>
+      <streamable>0</streamable>
+      <image size="small">http://userserve-ak.last.fm/serve/34/53572699.png</image>
+      <image size="medium">http://userserve-ak.last.fm/serve/34/53572699.png</image>
+      <image size="large">http://userserve-ak.last.fm/serve/34/53572699.png</image>
+    </artist>
+  </recommendations>
+</lfm>
