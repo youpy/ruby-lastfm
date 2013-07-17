@@ -13,6 +13,7 @@ Gem::Specification.new do |gem|
   gem.name          = %q{lastfm}
   gem.require_paths = ["lib"]
   gem.version       = "1.20.1"
+  gem.license       = 'MIT'
 
   gem.add_dependency "xml-simple"
   gem.add_dependency "httparty"
