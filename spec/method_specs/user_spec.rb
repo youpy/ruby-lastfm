@@ -319,12 +319,12 @@ describe '#user' do
       recommended_events[1]['artists']['headliner'].should == 'Reel Big Fish'
     end
   end
-  
+
   describe '#get_recommended_artists' do
     it 'shoud get user\'s recommended artists' do
       @lastfm.should_receive(:request).with('user.getRecommendedArtists', {}, :get, true, true) {
         make_response('user_get_recommended_artists') }
-        
+
       recommended_artists = @lastfm.user.get_recommended_artists
       recommended_artists[0]['name'].should == 'Quest.Room.Project'
       recommended_artists[1]['name'].should == 'Senior Soul'

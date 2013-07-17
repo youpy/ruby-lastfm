@@ -180,13 +180,12 @@ class Lastfm
       ) do |response|
         response.xml['events']['event']
       end
-      
+
       method_with_authentication(
         :get_recommended_artists
       ) do |response|
         response.xml['recommendations']['artist']
       end
-      
     end
   end
 end
