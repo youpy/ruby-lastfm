@@ -90,6 +90,7 @@ It supports methods which require {authentication}[http://www.last.fm/api/authen
 * {user.getPersonalTags}[http://www.lastfm.jp/api/show/user.getPersonalTags]
 * {user.getRecentTracks}[http://www.lastfm.jp/api/show?service=278]
 * {user.getRecommendedEvents}[http://www.last.fm/api/show/user.getRecommendedEvents]
+* {user.getRecommendedArtists}[http://www.last.fm/api/show/user.getRecommendedArtists]
 * {user.getTopArtists}[http://www.lastfm.jp/api/show/user.getTopArtists]
 * {user.getTopAlbums}[http://www.lastfm.jp/api/show/user.getTopAlbums]
 * {user.getTopTags}[http://www.lastfm.jp/api/show/user.getTopTags]
