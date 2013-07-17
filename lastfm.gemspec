@@ -16,7 +16,7 @@ Gem::Specification.new do |gem|
 
   gem.add_dependency "xml-simple"
   gem.add_dependency "httparty"
-  gem.add_dependency 'activesupport', '>= 3.0.3'
+  gem.add_dependency 'activesupport', '3.2.0'
 
   gem.add_development_dependency('rspec', ['~> 2.8.0'])
   gem.add_development_dependency('rake')
