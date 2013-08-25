@@ -207,6 +207,18 @@ describe '#user' do
     end
   end
 
+  describe '#get_new_releases' do
+    it 'should get user\'s new releases' do
+      @lastfm.should_receive(:request).with('user.getNewReleases', {
+        :user => 'rj',
+        :userecs => nil
+      }).and_return(make_response('user_get_new_releases'))
+      albums = @lastfm.user.get_new_releases(:user => 'rj')
+      albums.size.should == 20
+      albums[0]['name'].should == 'Ten Redux'
+    end
+  end
+
   describe '#get_recent_tracks' do
     it 'should get user\'s recent tracks' do
       @lastfm.should_receive(:request).with('user.getRecentTracks', {
