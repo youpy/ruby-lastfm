@@ -52,6 +52,16 @@ class Lastfm
       end
 
       regular_method(
+        :get_new_releases,
+        :required => [:user],
+        :optional => [
+          [:userecs, nil],
+        ]
+      ) do |response|
+        response.xml['albums']['album']
+      end
+
+      regular_method(
         :get_personal_tags,
         :required => [:user, :tag],
         :optional => [
