@@ -63,9 +63,8 @@ class Lastfm
 
       regular_method(
         :get_top_tags,
-        :required => [:artist],
+        :required => any_params([:artist], [:mbid]),
         :optional => [
-          [:mbid, nil],
           [:autocorrect, nil]
         ]
       ) do |response|
