@@ -131,21 +131,40 @@ describe '#artist' do
   end
 
   describe '#get_top_tags' do
-    it 'should get artist top tags' do
-      @lastfm.should_receive(:request).with('artist.getTopTags', {
-        :artist => 'Giorgio Moroder',
-        :mbid => nil,
-        :autocorrect => nil
-      }).and_return(make_response('artist_get_top_tags'))
-      
-      tags = @lastfm.artist.get_top_tags(:artist => 'Giorgio Moroder')
-      tags.size.should == 5
-      tags[0]['name'].should == 'electronic'
-      tags[0]['count'].should == '100'
-      tags[0]['url'].should == 'http://www.last.fm/tag/electronic'
-      tags[1]['name'].should == 'Disco'
-      tags[1]['count'].should == '97'
-      tags[1]['url'].should == 'http://www.last.fm/tag/disco'
+    context 'with artist' do
+      it 'should get artist top tags' do
+        @lastfm.should_receive(:request).with('artist.getTopTags', {
+            :artist => 'Giorgio Moroder',
+            :autocorrect => nil
+          }).and_return(make_response('artist_get_top_tags'))
+
+        tags = @lastfm.artist.get_top_tags(:artist => 'Giorgio Moroder')
+        tags.size.should == 5
+        tags[0]['name'].should == 'electronic'
+        tags[0]['count'].should == '100'
+        tags[0]['url'].should == 'http://www.last.fm/tag/electronic'
+        tags[1]['name'].should == 'Disco'
+        tags[1]['count'].should == '97'
+        tags[1]['url'].should == 'http://www.last.fm/tag/disco'
+      end
+    end
+
+    context 'with mbid' do
+      it 'should get artist top tags' do
+        @lastfm.should_receive(:request).with('artist.getTopTags', {
+            :mbid => 'xxxxx',
+            :autocorrect => nil
+          }).and_return(make_response('artist_get_top_tags'))
+
+        tags = @lastfm.artist.get_top_tags(:mbid => 'xxxxx')
+        tags.size.should == 5
+        tags[0]['name'].should == 'electronic'
+        tags[0]['count'].should == '100'
+        tags[0]['url'].should == 'http://www.last.fm/tag/electronic'
+        tags[1]['name'].should == 'Disco'
+        tags[1]['count'].should == '97'
+        tags[1]['url'].should == 'http://www.last.fm/tag/disco'
+      end
     end
   end
 
