@@ -20,6 +20,12 @@ A Ruby interface for Last.fm Web Services v2.0
  # deprecated style
  lastfm.track.love('Hujiko Pro', 'acid acid 7riddim')
 
+== Supported Rubies
+
+* 1.9.3
+* 2.0.0
+* 2.1.0
+
 == Supported API Methods
 
 It supports methods which require {authentication}[http://www.last.fm/api/authentication].
