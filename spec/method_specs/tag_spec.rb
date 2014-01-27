@@ -40,4 +40,38 @@ describe '#tag' do
     end
   end
 
+  describe '#get_top_albums' do
+    it 'should get top albums of a given tag' do
+      @lastfm.should_receive(:request).with('tag.getTopAlbums', {
+        :tag => 'Disco',
+        :limit => 5,
+        :page => nil
+      }).and_return(make_response('tag_get_top_albums'))
+
+      albums = @lastfm.tag.get_top_albums(:tag => 'Disco', :limit => 5)
+      albums.size.should == 5
+      albums[0]['name'].should == 'Number Ones'
+      albums[0]['url'].should == 'http://www.last.fm/music/Bee+Gees/Number+Ones'
+      albums[0]['artist']['name'].should == 'Bee Gees'
+      albums[1]['name'].should == 'Gold: Greatest Hits'
+    end
+  end
+
+  describe '#search' do
+    it 'should get all tags related to a given one' do
+      @lastfm.should_receive(:request).with('tag.search', {
+        :tag => 'Disco',
+        :limit => 5,
+        :page => nil
+      }).and_return(make_response('tag_search'))
+
+      tags = @lastfm.tag.search(:tag => 'Disco', :limit => 5)
+      tags.size.should == 5
+      tags[0]['name'].should == 'disco'
+      tags[0]['count'].should == '157207'
+      tags[0]['url'].should == 'www.last.fm/tag/disco'
+      tags[1]['name'].should == 'italo disco'
+    end
+  end
+
 end

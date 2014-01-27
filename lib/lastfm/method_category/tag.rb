@@ -22,6 +22,28 @@ class Lastfm
       ) do |response|
         response.xml['toptracks']['track']
       end
+
+      regular_method(
+        :get_top_albums,
+        :required => [:tag],
+        :optional => [
+          [:limit, nil],
+          [:page, nil]
+        ]
+      ) do |response|
+        response.xml['topalbums']['album']
+      end
+
+      regular_method(
+        :search,
+        :required => [:tag],
+        :optional => [
+          [:limit, nil],
+          [:page, nil]
+        ]
+      ) do |response|
+        response.xml['results']['tagmatches']['tag']
+      end
     end
   end
 end
