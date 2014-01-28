@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+<topalbums tag="Disco"  page="1" perPage="5" totalPages="200" total="1000">
+
+                        <album rank="1">
+    <name>Number Ones</name>
+                <mbid>1a5fbd22-9a0a-4252-9bb0-60f3f1e14750</mbid>
+                <url>http://www.last.fm/music/Bee+Gees/Number+Ones</url>
+        <artist>
+        <name>Bee Gees</name>
+                <mbid>bf0f7e29-dfe1-416c-b5c6-f9ebc19ea810</mbid>
+            <url>http://www.last.fm/music/Bee+Gees</url>
+                    </artist>
+        <image size="small">http://userserve-ak.last.fm/serve/34s/88142617.png</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/88142617.png</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/88142617.png</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/88142617.png</image>
+</album>                    <album rank="2">
+    <name>Gold: Greatest Hits</name>
+                <mbid>f2d583b3-c542-4b9e-bcef-12b9696bea51</mbid>
+                <url>http://www.last.fm/music/ABBA/Gold:+Greatest+Hits</url>
+        <artist>
+        <name>ABBA</name>
+                <mbid>d87e52c5-bb8d-4da8-b941-9f4928627dc8</mbid>
+            <url>http://www.last.fm/music/ABBA</url>
+                    </artist>
+        <image size="small">http://userserve-ak.last.fm/serve/34s/91651569.png</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/91651569.png</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/91651569.png</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/91651569.png</image>
+</album>                    <album rank="3">
+    <name>Remix 2005</name>
+                <mbid>08b95338-faa4-489e-87b3-7ea3a69aa7b6</mbid>
+                <url>http://www.last.fm/music/Boney+M./Remix+2005</url>
+        <artist>
+        <name>Boney M.</name>
+                <mbid>1a79fc33-3cfb-4736-9042-b6b9e8ce4fe9</mbid>
+            <url>http://www.last.fm/music/Boney+M.</url>
+                    </artist>
+        <image size="small">http://userserve-ak.last.fm/serve/34s/9102817.jpg</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/9102817.jpg</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/9102817.jpg</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/9102817.jpg</image>
+</album>                    <album rank="4">
+    <name>Greatest Hits</name>
+                <mbid>b05fbfb7-833e-4f40-acbf-103539bec01b</mbid>
+                <url>http://www.last.fm/music/Earth,+Wind+&amp;+Fire/Greatest+Hits</url>
+        <artist>
+        <name>Earth, Wind &amp; Fire</name>
+                <mbid>535afeda-2538-435d-9dd1-5e10be586774</mbid>
+            <url>http://www.last.fm/music/Earth,+Wind+&amp;+Fire</url>
+                    </artist>
+        <image size="small">http://userserve-ak.last.fm/serve/34s/9699191.jpg</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/9699191.jpg</image>
+    <image size="large">http://userserve-ak.last.fm/serve/126/9699191.jpg</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/9699191.jpg</image>
+</album>                    <album rank="5">
+    <name>Greatest Hits</name>
+                <mbid>11f1262d-9be0-46d4-8e74-a273f803a327</mbid>
+                <url>http://www.last.fm/music/KC+and+The+Sunshine+Band/Greatest+Hits</url>
+        <artist>
+        <name>KC and The Sunshine Band</name>
+                <mbid>25ad6e44-40a9-4b67-82cd-d20bb3b27afa</mbid>
+            <url>http://www.last.fm/music/KC+and+The+Sunshine+Band</url>
+                    </artist>
+        <image size="small">http://images.amazon.com/images/P/B00002NDAL.01.MZZZZZZZ.jpg</image>
+    <image size="medium">http://images.amazon.com/images/P/B00002NDAL.01.MZZZZZZZ.jpg</image>
+    <image size="large">http://images.amazon.com/images/P/B00002NDAL.01.MZZZZZZZ.jpg</image>
+    <image size="extralarge">http://images.amazon.com/images/P/B00002NDAL.01.MZZZZZZZ.jpg</image>
+</album></topalbums></lfm>

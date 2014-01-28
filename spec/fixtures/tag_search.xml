@@ -1,0 +1,35 @@
+
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+<results for="disco" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">
+<opensearch:Query role="request" searchTerms="disco" startPage="1" />
+<opensearch:totalResults>1172</opensearch:totalResults>
+<opensearch:startIndex>0</opensearch:startIndex>
+<opensearch:itemsPerPage>5</opensearch:itemsPerPage><tagmatches>
+<tag>
+    <name>disco</name>
+    <count>157207</count>
+    <url>www.last.fm/tag/disco</url>
+</tag>
+<tag>
+    <name>italo disco</name>
+    <count>18395</count>
+    <url>www.last.fm/tag/italo%20disco</url>
+</tag>
+<tag>
+    <name>disco house</name>
+    <count>6306</count>
+    <url>www.last.fm/tag/disco%20house</url>
+</tag>
+<tag>
+    <name>nu disco</name>
+    <count>7080</count>
+    <url>www.last.fm/tag/nu%20disco</url>
+</tag>
+<tag>
+    <name>panic at the disco</name>
+    <count>2825</count>
+    <url>www.last.fm/tag/panic%20at%20the%20disco</url>
+</tag>
+</tagmatches>
+</results></lfm>
