@@ -17,9 +17,6 @@ lastfm.session = lastfm.auth.get_session(token: token)['key']
 lastfm.track.love(artist: 'Hujiko Pro', track: 'acid acid 7riddim')
 lastfm.track.scrobble(artist: 'Hujiko Pro', track: 'acid acid 7riddim')
 lastfm.track.update_now_playing(artist: 'Hujiko Pro', track: 'acid acid 7riddim')
-
-# deprecated style
-lastfm.track.love('Hujiko Pro', 'acid acid 7riddim')
 ```
 
 ## Supported Rubies
