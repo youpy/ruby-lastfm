@@ -132,14 +132,18 @@ It supports methods which require (authentication)[http://www.last.fm/api/authen
 
 ### Archive Installation
 
- rake install
+```
+rake install
+```
 
 ### Gem Installation
 
- gem update --system
- gem install gemcutter
- gem tumble
- gem install lastfm
+```
+gem update --system
+gem install gemcutter
+gem tumble
+gem install lastfm
+```
 
 ## Features/Problems
 
