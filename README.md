@@ -27,7 +27,7 @@ lastfm.track.update_now_playing(artist: 'Hujiko Pro', track: 'acid acid 7riddim'
 
 ## Supported API Methods
 
-It supports methods which require (authentication)[http://www.last.fm/api/authentication].
+It supports methods which require [authentication](http://www.last.fm/api/authentication).
 
 ### Album
 
