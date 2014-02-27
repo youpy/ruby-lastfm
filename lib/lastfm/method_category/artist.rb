@@ -3,51 +3,51 @@ class Lastfm
     class Artist < Base
       regular_method(
         :get_top_tracks,
-        :required => [:artist]
+        :required => any_params([:artist], [:mbid])
       ) do |response|
         response.xml['toptracks']['track']
       end
 
       regular_method(
         :get_top_albums,
-        :required => [:artist]
+        :required => any_params([:artist], [:mbid])
       ) do |response|
         response.xml['topalbums']['album']
       end
 
       regular_method(
         :get_info,
-        :required => [:artist]
+        :required => any_params([:artist], [:mbid])
       ) do |response|
         response.xml['artist']
       end
 
       regular_method(
         :get_events,
-        :required => [:artist]
+        :required => any_params([:artist], [:mbid])
       ) do |response|
         response.xml['events']['event']
       end
 
       regular_method(
         :get_images,
-        :required => [:artist]
+        :required => any_params([:artist], [:mbid])
       ) do |response|
         response.xml['images']['image']
       end
 
-      regular_method(:get_similar,
-        :required => [:artist]
+      regular_method(
+        :get_similar,
+        :required => any_params([:artist], [:mbid])
       ) do |response|
         response.xml['similarartists']['artist']
       end
 
       regular_method(
         :get_tags,
-        :required => [:artist],
+        :required => any_params([:artist], [:mbid]),
         :optional => [
           [:user, nil],
-          [:mbid, nil],
           [:autocorrect, nil]
         ]
       ) do |response|
@@ -56,7 +56,7 @@ class Lastfm
 
       regular_method(
         :get_top_fans,
-        :required => [:artist]
+        :required => any_params([:artist], [:mbid])
       ) do |response|
         response.xml['topfans']['user']
       end
@@ -73,7 +73,7 @@ class Lastfm
 
       regular_method(
         :search,
-        :required => [:artist],
+        :required => any_params([:artist], [:mbid]),
         :optional => [
           [:limit, nil],
           [:page, nil]

@@ -119,7 +119,6 @@ describe '#artist' do
       @lastfm.should_receive(:request).with('artist.getTags', {
         :artist => 'zebrahead',
         :user => 'test',
-        :mbid => nil,
         :autocorrect => nil
       }).and_return(make_response('artist_get_tags'))
 
