@@ -193,6 +193,18 @@ describe '#user' do
     end
   end
 
+  describe '#get_friend_count' do
+    it 'should get count of user\'s friends' do
+      @lastfm.should_receive(:request).with('user.getFriends', {
+          :user => 'test',
+          :recenttracks => false,
+          :per_page => 0
+      }).and_return(make_response('user_get_friends'))
+      friend_count = @lastfm.user.get_friend_count(:user => 'test')
+      friend_count.should == 1
+    end
+  end
+
   describe '#get_neighbours' do
     it 'should get user\'s neighbours' do
       @lastfm.should_receive(:request).with('user.getNeighbours', {
