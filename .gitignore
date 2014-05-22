@@ -8,3 +8,4 @@ vendor/bundle
 Gemfile.lock
 bin
 .rvmrc
+.idea/
