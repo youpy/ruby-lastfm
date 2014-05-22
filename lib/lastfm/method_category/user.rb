@@ -13,6 +13,14 @@ class Lastfm
         response.xml['friends']['user']
       end
 
+      def get_friend_count(*args)
+        options  = Lastfm::Util.build_options(args, [:user], [[:recenttracks, false], [:per_page, 0]])
+        response = request('getFriends', options)
+        #JSON vs XML APIs seem to return a different structure where to find the total, so defaulting to test both locations
+        total    = response.xml['total'] || response.xml['friends']['total']
+        total.to_i if total.respond_to?(:to_i)
+      end
+
       def get_info(*args)
         method = :get_info.to_s.camelize(:lower)
         response = if args.any?
