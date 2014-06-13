@@ -74,4 +74,16 @@ describe '#tag' do
     end
   end
 
+  describe '#get_info' do
+    it 'should get detailed info of a given tag' do
+      @lastfm.should_receive(:request).with('tag.getInfo', {
+        :tag => 'Disco'
+      }).and_return(make_response('tag_get_info'))
+
+      tags = @lastfm.tag.get_info(:tag => 'Disco')
+      tags[0]['name'].should == 'disco'
+      tags[0]['reach'].should == '33745'
+      tags[0]['url'].should == 'http://www.last.fm/tag/disco'
+    end
+  end
 end
