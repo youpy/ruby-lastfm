@@ -32,8 +32,9 @@ class Lastfm
         ]
       ) do |response|
         response.xml['topalbums']['album']
-      end
 
+      end
+      
       regular_method(
         :search,
         :required => [:tag],
@@ -43,6 +44,13 @@ class Lastfm
         ]
       ) do |response|
         response.xml['results']['tagmatches']['tag']
+      end
+
+      regular_method(
+        :get_info,
+        :required => [:tag]
+      ) do |response|
+        response.xml['tag']
       end
     end
   end
