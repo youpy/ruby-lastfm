@@ -61,6 +61,7 @@ It supports methods which require [authentication](http://www.last.fm/api/authen
 
 ### Tag
 
+* [tag.getInfo](http://www.last.fm/api/show/tag.getInfo)
 * [tag.getTopAlbums](http://www.last.fm/api/show/tag.getTopAlbums)
 * [tag.getTopArtists](http://www.last.fm/api/show/tag.getTopArtists)
 * [tag.getTopTracks](http://www.last.fm/api/show/tag.getTopTracks)
