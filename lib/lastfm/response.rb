@@ -8,7 +8,7 @@ class Lastfm
     def initialize(body)
       @xml = XmlSimple.xml_in(body, 'ForceArray' => ['image', 'tag', 'user', 'event', 'correction'])
     rescue REXML::ParseException
-      @xml = XmlSimple.xml_in(body.encode(Encoding.find("ISO-8859-1"), :undef => :replace), 'ForceArray' => ['image', 'tag', 'user', 'event', 'correction'])
+      @xml = XmlSimple.xml_in(body.encode(Encoding.find("UTF-8"), :undef => :replace), 'ForceArray' => ['image', 'tag', 'user', 'event', 'correction'])
     end
 
     def success?
