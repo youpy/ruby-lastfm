@@ -82,7 +82,7 @@ class Lastfm
         Lastfm::Util::force_array(result)
       end
 
-      regular_method(
+      method_with_authentication(
         :get_recent_tracks,
         :required => [:user],
         :optional => [
