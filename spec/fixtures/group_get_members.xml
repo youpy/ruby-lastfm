@@ -1,0 +1,13 @@
+<lfm status="ok">
+  <members for="Linux" page="1" perPage="50" totalPages="1" total="1">
+    <user>
+      <name>RJ</name>
+      <realname>Richard Jones</realname>
+      <image size="small">http://test.com/1.jpg</image>
+      <image size="medium">http://test.com/2.jpg</image>
+      <image size="large">http://test.com/3.jpg</image>
+      <image size="extralarge">http://test.com/4.jpg</image>
+      <url>http://www.last.fm/user/RJ</url>
+    </user>
+  </members>
+</lfm>
