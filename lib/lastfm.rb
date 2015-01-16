@@ -13,6 +13,7 @@ require 'lastfm/method_category/artist'
 require 'lastfm/method_category/auth'
 require 'lastfm/method_category/event'
 require 'lastfm/method_category/geo'
+require 'lastfm/method_category/group'
 require 'lastfm/method_category/library'
 require 'lastfm/method_category/tag'
 require 'lastfm/method_category/tasteometer'
@@ -57,6 +58,10 @@ class Lastfm
 
   def geo
     MethodCategory::Geo.new(self)
+  end
+
+  def group
+    MethodCategory::Group.new(self)
   end
 
   def library

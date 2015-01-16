@@ -112,6 +112,10 @@ It supports methods which require [authentication](http://www.last.fm/api/authen
 
 * [geo.getEvents](http://www.last.fm/api/show?service#270)
 
+### Group
+
+* [group.getMembers](http://www.last.fm/api/show/group.getMembers)
+
 ### Library
 
 * [library.getArtists](http://www.last.fm/api/show?service#322)
