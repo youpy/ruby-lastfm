@@ -239,6 +239,23 @@ describe '#track' do
       tracks['results']['trackmatches']['track'].size.should == 1
       tracks['results']['trackmatches']['track'][0]['name'].should == 'Make Me Believe'
     end
+
+    it 'should return an empty array if no match found' do
+      @lastfm.should_receive(:request).with('track.search', {
+        :artist => nil,
+        :track => 'Believe',
+        :limit => 10,
+        :page => 1,
+      }).and_return(make_response('track_search_no_match'))
+
+      tracks = @lastfm.track.search(
+        :track => 'Believe',
+        :limit => 10,
+        :page => 1)
+      tracks['results']['for'].should == 'Believe'
+      tracks['results']['totalResults'].should == '0'
+      tracks['results']['trackmatches']['track'].size.should == 0
+    end
   end
 
   describe '#share' do

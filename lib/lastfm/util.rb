@@ -1,7 +1,7 @@
 class Lastfm
   class Util
     def self.force_array(array_or_something)
-      array_or_something.kind_of?(Array) ? array_or_something : [array_or_something]
+      array_or_something.kind_of?(Array) ? array_or_something : [array_or_something].compact
     end
 
     def self.build_options(args, mandatory, optional)
