@@ -31,7 +31,15 @@ It supports methods which require [authentication](http://www.last.fm/api/authen
 
 ### Album
 
+* [album.addTags](http://www.last.fm/api/show/album.addTags)
+* [album.getBuylinks](http://www.last.fm/api/show/album.getBuylinks)
 * [album.getInfo](http://www.last.fm/api/show?service=290)
+* [album.getShouts](http://www.last.fm/api/show/album.getShouts)
+* [album.getTags](http://www.last.fm/api/show/album.getTags)
+* [album.getTopTags](http://www.last.fm/api/show/album.getTopTags)
+* [album.removeTag](http://www.last.fm/api/show/album.removeTag)
+* [album.search](http://www.last.fm/api/show/album.search)
+* [album.share](http://www.last.fm/api/show/album.share)
 
 ### Artist
 
