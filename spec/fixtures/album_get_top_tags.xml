@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+  <toptags artist="Radiohead" album="The Bends">
+    <tag>
+      <name>albums I own</name> 
+      <count>100</count>
+      <url>http://www.last.fm/tag/albums%20i%20own</url>
+    </tag>
+    <tag>
+      <name>alternative rock</name> 
+      <count>56</count>
+      <url>http://www.last.fm/tag/alternative%20rock</url>
+    </tag>
+  </toptags>
+</lfm>

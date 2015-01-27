@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+  <lovedtracks user="skr" page="1" perPage="50" totalPages="4" total="180">
+    <track>
+      <name>I Spy</name>
+      <mbid/>
+      <url>http://www.last.fm/music/Mikhael+Paskalev/_/I+Spy</url>
+      <date uts="1329859504">21 Feb 2012, 21:25</date>
+      <artist>
+        <name>Mikhael Paskalev</name>
+        <mbid/>
+        <url>http://www.last.fm/music/Mikhael+Paskalev</url>
+      </artist>
+      <streamable fulltrack="0">0</streamable>
+    </track>
+  </lovedtracks>
+</lfm>

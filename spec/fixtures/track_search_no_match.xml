@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+  <results xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" for="Believe">
+    <opensearch:Query role="request" searchTerms="Believe" startPage="1"/>
+    <opensearch:totalResults>0</opensearch:totalResults>
+    <opensearch:startIndex>0</opensearch:startIndex>
+    <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+    <trackmatches>
+    </trackmatches>
+  </results>
+</lfm>

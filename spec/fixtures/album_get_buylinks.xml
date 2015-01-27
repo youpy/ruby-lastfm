@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+  <affiliations>
+    <physicals>
+      <affiliation>
+        <supplierName>Amazon</supplierName>
+        <price>
+          <currency>GBP</currency>
+          <amount>6.34</amount>
+          <formatted>£6.34</formatted>
+        </price>
+        <buyLink>http://www.last.fm/affiliate/byid/8/3418994/1/ws.album.buylinks.f4e2585261d8d10d3297e181d68940fc</buyLink>
+        <supplierIcon>http://cdn.last.fm/favicons/1/amazon.gif</supplierIcon>
+        <isSearch>0</isSearch>
+      </affiliation>
+    </physicals>
+    <downloads>
+      <affiliation>
+        <supplierName>Amazon MP3</supplierName>
+        <price>
+          <currency>GBP</currency>
+          <amount>7.99</amount>
+          <formatted>£7.99</formatted>
+        </price>
+        <buyLink>http://www.last.fm/affiliate/byid/8/3418994/44/ws.album.buylinks.f4e2585261d8d10d3297e181d68940fc</buyLink>
+        <supplierIcon>http://cdn.last.fm/favicons/amazon-mp3-16x16-a.gif</supplierIcon>
+        <isSearch>0</isSearch>
+      </affiliation>
+    </downloads>
+  </affiliations>
+</lfm>

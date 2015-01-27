@@ -33,7 +33,7 @@ class Lastfm
           [:page, nil]
         ]
       ) do |response|
-        response.xml['lovedtracks']['track']
+        response.xml['lovedtracks']['track'] = Util.force_array(response.xml['lovedtracks']['track'])
       end
 
       regular_method(

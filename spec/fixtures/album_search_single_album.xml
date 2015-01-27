@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+  <results for="Believe" xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/">
+    <opensearch:Query role="request" searchTerms="Believe" startPage="1" />
+    <opensearch:totalResults>3926</opensearch:totalResults>
+    <opensearch:startIndex>0</opensearch:startIndex>
+    <opensearch:itemsPerPage>50</opensearch:itemsPerPage>
+    <albummatches>
+      <album>
+        <name>Believe</name>
+        <artist>Disturbed</artist>
+        <id>1418894</id>
+        <url>http://www.last.fm/music/Disturbed/Believe</url>
+        <image size="small">http://userserve-ak.last.fm/serve/34s/53553281.png</image>
+        <image size="medium">http://userserve-ak.last.fm/serve/64s/53553281.png</image>
+        <image size="large">http://userserve-ak.last.fm/serve/126/53553281.png</image>
+        <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/53553281.png</image>
+        <streamable>0</streamable>
+        <mbid>ed32813a-cd20-4bb3-b3fd-bca6161deb17</mbid>
+      </album>
+    </albummatches>
+  </results>
+</lfm>
