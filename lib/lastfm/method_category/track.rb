@@ -71,7 +71,10 @@ class Lastfm
 
       regular_method(
         :get_similar,
-        :required => [:artist, :track]
+        :required => [:artist, :track],
+        :optional => [
+          [:limit, nil]
+        ]
       ) do |response|
         response.xml['similartracks']['track'][1 .. -1]
       end
