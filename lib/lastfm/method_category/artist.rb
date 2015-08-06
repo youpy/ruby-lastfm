@@ -21,7 +21,14 @@ class Lastfm
       ) do |response|
         response.xml['artist']
       end
-
+      
+      regular_method(
+        :get_correction,
+        :required => [:artist]
+      ) do |response|
+        response.xml['corrections']['correction']
+      end
+      
       regular_method(
         :get_events,
         :required => any_params([:artist], [:mbid])
