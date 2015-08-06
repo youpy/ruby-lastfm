@@ -7,6 +7,18 @@ describe '#artist' do
     @lastfm.artist.should be_an_instance_of(Lastfm::MethodCategory::Artist)
   end
 
+  describe '#get_correction' do
+    it 'should get corrections' do
+      @lastfm.should_receive(:request).with('artist.getCorrection', {
+        :artist => 'Guns N Roses'
+      }).and_return(make_response('artist_get_correction'))
+
+      corrections = @lastfm.artist.get_correction(:artist => 'Guns N Roses')
+      corrections[0]['artist']['name'].should == "Guns N' Roses"
+      corrections[0]['artist']['url'].should == 'http://www.last.fm/music/Guns+N%27+Roses'
+    end
+  end
+
   describe '#get_top_tracks' do
     it 'should get top tracks' do
       @lastfm.should_receive(:request).with('artist.getTopTracks', {
