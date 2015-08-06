@@ -115,6 +115,7 @@ describe '#track' do
       @lastfm.should_receive(:request).with('track.getSimilar', {
         :artist => 'Cher',
         :track => 'Believe',
+        :limit => nil
       }).and_return(make_response('track_get_similar'))
 
       tracks = @lastfm.track.get_similar(
