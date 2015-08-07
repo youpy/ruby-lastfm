@@ -24,6 +24,7 @@ lastfm.track.update_now_playing(artist: 'Hujiko Pro', track: 'acid acid 7riddim'
 * 1.9.3
 * 2.0.0
 * 2.1.0
+* 2.2.0
 
 ## Supported API Methods
 
