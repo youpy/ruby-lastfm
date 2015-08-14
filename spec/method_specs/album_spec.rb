@@ -131,6 +131,15 @@ describe '#album' do
       album['tracks']['track'][0]['duration'].should == '239'
       album['tracks']['track'][0]['url'].should == 'http://www.last.fm/music/Cher/_/Believe'
     end
+    
+    it 'works without release date' do
+      @lastfm.should_receive(:request).with('album.getInfo', {
+        :mbid => 'xxxxx'
+      }).and_return(make_response('album_get_info_without_release_date'))
+
+      album = @lastfm.album.get_info(:mbid => 'xxxxx')
+      album['name'].should == 'Believe'
+    end
   end
 
   describe '#get_shouts' do
