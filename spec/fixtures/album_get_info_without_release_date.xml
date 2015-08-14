@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<lfm status="ok">
+  <album>
+    <name>Believe</name>
+    <artist>Cher</artist>
+    <id>2026126</id>
+    <mbid>61bf0388-b8a9-48f4-81d1-7eb02706dfb0</mbid>
+    <url>http://www.last.fm/music/Cher/Believe</url>
+    <image size="small">http://userserve-ak.last.fm/serve/34s/42806845.png</image>
+    <image size="medium">http://userserve-ak.last.fm/serve/64s/42806845.png</image>
+    <image size="large">http://userserve-ak.last.fm/serve/174s/42806845.png</image>
+    <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/42806845.png</image>
+    <image size="mega">http://userserve-ak.last.fm/serve/_/42806845/Believe++600++600+PNG.png</image>
+    <listeners>179749</listeners>
+    <playcount>838056</playcount>
+    <tracks>
+      <track rank="1">
+        <name>Believe</name>
+        <duration>239</duration>
+        <mbid/>
+        <url>http://www.last.fm/music/Cher/_/Believe</url>
+        <streamable fulltrack="0">1</streamable>
+        <artist>
+          <name>Cher</name>
+          <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+          <url>http://www.last.fm/music/Cher</url>
+        </artist>
+      </track>
+      <track rank="2">
+        <name>The Power</name>
+        <duration>235</duration>
+        <mbid/>
+        <url>http://www.last.fm/music/Cher/_/The+Power</url>
+        <streamable fulltrack="0">0</streamable>
+        <artist>
+          <name>Cher</name>
+          <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+          <url>http://www.last.fm/music/Cher</url>
+        </artist>
+      </track>
+      <track rank="3">
+        <name>Runaway</name>
+        <duration>285</duration>
+        <mbid/>
+        <url>http://www.last.fm/music/Cher/_/Runaway</url>
+        <streamable fulltrack="0">0</streamable>
+        <artist>
+          <name>Cher</name>
+          <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+          <url>http://www.last.fm/music/Cher</url>
+        </artist>
+      </track>
+      <track rank="4">
+        <name>All Or Nothing</name>
+        <duration>237</duration>
+        <mbid/>
+        <url>http://www.last.fm/music/Cher/_/All+Or+Nothing</url>
+        <streamable fulltrack="0">1</streamable>
+        <artist>
+          <name>Cher</name>
+          <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+          <url>http://www.last.fm/music/Cher</url>
+        </artist>
+      </track>
+      <track rank="5">
+        <name>Strong Enough</name>
+        <duration>223</duration>
+        <mbid/>
+        <url>http://www.last.fm/music/Cher/_/Strong+Enough</url>
+        <streamable fulltrack="0">1</streamable>
+        <artist>
+          <name>Cher</name>
+          <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+          <url>http://www.last.fm/music/Cher</url>
+        </artist>
+      </track>
+      <track rank="6">
+        <name>Dov'è l'amore</name>
+        <duration>257</duration>
+        <mbid/>
+        <url>http://www.last.fm/music/Cher/_/Dov%27%C3%A8+l%27amore</url>
+        <streamable fulltrack="0">0</streamable>
+        <artist>
+          <name>Cher</name>
+          <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+          <url>http://www.last.fm/music/Cher</url>
+        </artist>
+      </track>
+      <track rank="7">
+        <name>Takin' Back My Heart</name>
+        <duration>271</duration>
+        <mbid/>
+        <url>http://www.last.fm/music/Cher/_/Takin%27+Back+My+Heart</url>
+        <streamable fulltrack="0">0</streamable>
+        <artist>
+          <name>Cher</name>
+          <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+          <url>http://www.last.fm/music/Cher</url>
+        </artist>
+      </track>
+      <track rank="8">
+        <name>Taxi Taxi</name>
+        <duration>302</duration>
+        <mbid/>
+        <url>http://www.last.fm/music/Cher/_/Taxi+Taxi</url>
+        <streamable fulltrack="0">0</streamable>
+        <artist>
+          <name>Cher</name>
+          <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+          <url>http://www.last.fm/music/Cher</url>
+        </artist>
+      </track>
+      <track rank="9">
+        <name>Love Is the Groove</name>
+        <duration>270</duration>
+        <mbid/>
+        <url>http://www.last.fm/music/Cher/_/Love+Is+the+Groove</url>
+        <streamable fulltrack="0">0</streamable>
+        <artist>
+          <name>Cher</name>
+          <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+          <url>http://www.last.fm/music/Cher</url>
+        </artist>
+      </track>
+      <track rank="10">
+        <name>We All Sleep Alone</name>
+        <duration>233</duration>
+        <mbid/>
+        <url>http://www.last.fm/music/Cher/_/We+All+Sleep+Alone</url>
+        <streamable fulltrack="0">1</streamable>
+        <artist>
+          <name>Cher</name>
+          <mbid>bfcc6d75-a6a5-4bc6-8282-47aec8531818</mbid>
+          <url>http://www.last.fm/music/Cher</url>
+        </artist>
+      </track>
+    </tracks>
+    <toptags>
+      <tag>
+        <name>pop</name>
+        <url>http://www.last.fm/tag/pop</url>
+      </tag>
+      <tag>
+        <name>90s</name>
+        <url>http://www.last.fm/tag/90s</url>
+      </tag>
+      <tag>
+        <name>dance</name>
+        <url>http://www.last.fm/tag/dance</url>
+      </tag>
+      <tag>
+        <name>1998</name>
+        <url>http://www.last.fm/tag/1998</url>
+      </tag>
+      <tag>
+        <name>albums i own</name>
+        <url>http://www.last.fm/tag/albums%20i%20own</url>
+      </tag>
+    </toptags>
+    <wiki>
+      <published>Sat, 6 Mar 2010 16:48:03 +0000</published>
+      <summary><![CDATA[Believe is the twenty-third studio album by American  singer-actress Cher, released on November 10, 1998 by Warner Bros. Records. The RIAA certified it Quadruple Platinum on December 23, 1999, recognizing four million shipments in the United States; Worldwide, the album has sold more than 20 million copies, making it the biggest-selling album of her career. In 1999 the album received three Grammy Awards nominations including &quot;Record of the Year&quot;, &quot;Best Pop Album&quot; and winning &quot;Best Dance Recording&quot; for the single &quot;Believe&quot;. ]]></summary>
+      <content><![CDATA[Believe is the twenty-third studio album by American  singer-actress Cher, released on November 10, 1998 by Warner Bros. Records. The RIAA certified it Quadruple Platinum on December 23, 1999, recognizing four million shipments in the United States; Worldwide, the album has sold more than 20 million copies, making it the biggest-selling album of her career. In 1999 the album received three Grammy Awards nominations including &quot;Record of the Year&quot;, &quot;Best Pop Album&quot; and winning &quot;Best Dance Recording&quot; for the single &quot;Believe&quot;.
+ 
+ It was released by Warner Bros. Records at the end of 1998. The album was executive produced by Rob Dickens. Upon its debut, critical reception was generally positive. Believe became Cher's most commercially-successful release, reached number one and Top 10 all over the world. In the United States, the album was released on November 10, 1998, and reached number four on the Billboard 200 chart, where it was certified four times platinum.
+ 
+ The album featured a change in Cher's music; in addition, Believe presented a vocally stronger Cher and a massive use of vocoder and Auto-Tune. In 1999, the album received 3 Grammy Awards nominations for &quot;Record of the Year&quot;, &quot;Best Pop Album&quot; and winning &quot;Best Dance Recording&quot;. Throughout 1999 and into 2000 Cher was nominated and winning many awards for the album including a Billboard Music Award for &quot;Female Vocalist of the Year&quot;, Lifelong Contribution Awards and a Star on the Walk of Fame shared with former Sonny Bono. The boost in Cher's popularity led to a very successful Do You Believe? Tour.
+ 
+ The album was dedicated to Sonny Bono, Cher's former husband who died earlier that year from a skiing accident.
+ 
+ Cher also recorded a cover version of &quot;Love Is in the Air&quot; during early sessions for this album. Although never officially released, the song has leaked on file sharing networks.
+ 
+ Singles
+ 
+ 
+ &quot;Believe&quot;
+ &quot;Strong Enough&quot;
+ &quot;All or Nothing&quot;
+ &quot;Dov'è L'Amore&quot;
+        
+User-contributed text is available under the Creative Commons By-SA License and may also be available under the GNU FDL.]]></content>
+    </wiki>
+  </album>
+</lfm>
