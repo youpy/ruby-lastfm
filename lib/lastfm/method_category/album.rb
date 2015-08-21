@@ -30,7 +30,7 @@ class Lastfm
       ) do |response|
         result = response.xml['album']
 
-        result['releasedate'].lstrip! unless result['releasedate'].empty?
+        result['releasedate'].lstrip! unless result['releasedate'].nil? or result['releasedate'].empty?
         result
       end
 
