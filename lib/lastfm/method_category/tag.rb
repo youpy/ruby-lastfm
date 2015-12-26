@@ -20,7 +20,7 @@ class Lastfm
           [:page, nil]
         ]
       ) do |response|
-        response.xml['toptracks']['track']
+        response.xml['tracks']['track']
       end
 
       regular_method(
@@ -31,7 +31,7 @@ class Lastfm
           [:page, nil]
         ]
       ) do |response|
-        response.xml['topalbums']['album']
+        response.xml['albums']['album']
 
       end
       
