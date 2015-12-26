@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <lfm status="ok">
-<topalbums tag="Disco"  page="1" perPage="5" totalPages="200" total="1000">
+<albums tag="Disco"  page="1" perPage="5" totalPages="200" total="1000">
 
                         <album rank="1">
     <name>Number Ones</name>
@@ -67,4 +67,4 @@
     <image size="medium">http://images.amazon.com/images/P/B00002NDAL.01.MZZZZZZZ.jpg</image>
     <image size="large">http://images.amazon.com/images/P/B00002NDAL.01.MZZZZZZZ.jpg</image>
     <image size="extralarge">http://images.amazon.com/images/P/B00002NDAL.01.MZZZZZZZ.jpg</image>
-</album></topalbums></lfm>
+</album></albums></lfm>

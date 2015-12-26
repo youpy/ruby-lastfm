@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <lfm status="ok">
-  <toptracks tag="Disco" page="1" perPage="5" totalPages="200" total="1000">
+  <tracks tag="Disco" page="1" perPage="5" totalPages="200" total="1000">
 
     <track rank="1">
       <name>Stayin' Alive</name>
@@ -97,5 +97,5 @@
       <image size="medium">http://userserve-ak.last.fm/serve/64s/72573304.png</image>
       <image size="large">http://userserve-ak.last.fm/serve/126/72573304.png</image>
       <image size="extralarge">http://userserve-ak.last.fm/serve/300x300/72573304.png</image>
-</track></toptracks></lfm>
+</track></tracks></lfm>
 
