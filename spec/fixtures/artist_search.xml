@@ -1,5 +1,5 @@
 <lfm status="ok">
-  <results xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" for="RADWIMPS">
+  <results for="RADWIMPS">
     <opensearch:Query role="request" searchTerms="RADWIMPS" startPage="1"/>
     <opensearch:totalResults>3</opensearch:totalResults>
     <opensearch:startIndex>0</opensearch:startIndex>

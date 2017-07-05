@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <lfm status="ok">
-  <results xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" for="Believe">
+  <results for="Believe">
     <opensearch:Query role="request" searchTerms="Believe" startPage="3"/>
     <opensearch:totalResults>40540</opensearch:totalResults>
     <opensearch:startIndex>20</opensearch:startIndex>
