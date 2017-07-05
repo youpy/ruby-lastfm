@@ -44,7 +44,7 @@ It supports methods which require [authentication](http://www.last.fm/api/authen
 
 ### Artist
 
-* [artist.getEvents](http://www.last.fm/api/show?service=117)
+* ~~[artist.getEvents](http://www.last.fm/api/show?service=117)~~ deleted
 * [artist.getInfo](http://www.last.fm/api/show?service=267)
 * [artist.getSimilar](http://www.last.fm/api/show?service=267)
 * [artist.getTags](http://www.last.fm/api/show?service=267)
@@ -119,7 +119,7 @@ It supports methods which require [authentication](http://www.last.fm/api/authen
 
 ### Geo
 
-* [geo.getEvents](http://www.last.fm/api/show?service#270)
+* ~~[geo.getEvents](http://www.last.fm/api/show?service#270)~~ deleted
 
 ### Group
 
