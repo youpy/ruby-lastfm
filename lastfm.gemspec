@@ -12,7 +12,7 @@ Gem::Specification.new do |gem|
   gem.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   gem.name          = %q{lastfm}
   gem.require_paths = ["lib"]
-  gem.version       = "1.27.1"
+  gem.version       = "1.27.2"
   gem.license       = 'MIT'
 
   gem.add_dependency "xml-simple"
