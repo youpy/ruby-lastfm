@@ -92,7 +92,7 @@ class Lastfm
         response.xml
       end
 
-      method_with_authentication(
+      regular_method(
         :get_tags,
         :required => [:artist, :track]
       ) do |response|

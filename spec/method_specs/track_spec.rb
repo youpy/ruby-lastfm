@@ -133,7 +133,7 @@ describe '#track' do
       @lastfm.should_receive(:request).with('track.getTags', {
         :artist => 'foo artist',
         :track => 'foo track',
-      }, :get, true, true).and_return(make_response('track_get_tags'))
+      }).and_return(make_response('track_get_tags'))
 
       tags = @lastfm.track.get_tags(
         :artist => 'foo artist',
