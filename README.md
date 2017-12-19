@@ -44,7 +44,7 @@ It supports methods which require [authentication](http://www.last.fm/api/authen
 
 ### Artist
 
-* [artist.getEvents](http://www.last.fm/api/show?service=117)
+* ~~[artist.gets](http://www.last.fm/api/show?service=117)~~ deleted
 * [artist.getInfo](http://www.last.fm/api/show?service=267)
 * [artist.getSimilar](http://www.last.fm/api/show?service=267)
 * [artist.getTags](http://www.last.fm/api/show?service=267)
@@ -62,7 +62,7 @@ It supports methods which require [authentication](http://www.last.fm/api/authen
 
 ### Event
 
-* [event.getInfo](http://www.last.fm/api/show/event.getInfo)
+* ~~[event.getInfo](http://www.last.fm/api/show/event.getInfo)~~ deleted
 
 ### Radio
 
@@ -78,7 +78,7 @@ It supports methods which require [authentication](http://www.last.fm/api/authen
 
 ### Tasteometer
 
-* [tasteometer.compare](http://www.last.fm/api/show/tasteometer.compare)
+* ~~[tasteometer.compare](http://www.last.fm/api/show/tasteometer.compare)~~ deleted
 
 ### Track
 
@@ -106,7 +106,7 @@ It supports methods which require [authentication](http://www.last.fm/api/authen
 * [user.getNeighbours](http://www.last.fm/api/show?service=264)
 * [user.getPersonalTags](http://www.last.fm/api/show/user.getPersonalTags)
 * [user.getRecentTracks](http://www.last.fm/api/show?service=278)
-* [user.getRecommendedEvents](http://www.last.fm/api/show/user.getRecommendedEvents)
+* ~~[user.getRecommendedEvents](http://www.last.fm/api/show/user.getRecommendedEvents)~~ deleted
 * [user.getRecommendedArtists](http://www.last.fm/api/show/user.getRecommendedArtists)
 * [user.getTopArtists](http://www.last.fm/api/show/user.getTopArtists)
 * [user.getTopAlbums](http://www.last.fm/api/show/user.getTopAlbums)
@@ -119,7 +119,7 @@ It supports methods which require [authentication](http://www.last.fm/api/authen
 
 ### Geo
 
-* [geo.getEvents](http://www.last.fm/api/show?service#270)
+* ~~[geo.getEvents](http://www.last.fm/api/show?service#270)~~ deleted
 
 ### Group
 
