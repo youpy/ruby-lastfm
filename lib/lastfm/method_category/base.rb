@@ -45,7 +45,7 @@ class Lastfm
             block.call(
               send(
                 method,
-                id.to_s.camelize(:lower),
+                id.to_s.gsub(/_[a-z]/){ |s| s[1].upcase },
                 Lastfm::Util.build_options(
                   args,
                   params[:required],
