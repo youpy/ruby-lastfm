@@ -14,7 +14,7 @@ class Lastfm
       end
 
       def get_info(*args)
-        method = :get_info.to_s.camelize(:lower)
+        method = 'getInfo'
         response = if args.any?
           options = Lastfm::Util.build_options(args, [:user], [])
           request(method, options)
