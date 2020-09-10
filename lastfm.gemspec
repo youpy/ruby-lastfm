@@ -19,5 +19,5 @@ Gem::Specification.new do |gem|
   gem.add_dependency "httparty"
 
   gem.add_development_dependency('rspec', ['~> 2.14.0'])
-  gem.add_development_dependency('rake', '< 11.0')
+  gem.add_development_dependency('rake', '< 12.3.3')
 end
