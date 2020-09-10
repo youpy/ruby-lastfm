@@ -8,7 +8,7 @@ describe 'Lastfm::Response' do
 
   describe '.new' do
     it 'should instantiate' do
-      Lastfm::Response.new(@ok).should be_an_instance_of(Lastfm::Response)
+      expect(Lastfm::Response.new(@ok)).to be_an_instance_of(Lastfm::Response)
     end
   end
 
@@ -18,12 +18,12 @@ describe 'Lastfm::Response' do
     end
 
     it 'should be success' do
-      @response.should be_success
+      expect(@response).to be_success
     end
 
     it 'should parse response body as xml' do
       xml = @response.xml
-      xml['similartracks']['track'].size.should == 7
+      expect(xml['similartracks']['track'].size).to eq(7)
     end
   end
 
@@ -33,15 +33,15 @@ describe 'Lastfm::Response' do
     end
 
     it 'should not be success' do
-      @response.should_not be_success
+      expect(@response).not_to be_success
     end
 
     it 'should have message' do
-      @response.message.should == 'Invalid API key - You must be granted a valid key by last.fm'
+      expect(@response.message).to eq('Invalid API key - You must be granted a valid key by last.fm')
     end
 
     it 'should have error number' do
-      @response.error.should == 10
+      expect(@response.error).to eq(10)
     end
   end
 end

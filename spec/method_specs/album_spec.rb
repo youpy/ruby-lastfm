@@ -5,28 +5,28 @@ describe '#album' do
   before { init_lastfm }
 
   it 'should return an instance of Lastfm::Album' do
-    @lastfm.album.should be_an_instance_of(Lastfm::MethodCategory::Album)
+    expect(@lastfm.album).to be_an_instance_of(Lastfm::MethodCategory::Album)
   end
 
   describe '#add_tags' do
     it 'should add tags' do
-      @lastfm.should_receive(:request).with('album.addTags', {
+      expect(@lastfm).to receive(:request).with('album.addTags', {
         :artist => 'foo artist',
         :album => 'foo track',
         :tags => 'aaa,bbb,ccc'
       }, :post, true, true).and_return(@ok_response)
 
-      @lastfm.album.add_tags(
+      expect(@lastfm.album.add_tags(
         :artist => 'foo artist',
         :album => 'foo track',
         :tags => 'aaa,bbb,ccc'
-        ).should be_true
+        )).to be_truthy
     end
   end
 
   describe '#get_buylinks' do
     it 'should get buylinks' do
-      @lastfm.should_receive(:request).with('album.getBuylinks', {
+      expect(@lastfm).to receive(:request).with('album.getBuylinks', {
         :artist => 'radiohead',
         :album => 'in rainbows',
         :country => 'united kingdom',
@@ -39,23 +39,23 @@ describe '#album' do
         :country => 'united kingdom'
       )
 
-      buylinks['physicals'].size.should == 1
-      buylinks['physicals']['affiliation']['supplierName'].should == 'Amazon'
-      buylinks['physicals']['affiliation']['price']['currency'].should == 'GBP'
-      buylinks['physicals']['affiliation']['price']['amount'].should == '6.34'
-      buylinks['physicals']['affiliation']['price']['formatted'].should == '£6.34'
-      buylinks['physicals']['affiliation']['buyLink'].should == 'http://www.last.fm/affiliate/byid/8/3418994/1/ws.album.buylinks.f4e2585261d8d10d3297e181d68940fc'
+      expect(buylinks['physicals'].size).to eq(1)
+      expect(buylinks['physicals']['affiliation']['supplierName']).to eq('Amazon')
+      expect(buylinks['physicals']['affiliation']['price']['currency']).to eq('GBP')
+      expect(buylinks['physicals']['affiliation']['price']['amount']).to eq('6.34')
+      expect(buylinks['physicals']['affiliation']['price']['formatted']).to eq('£6.34')
+      expect(buylinks['physicals']['affiliation']['buyLink']).to eq('http://www.last.fm/affiliate/byid/8/3418994/1/ws.album.buylinks.f4e2585261d8d10d3297e181d68940fc')
 
-      buylinks['downloads'].size.should == 1
-      buylinks['downloads']['affiliation']['supplierName'].should == 'Amazon MP3'
-      buylinks['downloads']['affiliation']['price']['currency'].should == 'GBP'
-      buylinks['downloads']['affiliation']['price']['amount'].should == '7.99'
-      buylinks['downloads']['affiliation']['price']['formatted'].should == '£7.99'
-      buylinks['downloads']['affiliation']['buyLink'].should == 'http://www.last.fm/affiliate/byid/8/3418994/44/ws.album.buylinks.f4e2585261d8d10d3297e181d68940fc'
+      expect(buylinks['downloads'].size).to eq(1)
+      expect(buylinks['downloads']['affiliation']['supplierName']).to eq('Amazon MP3')
+      expect(buylinks['downloads']['affiliation']['price']['currency']).to eq('GBP')
+      expect(buylinks['downloads']['affiliation']['price']['amount']).to eq('7.99')
+      expect(buylinks['downloads']['affiliation']['price']['formatted']).to eq('£7.99')
+      expect(buylinks['downloads']['affiliation']['buyLink']).to eq('http://www.last.fm/affiliate/byid/8/3418994/44/ws.album.buylinks.f4e2585261d8d10d3297e181d68940fc')
     end
     
     it 'should get buylinks by mbid' do
-      @lastfm.should_receive(:request).with('album.getBuylinks', {
+      expect(@lastfm).to receive(:request).with('album.getBuylinks', {
         :mbid => 'radiohead',
         :country => 'united kingdom',
         :autocorrect => nil
@@ -66,19 +66,19 @@ describe '#album' do
         :country => 'united kingdom'
       )
 
-      buylinks['physicals'].size.should == 1
-      buylinks['physicals']['affiliation']['supplierName'].should == 'Amazon'
-      buylinks['physicals']['affiliation']['price']['currency'].should == 'GBP'
-      buylinks['physicals']['affiliation']['price']['amount'].should == '6.34'
-      buylinks['physicals']['affiliation']['price']['formatted'].should == '£6.34'
-      buylinks['physicals']['affiliation']['buyLink'].should == 'http://www.last.fm/affiliate/byid/8/3418994/1/ws.album.buylinks.f4e2585261d8d10d3297e181d68940fc'
+      expect(buylinks['physicals'].size).to eq(1)
+      expect(buylinks['physicals']['affiliation']['supplierName']).to eq('Amazon')
+      expect(buylinks['physicals']['affiliation']['price']['currency']).to eq('GBP')
+      expect(buylinks['physicals']['affiliation']['price']['amount']).to eq('6.34')
+      expect(buylinks['physicals']['affiliation']['price']['formatted']).to eq('£6.34')
+      expect(buylinks['physicals']['affiliation']['buyLink']).to eq('http://www.last.fm/affiliate/byid/8/3418994/1/ws.album.buylinks.f4e2585261d8d10d3297e181d68940fc')
 
-      buylinks['downloads'].size.should == 1
-      buylinks['downloads']['affiliation']['supplierName'].should == 'Amazon MP3'
-      buylinks['downloads']['affiliation']['price']['currency'].should == 'GBP'
-      buylinks['downloads']['affiliation']['price']['amount'].should == '7.99'
-      buylinks['downloads']['affiliation']['price']['formatted'].should == '£7.99'
-      buylinks['downloads']['affiliation']['buyLink'].should == 'http://www.last.fm/affiliate/byid/8/3418994/44/ws.album.buylinks.f4e2585261d8d10d3297e181d68940fc'
+      expect(buylinks['downloads'].size).to eq(1)
+      expect(buylinks['downloads']['affiliation']['supplierName']).to eq('Amazon MP3')
+      expect(buylinks['downloads']['affiliation']['price']['currency']).to eq('GBP')
+      expect(buylinks['downloads']['affiliation']['price']['amount']).to eq('7.99')
+      expect(buylinks['downloads']['affiliation']['price']['formatted']).to eq('£7.99')
+      expect(buylinks['downloads']['affiliation']['buyLink']).to eq('http://www.last.fm/affiliate/byid/8/3418994/44/ws.album.buylinks.f4e2585261d8d10d3297e181d68940fc')
     end
 
     it 'should raise ArgumentError without country' do
@@ -95,56 +95,56 @@ describe '#album' do
 
   describe '#get_info' do
     it 'should get info by artist and album' do
-      @lastfm.should_receive(:request).with('album.getInfo', {
+      expect(@lastfm).to receive(:request).with('album.getInfo', {
         :artist => 'Cher', :album => 'Believe'
       }).and_return(make_response('album_get_info'))
 
       album = @lastfm.album.get_info(:artist => 'Cher', :album => 'Believe')
-      album['name'].should == 'Believe'
-      album['artist'].should == 'Cher'
-      album['id'].should == '2026126'
-      album['mbid'].should == '61bf0388-b8a9-48f4-81d1-7eb02706dfb0'
-      album['url'].should == 'http://www.last.fm/music/Cher/Believe'
-      album['image'].size.should == 5
-      album['releasedate'].should == '6 Apr 1999, 00:00'
-      album['tracks']['track'].size.should == 10
-      album['tracks']['track'][0]['name'].should == 'Believe'
-      album['tracks']['track'][0]['duration'].should == '239'
-      album['tracks']['track'][0]['url'].should == 'http://www.last.fm/music/Cher/_/Believe'
+      expect(album['name']).to eq('Believe')
+      expect(album['artist']).to eq('Cher')
+      expect(album['id']).to eq('2026126')
+      expect(album['mbid']).to eq('61bf0388-b8a9-48f4-81d1-7eb02706dfb0')
+      expect(album['url']).to eq('http://www.last.fm/music/Cher/Believe')
+      expect(album['image'].size).to eq(5)
+      expect(album['releasedate']).to eq('6 Apr 1999, 00:00')
+      expect(album['tracks']['track'].size).to eq(10)
+      expect(album['tracks']['track'][0]['name']).to eq('Believe')
+      expect(album['tracks']['track'][0]['duration']).to eq('239')
+      expect(album['tracks']['track'][0]['url']).to eq('http://www.last.fm/music/Cher/_/Believe')
     end
 
     it 'should get info by mbid' do
-      @lastfm.should_receive(:request).with('album.getInfo', {
+      expect(@lastfm).to receive(:request).with('album.getInfo', {
         :mbid => 'xxxxx'
       }).and_return(make_response('album_get_info'))
 
       album = @lastfm.album.get_info(:mbid => 'xxxxx')
-      album['name'].should == 'Believe'
-      album['artist'].should == 'Cher'
-      album['id'].should == '2026126'
-      album['mbid'].should == '61bf0388-b8a9-48f4-81d1-7eb02706dfb0'
-      album['url'].should == 'http://www.last.fm/music/Cher/Believe'
-      album['image'].size.should == 5
-      album['releasedate'].should == '6 Apr 1999, 00:00'
-      album['tracks']['track'].size.should == 10
-      album['tracks']['track'][0]['name'].should == 'Believe'
-      album['tracks']['track'][0]['duration'].should == '239'
-      album['tracks']['track'][0]['url'].should == 'http://www.last.fm/music/Cher/_/Believe'
+      expect(album['name']).to eq('Believe')
+      expect(album['artist']).to eq('Cher')
+      expect(album['id']).to eq('2026126')
+      expect(album['mbid']).to eq('61bf0388-b8a9-48f4-81d1-7eb02706dfb0')
+      expect(album['url']).to eq('http://www.last.fm/music/Cher/Believe')
+      expect(album['image'].size).to eq(5)
+      expect(album['releasedate']).to eq('6 Apr 1999, 00:00')
+      expect(album['tracks']['track'].size).to eq(10)
+      expect(album['tracks']['track'][0]['name']).to eq('Believe')
+      expect(album['tracks']['track'][0]['duration']).to eq('239')
+      expect(album['tracks']['track'][0]['url']).to eq('http://www.last.fm/music/Cher/_/Believe')
     end
     
     it 'works without release date' do
-      @lastfm.should_receive(:request).with('album.getInfo', {
+      expect(@lastfm).to receive(:request).with('album.getInfo', {
         :mbid => 'xxxxx'
       }).and_return(make_response('album_get_info_without_release_date'))
 
       album = @lastfm.album.get_info(:mbid => 'xxxxx')
-      album['name'].should == 'Believe'
+      expect(album['name']).to eq('Believe')
     end
   end
 
   describe '#get_shouts' do
     it 'should get shouts' do
-      @lastfm.should_receive(:request).with('album.getShouts', {
+      expect(@lastfm).to receive(:request).with('album.getShouts', {
         :artist => 'Cher',
         :album => 'Believe',
         :autocorrect => nil,
@@ -155,16 +155,16 @@ describe '#album' do
       shouts = @lastfm.album.get_shouts(
         :artist => 'Cher',
         :album => 'Believe')
-      shouts.size.should == 2
-      shouts[0]['body'].should == 'A perfect Pop/Dance Masterpiece'
-      shouts[0]['author'].should == 'top20fanatico'
-      shouts[0]['date'].should == 'Wed, 7 Jan 2015 12:45:35'
+      expect(shouts.size).to eq(2)
+      expect(shouts[0]['body']).to eq('A perfect Pop/Dance Masterpiece')
+      expect(shouts[0]['author']).to eq('top20fanatico')
+      expect(shouts[0]['date']).to eq('Wed, 7 Jan 2015 12:45:35')
     end
   end
 
   describe '#get_tags' do
     it 'should get tags' do
-      @lastfm.should_receive(:request).with('album.getTags', {
+      expect(@lastfm).to receive(:request).with('album.getTags', {
         :artist => 'Cher',
         :album => 'Believe',
         :autocorrect => nil
@@ -173,15 +173,15 @@ describe '#album' do
       tags = @lastfm.album.get_tags(
         :artist => 'Cher',
         :album => 'Believe')
-      tags.size.should == 2
-      tags[0]['name'].should == 'sourabh'
-      tags[0]['url'].should == 'http://www.last.fm/tag/sourabh'
+      expect(tags.size).to eq(2)
+      expect(tags[0]['name']).to eq('sourabh')
+      expect(tags[0]['url']).to eq('http://www.last.fm/tag/sourabh')
     end
   end
 
   describe '#get_top_tags' do
     it 'should get top tags' do
-      @lastfm.should_receive(:request).with('album.getTopTags', {
+      expect(@lastfm).to receive(:request).with('album.getTopTags', {
         :artist => 'Radiohead',
         :album => 'The Bends',
         :autocorrect => nil
@@ -190,31 +190,31 @@ describe '#album' do
       tags = @lastfm.album.get_top_tags(
         :artist => 'Radiohead',
         :album => 'The Bends')
-      tags.size.should == 2
-      tags[0]['name'].should == 'albums I own'
-      tags[0]['count'].should == '100'
-      tags[0]['url'].should == 'http://www.last.fm/tag/albums%20i%20own'
+      expect(tags.size).to eq(2)
+      expect(tags[0]['name']).to eq('albums I own')
+      expect(tags[0]['count']).to eq('100')
+      expect(tags[0]['url']).to eq('http://www.last.fm/tag/albums%20i%20own')
     end
   end
 
   describe '#remove_tag' do
     it 'should remove tag' do
-      @lastfm.should_receive(:request).with('album.removeTag', {
+      expect(@lastfm).to receive(:request).with('album.removeTag', {
         :artist => 'foo artist',
         :album => 'foo track',
         :tag => 'aaa'
       }, :post, true, true).and_return(@ok_response)
 
-      @lastfm.album.remove_tag(
+      expect(@lastfm.album.remove_tag(
         :artist => 'foo artist',
         :album => 'foo track',
-        :tag => 'aaa').should be_true
+        :tag => 'aaa')).to be_truthy
     end
   end
 
   describe '#search' do
     it 'should search' do
-      @lastfm.should_receive(:request).with('album.search', {
+      expect(@lastfm).to receive(:request).with('album.search', {
         :album => 'Believe',
         :limit => nil,
         :page => nil,
@@ -222,14 +222,14 @@ describe '#album' do
 
       albums = @lastfm.album.search(:album => 'Believe')
       
-      albums['results']['for'].should == 'Believe'
-      albums['results']['totalResults'].should == '3926'
-      albums['results']['albummatches']['album'].size.should == 2
-      albums['results']['albummatches']['album'][0]['name'].should == 'Believe'
+      expect(albums['results']['for']).to eq('Believe')
+      expect(albums['results']['totalResults']).to eq('3926')
+      expect(albums['results']['albummatches']['album'].size).to eq(2)
+      expect(albums['results']['albummatches']['album'][0]['name']).to eq('Believe')
     end
 
     it 'should always return an array of albums' do
-      @lastfm.should_receive(:request).with('album.search', {
+      expect(@lastfm).to receive(:request).with('album.search', {
         :album => 'Believe',
         :limit => nil,
         :page => nil,
@@ -237,14 +237,14 @@ describe '#album' do
 
       albums = @lastfm.album.search(:album => 'Believe')
       
-      albums['results']['for'].should == 'Believe'
-      albums['results']['totalResults'].should == '3926'
-      albums['results']['albummatches']['album'].size.should == 1
-      albums['results']['albummatches']['album'][0]['name'].should == 'Believe'
+      expect(albums['results']['for']).to eq('Believe')
+      expect(albums['results']['totalResults']).to eq('3926')
+      expect(albums['results']['albummatches']['album'].size).to eq(1)
+      expect(albums['results']['albummatches']['album'][0]['name']).to eq('Believe')
     end
     
     it 'should return an empty array if no match found' do
-      @lastfm.should_receive(:request).with('album.search', {
+      expect(@lastfm).to receive(:request).with('album.search', {
         :album => 'Believe',
         :limit => nil,
         :page => nil,
@@ -252,15 +252,15 @@ describe '#album' do
 
       albums = @lastfm.album.search(:album => 'Believe')
       
-      albums['results']['for'].should == 'Believe'
-      albums['results']['totalResults'].should == '0'
-      albums['results']['albummatches']['album'].size.should == 0
+      expect(albums['results']['for']).to eq('Believe')
+      expect(albums['results']['totalResults']).to eq('0')
+      expect(albums['results']['albummatches']['album'].size).to eq(0)
     end
   end
 
   describe '#share' do
     it 'should share' do
-      @lastfm.should_receive(:request).with('album.share', {
+      expect(@lastfm).to receive(:request).with('album.share', {
         :artist => 'bar artist',
         :album => 'bar album',
         :recipient => 'bar@example.com',
@@ -268,12 +268,12 @@ describe '#album' do
         :public => nil,
       }, :post, true, true).and_return(@ok_response)
 
-      @lastfm.album.share(
+      expect(@lastfm.album.share(
         :artist => 'bar artist',
         :album => 'bar album',
         :recipient => 'bar@example.com',
         :message => 'this is a message',
-      ).should be_true
+      )).to be_truthy
     end
   end
 end

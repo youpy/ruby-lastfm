@@ -4,39 +4,39 @@ describe '#track' do
   before { init_lastfm }
 
   it 'should return an instance of Lastfm::Track' do
-    @lastfm.track.should be_an_instance_of(Lastfm::MethodCategory::Track)
+    expect(@lastfm.track).to be_an_instance_of(Lastfm::MethodCategory::Track)
   end
 
   describe '#add_tags' do
     it 'should add tags' do
-      @lastfm.should_receive(:request).with('track.addTags', {
+      expect(@lastfm).to receive(:request).with('track.addTags', {
         :artist => 'foo artist',
         :track => 'foo track',
         :tags => 'aaa,bbb,ccc'
       }, :post, true, true).and_return(@ok_response)
 
-      @lastfm.track.add_tags(
+      expect(@lastfm.track.add_tags(
         :artist => 'foo artist',
         :track => 'foo track',
         :tags => 'aaa,bbb,ccc'
-        ).should be_true
+        )).to be_truthy
     end
   end
 
   describe '#ban' do
     it 'should ban' do
-      @lastfm.should_receive(:request).with('track.ban', {
+      expect(@lastfm).to receive(:request).with('track.ban', {
         :artist => 'foo artist',
         :track => 'foo track',
       }, :post, true, true).and_return(@ok_response)
 
-      @lastfm.track.ban(:artist => 'foo artist', :track => 'foo track').should be_true
+      expect(@lastfm.track.ban(:artist => 'foo artist', :track => 'foo track')).to be_truthy
     end
   end
 
   describe '#get_info' do
     it 'should get info by track and artist' do
-      @lastfm.should_receive(:request).with('track.getInfo', {
+      expect(@lastfm).to receive(:request).with('track.getInfo', {
         :artist => 'Cher',
         :track => 'Believe',
         :username => 'youpy',
@@ -46,16 +46,16 @@ describe '#track' do
         :artist => 'Cher',
         :track => 'Believe',
         :username => 'youpy')
-      track['name'].should == 'Believe'
-      track['album']['image'].size.should == 4
-      track['album']['image'].first['size'].should == 'small'
-      track['album']['image'].first['content'].should == 'http://userserve-ak.last.fm/serve/64s/8674593.jpg'
-      track['toptags']['tag'].size.should == 5
-      track['toptags']['tag'].first['name'].should == 'pop'
+      expect(track['name']).to eq('Believe')
+      expect(track['album']['image'].size).to eq(4)
+      expect(track['album']['image'].first['size']).to eq('small')
+      expect(track['album']['image'].first['content']).to eq('http://userserve-ak.last.fm/serve/64s/8674593.jpg')
+      expect(track['toptags']['tag'].size).to eq(5)
+      expect(track['toptags']['tag'].first['name']).to eq('pop')
     end
 
     it 'should get info by mbid' do
-      @lastfm.should_receive(:request).with('track.getInfo', {
+      expect(@lastfm).to receive(:request).with('track.getInfo', {
           :mbid => 'xxx',
           :username => nil
         }
@@ -64,16 +64,16 @@ describe '#track' do
       track = @lastfm.track.get_info(
         :mbid => 'xxx'
       )
-      track['name'].should == 'Believe'
-      track['album']['image'].size.should == 4
-      track['album']['image'].first['size'].should == 'small'
-      track['album']['image'].first['content'].should == 'http://userserve-ak.last.fm/serve/64s/8674593.jpg'
-      track['toptags']['tag'].size.should == 5
-      track['toptags']['tag'].first['name'].should == 'pop'
+      expect(track['name']).to eq('Believe')
+      expect(track['album']['image'].size).to eq(4)
+      expect(track['album']['image'].first['size']).to eq('small')
+      expect(track['album']['image'].first['content']).to eq('http://userserve-ak.last.fm/serve/64s/8674593.jpg')
+      expect(track['toptags']['tag'].size).to eq(5)
+      expect(track['toptags']['tag'].first['name']).to eq('pop')
     end
 
     it 'should get xml with force array option' do
-      @lastfm.should_receive(:request).with('track.getInfo', {
+      expect(@lastfm).to receive(:request).with('track.getInfo', {
         :artist => 'Cher',
         :track => 'Believe',
         :username => 'youpy',
@@ -83,17 +83,17 @@ describe '#track' do
         :artist => 'Cher',
         :track => 'Believe',
         :username => 'youpy')
-      track['album']['image'].size.should == 1
-      track['album']['image'].first['size'].should == 'small'
-      track['album']['image'].first['content'].should == 'http://userserve-ak.last.fm/serve/64s/8674593.jpg'
-      track['toptags']['tag'].size.should == 1
-      track['toptags']['tag'].first['name'].should == 'pop'
+      expect(track['album']['image'].size).to eq(1)
+      expect(track['album']['image'].first['size']).to eq('small')
+      expect(track['album']['image'].first['content']).to eq('http://userserve-ak.last.fm/serve/64s/8674593.jpg')
+      expect(track['toptags']['tag'].size).to eq(1)
+      expect(track['toptags']['tag'].first['name']).to eq('pop')
     end
   end
 
   describe '#get_correction' do
     it 'should get correction' do
-      @lastfm.should_receive(:request).with('track.getCorrection', {
+      expect(@lastfm).to receive(:request).with('track.getCorrection', {
         :artist => 'White Stripes',
         :track => 'One More Cup of Coffee'
       }).and_return(make_response('track_get_correction'))
@@ -103,16 +103,16 @@ describe '#track' do
         :track => 'One More Cup of Coffee')
       correction = corrections.first
 
-      corrections.size.should eql(1)
-      correction['track']['name'].should == 'One More Cup of Coffee'
-      correction['track']['artist']['name'].should == 'The White Stripes'
-      correction['track']['url'].should == 'www.last.fm/music/The+White+Stripes/_/One+More+Cup+of+Coffee'
+      expect(corrections.size).to eql(1)
+      expect(correction['track']['name']).to eq('One More Cup of Coffee')
+      expect(correction['track']['artist']['name']).to eq('The White Stripes')
+      expect(correction['track']['url']).to eq('www.last.fm/music/The+White+Stripes/_/One+More+Cup+of+Coffee')
     end
   end
 
   describe '#get_similar' do
     it 'should get similar' do
-      @lastfm.should_receive(:request).with('track.getSimilar', {
+      expect(@lastfm).to receive(:request).with('track.getSimilar', {
         :artist => 'Cher',
         :track => 'Believe',
         :limit => nil
@@ -121,16 +121,16 @@ describe '#track' do
       tracks = @lastfm.track.get_similar(
         :artist => 'Cher',
         :track => 'Believe')
-      tracks.size.should == 5
-      tracks.first['name'].should == 'Strong Enough'
-      tracks.first['image'][1]['content'].should == 'http://userserve-ak.last.fm/serve/64s/8674593.jpg'
-      tracks[1]['image'][0]['content'].should == 'http://userserve-ak.last.fm/serve/34s/8674593.jpg'
+      expect(tracks.size).to eq(5)
+      expect(tracks.first['name']).to eq('Strong Enough')
+      expect(tracks.first['image'][1]['content']).to eq('http://userserve-ak.last.fm/serve/64s/8674593.jpg')
+      expect(tracks[1]['image'][0]['content']).to eq('http://userserve-ak.last.fm/serve/34s/8674593.jpg')
     end
   end
 
   describe '#get_tags' do
     it 'should get tags' do
-      @lastfm.should_receive(:request).with('track.getTags', {
+      expect(@lastfm).to receive(:request).with('track.getTags', {
         :artist => 'foo artist',
         :track => 'foo track',
       }).and_return(make_response('track_get_tags'))
@@ -138,15 +138,15 @@ describe '#track' do
       tags = @lastfm.track.get_tags(
         :artist => 'foo artist',
         :track => 'foo track')
-      tags.size.should == 2
-      tags[0]['name'].should == 'swedish'
-      tags[0]['url'].should == 'http://www.last.fm/tag/swedish'
+      expect(tags.size).to eq(2)
+      expect(tags[0]['name']).to eq('swedish')
+      expect(tags[0]['url']).to eq('http://www.last.fm/tag/swedish')
     end
   end
 
   describe '#get_top_fans' do
     it 'should get top fans' do
-      @lastfm.should_receive(:request).with('track.getTopFans', {
+      expect(@lastfm).to receive(:request).with('track.getTopFans', {
         :artist => 'foo artist',
         :track => 'foo track',
       }).and_return(make_response('track_get_top_fans'))
@@ -154,14 +154,14 @@ describe '#track' do
       users = @lastfm.track.get_top_fans(
         :artist => 'foo artist',
         :track => 'foo track')
-      users.size.should == 2
-      users[0]['name'].should == 'Through0glass'
+      expect(users.size).to eq(2)
+      expect(users[0]['name']).to eq('Through0glass')
     end
   end
 
   describe '#get_top_tags' do
     it 'should get top tags' do
-      @lastfm.should_receive(:request).with('track.getTopTags', {
+      expect(@lastfm).to receive(:request).with('track.getTopTags', {
         :artist => 'foo artist',
         :track => 'foo track',
       }).and_return(make_response('track_get_top_tags'))
@@ -169,44 +169,44 @@ describe '#track' do
       tags = @lastfm.track.get_top_tags(
         :artist => 'foo artist',
         :track => 'foo track')
-      tags.size.should == 2
-      tags[0]['name'].should == 'alternative'
-      tags[0]['count'].should == '100'
-      tags[0]['url'].should == 'www.last.fm/tag/alternative'
+      expect(tags.size).to eq(2)
+      expect(tags[0]['name']).to eq('alternative')
+      expect(tags[0]['count']).to eq('100')
+      expect(tags[0]['url']).to eq('www.last.fm/tag/alternative')
     end
   end
 
   describe '#love' do
     it 'should love' do
-      @lastfm.should_receive(:request).with('track.love', {
+      expect(@lastfm).to receive(:request).with('track.love', {
         :artist => 'foo artist',
         :track => 'foo track',
       }, :post, true, true).and_return(@ok_response)
 
-      @lastfm.track.love(
+      expect(@lastfm.track.love(
         :artist => 'foo artist',
-        :track => 'foo track').should be_true
+        :track => 'foo track')).to be_truthy
     end
   end
 
   describe '#remove_tag' do
     it 'should remove tag' do
-      @lastfm.should_receive(:request).with('track.removeTag', {
+      expect(@lastfm).to receive(:request).with('track.removeTag', {
         :artist => 'foo artist',
         :track => 'foo track',
         :tag => 'aaa'
       }, :post, true, true).and_return(@ok_response)
 
-      @lastfm.track.remove_tag(
+      expect(@lastfm.track.remove_tag(
         :artist => 'foo artist',
         :track => 'foo track',
-        :tag => 'aaa').should be_true
+        :tag => 'aaa')).to be_truthy
     end
   end
 
   describe '#search' do
     it 'should search' do
-      @lastfm.should_receive(:request).with('track.search', {
+      expect(@lastfm).to receive(:request).with('track.search', {
         :artist => nil,
         :track => 'Believe',
         :limit => 10,
@@ -217,14 +217,14 @@ describe '#track' do
         :track => 'Believe',
         :limit => 10,
         :page => 3)
-      tracks['results']['for'].should == 'Believe'
-      tracks['results']['totalResults'].should == '40540'
-      tracks['results']['trackmatches']['track'].size.should == 2
-      tracks['results']['trackmatches']['track'][0]['name'].should == 'Make Me Believe'
+      expect(tracks['results']['for']).to eq('Believe')
+      expect(tracks['results']['totalResults']).to eq('40540')
+      expect(tracks['results']['trackmatches']['track'].size).to eq(2)
+      expect(tracks['results']['trackmatches']['track'][0]['name']).to eq('Make Me Believe')
     end
 
     it 'should always return an arrays of tracks' do
-      @lastfm.should_receive(:request).with('track.search', {
+      expect(@lastfm).to receive(:request).with('track.search', {
         :artist => nil,
         :track => 'Believe',
         :limit => 10,
@@ -235,14 +235,14 @@ describe '#track' do
         :track => 'Believe',
         :limit => 10,
         :page => 3)
-      tracks['results']['for'].should == 'Believe'
-      tracks['results']['totalResults'].should == '40540'
-      tracks['results']['trackmatches']['track'].size.should == 1
-      tracks['results']['trackmatches']['track'][0]['name'].should == 'Make Me Believe'
+      expect(tracks['results']['for']).to eq('Believe')
+      expect(tracks['results']['totalResults']).to eq('40540')
+      expect(tracks['results']['trackmatches']['track'].size).to eq(1)
+      expect(tracks['results']['trackmatches']['track'][0]['name']).to eq('Make Me Believe')
     end
 
     it 'should return an empty array if no match found' do
-      @lastfm.should_receive(:request).with('track.search', {
+      expect(@lastfm).to receive(:request).with('track.search', {
         :artist => nil,
         :track => 'Believe',
         :limit => 10,
@@ -253,33 +253,33 @@ describe '#track' do
         :track => 'Believe',
         :limit => 10,
         :page => 1)
-      tracks['results']['for'].should == 'Believe'
-      tracks['results']['totalResults'].should == '0'
-      tracks['results']['trackmatches']['track'].size.should == 0
+      expect(tracks['results']['for']).to eq('Believe')
+      expect(tracks['results']['totalResults']).to eq('0')
+      expect(tracks['results']['trackmatches']['track'].size).to eq(0)
     end
   end
 
   describe '#share' do
     it 'should share' do
-      @lastfm.should_receive(:request).with('track.share', {
+      expect(@lastfm).to receive(:request).with('track.share', {
         :artist => 'foo artist',
         :track => 'foo track',
         :message => 'this is a message',
         :recipient => 'foo@example.com',
       }, :post, true, true).and_return(@ok_response)
 
-      @lastfm.track.share(
+      expect(@lastfm.track.share(
         :artist => 'foo artist',
         :track => 'foo track',
         :recipient => 'foo@example.com',
-        :message => 'this is a message').should be_true
+        :message => 'this is a message')).to be_truthy
     end
   end
 
   describe '#scrobble' do
     it 'should scrobble' do
       time = Time.now
-      @lastfm.should_receive(:request).with('track.scrobble', {
+      expect(@lastfm).to receive(:request).with('track.scrobble', {
         :artist => 'foo artist',
         :track => 'foo track',
         :album => 'foo album',
@@ -302,7 +302,7 @@ describe '#track' do
 
   describe '#update_now_playing' do
     it 'should update now playing' do
-      @lastfm.should_receive(:request).with('track.updateNowPlaying', {
+      expect(@lastfm).to receive(:request).with('track.updateNowPlaying', {
         :artist => 'foo artist',
         :track => 'foo track',
         :album => 'foo album',
@@ -323,14 +323,14 @@ describe '#track' do
 
   describe '#unlove' do
     it 'should unlove' do
-      @lastfm.should_receive(:request).with('track.unlove', {
+      expect(@lastfm).to receive(:request).with('track.unlove', {
         :artist => 'foo artist',
         :track => 'foo track',
       }, :post, true, true).and_return(@ok_response)
 
-      @lastfm.track.unlove(
+      expect(@lastfm.track.unlove(
         :artist => 'foo artist',
-        :track => 'foo track').should be_true
+        :track => 'foo track')).to be_truthy
     end
   end
 end
